@@ -26,7 +26,7 @@ module Abbyy
     Catalan
     Chamorro
     Chechen
-    ChinesePRC # Chinese Simplified
+    ChinesePRC    # Chinese Simplified
     ChineseTaiwan # Chinese Traditional
     Chukcha
     Chuvash
@@ -47,8 +47,8 @@ module Abbyy
     EskimoCyrillic
     EskimoLatin
     Esperanto
-    Estonian;
-    Even;
+    Estonian
+    Even
     Evenki
     Farsi
     Faeroese

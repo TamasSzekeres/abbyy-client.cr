@@ -50,20 +50,20 @@ module Abbyy
 
     def to_s
       case self
-      when Txt then "txt"
-      when TxtUnstructured then "txtUnstructured"
-      when Rtf then "rtf"
-      when Docx then "docx"
-      when Xlsx then "xlsx"
-      when Pptx then "pptx"
-      when PdfSearchable then "pdfSearchable"
-      when PdfTextAndImages then "pdfTextAndImages"
-      when Pdfa then "pdfa"
-      when Xml then "xml"
+      when Txt                  then "txt"
+      when TxtUnstructured      then "txtUnstructured"
+      when Rtf                  then "rtf"
+      when Docx                 then "docx"
+      when Xlsx                 then "xlsx"
+      when Pptx                 then "pptx"
+      when PdfSearchable        then "pdfSearchable"
+      when PdfTextAndImages     then "pdfTextAndImages"
+      when Pdfa                 then "pdfa"
+      when Xml                  then "xml"
       when XmlForCorrectedImage then "xmlForCorrectedImage"
-      when Alto then "alto"
-      when V_Card then "vCard"
-      when Csv then "csv"
+      when Alto                 then "alto"
+      when V_Card               then "vCard"
+      when Csv                  then "csv"
       end
     end
   end
