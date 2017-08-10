@@ -10,7 +10,7 @@ module Abbyy
     Square
 
     def to_s
-      self.downcase
+      super.to_s.downcase
     end
   end
 end

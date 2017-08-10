@@ -122,6 +122,8 @@ module Abbyy
       when UCC_128       then "ucc128"
       when UPCA          then "upca"
       when UPCE          then "upce"
+      else
+        raise "Unknown barcode-type: #{self}"
       end
     end
   end

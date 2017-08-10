@@ -8,7 +8,7 @@ module Abbyy
     Scanner
 
     def to_s
-      self.downcase
+      super.to_s.downcase
     end
   end
 end

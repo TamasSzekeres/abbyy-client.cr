@@ -38,7 +38,7 @@ module Abbyy
       when OcrA then "ocrA"
       when OcrB then "ocrB"
       else
-        self.downcase
+        super.to_s.downcase
       end
     end
   end

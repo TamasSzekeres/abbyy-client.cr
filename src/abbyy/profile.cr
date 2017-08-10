@@ -34,6 +34,8 @@ module Abbyy
       when TextExtraction        then "textExtraction"
       when FieldLevelRecognition then "fieldLevelRecognition"
       when BarcodeRecognition    then "barcodeRecognition"
+      else
+        raise "Unknown profile: #{self}"
       end
     end
   end

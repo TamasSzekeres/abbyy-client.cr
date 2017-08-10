@@ -13,6 +13,8 @@ module Abbyy
       when Auto      then "auto"
       when Write     then "write"
       when DontWrite then "dontWrite"
+      else
+        raise "Unknown pdf-write-tag: #{self}"
       end
     end
   end

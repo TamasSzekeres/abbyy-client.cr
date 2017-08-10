@@ -64,6 +64,8 @@ module Abbyy
       when Alto                 then "alto"
       when V_Card               then "vCard"
       when Csv                  then "csv"
+      else
+        raise "Unknown export format: #{self}"
       end
     end
   end

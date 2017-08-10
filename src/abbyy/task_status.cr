@@ -13,10 +13,12 @@ module Abbyy
     # the URL for downloading the result of processing is available in the response.
     Completed
 
-    # The task has not been processed because an error occurred. You can find the description of the error in the XML response.
+    # The task has not been processed because an error occurred.
+    # You can find the description of the error in the XML response.
     ProcessingFailed
 
-    # The task has been deleted. This status can be returned only for the deleteTask method.
+    # The task has been deleted. This status can be returned only for the
+    # `Abyyy::Client::delete_task` method.
     Deleted
 
     # You do not have enough money on your account to process the task.

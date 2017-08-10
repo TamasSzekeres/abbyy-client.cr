@@ -34,6 +34,8 @@ module Abbyy
       when SimpleComb       then "simpleComb"
       when CombInFrame      then "combInFrame"
       when PartitionedFrame then "partitionedFrame"
+      else
+        raise "Unknown field-marking-type: {self}"
       end
     end
   end
