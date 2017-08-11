@@ -11,17 +11,17 @@ module Abbyy
   # Cloud OCR SDK server requires authentication before allowing access to its resources on the Internet.
   # To authenticate on the server, you need a registered Application ID and Application Password.
   #
-  # See details in the [http://ocrsdk.com/documentation/apireference/authentication](http://ocrsdk.com/documentation/apireference/authentication) section.
+  # See details in the [Authentication](http://ocrsdk.com/documentation/apireference/authentication) section.
   #
   # **See** [http://ocrsdk.com/documentation/apireference/](http://ocrsdk.com/documentation/apireference/).
   class Client
     # User-Agent
-    USER_AGENT = "Abbyy-Client/1.0 (Crystal Client)"
+    USER_AGENT = "Abbyy-Client/#{VERSION} (Crystal Client)"
 
     # Base url of the api.
     property api_url : String = "http://cloud.ocrsdk.com"
 
-    # Application ID.
+    # User's Application ID.
     property application_id : String
 
     # User's password for authenticaion.
@@ -33,6 +33,24 @@ module Abbyy
     def initialize(@application_id, @password, @language = nil)
     end
 
+    # The method loads the image, creates a processing task for the image with
+    # the specified parameters, and passes the task for processing.
+    #
+    # The image file is transmitted in the request body. See the list of
+    # [supported input formats](http://ocrsdk.com/documentation/specifications/image-formats/).
+    #
+    # This method allows you to specify up to three file formats for the result,
+    # in which case the [server response](http://ocrsdk.com/documentation/specifications/status-codes/)
+    # for the completed task will contain several result URLs.
+    #
+    # If there is not enough money on your account, the task will be created,
+    # but will be suspended with `TaskStatus::NotEnoughCredits` status.
+    # You can pass this task for processing using the `process_document` method
+    # after you have topped up your account.
+    #
+    # The task will not be created, if you exceed the limit of uploaded images.
+    #
+    # For details on task cost please see [billing terms](http://ocrsdk.com/plans-and-pricing/billing-terms/).
     def process_image(request : ProcessImageRequest) : ProcessImageResponse
       api_post :processImage, request, ProcessImageResponse
     end
@@ -115,14 +133,14 @@ module Abbyy
 
     private def api_get(method, request : BaseRequest?, result_type : ResultT.class) forall ResultT
       uri = build_uri method, request
-      HTTP::Client.get(uri) do |response|
+      HTTP::Client.get(uri, headers: headers) do |response|
         result_type.new response
       end
     end
 
     private def api_post(method, request : BaseRequest?, result_type : ResultT.class) forall ResultT
       uri = build_uri method, request
-      HTTP::Client.post(uri, body: request ? request.body : nil) do |response|
+      HTTP::Client.post(uri, body: request ? request.body : nil, headers: headers) do |response|
         result_type.new response
       end
     end
@@ -131,8 +149,17 @@ module Abbyy
       uri = URI.parse "#{api_url}/#{method}"
       uri.user = @application_id
       uri.password = @password
-      uri.query = HTTP::Params.encode(request.params) if request
+
+      params = request ? request.params : {} of String => String
+      if !params["language"]? && @language
+        params["language"] = @language.to_s
+      end
+      uri.query = HTTP::Params.encode(params) unless params.empty?
       uri
+    end
+
+    private def headers
+      HTTP::Headers{"User-Agent" => USER_AGENT}
     end
   end
 end

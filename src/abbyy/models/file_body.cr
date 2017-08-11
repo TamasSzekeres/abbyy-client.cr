@@ -2,14 +2,14 @@ require "http/client"
 
 module Abbyy::Models
   module FileBody
-    property file_path : String? = nil
+    # **Required Parameter**
+    property file_path : String
+
+    def initialize(@file_path : String)
+    end
 
     def body : HTTP::Client::BodyType
-      if @file_path
-        File.open @file_path.as(String)
-      else
-        nil
-      end
+      File.open @file_path
     end
   end
 end

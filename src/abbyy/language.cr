@@ -1,4 +1,7 @@
 module Abbyy
+  # Supported languages.
+  #
+  # **See** [http://ocrsdk.com/documentation/specifications/recognition-languages/](http://ocrsdk.com/documentation/specifications/recognition-languages/).
   enum Language
     Abkhaz
     Adyghe

@@ -6,14 +6,10 @@ require "./abbyy/models/*"
 module Abbyy
   include Models
 
-  API_URL = "http://cloud.ocrsdk.com"
-  APP_ID = "szektam_abbyy_ocr_demo"
-  PASSWD = "IzwHj9H+bz7E3T1SvdzRSNdB"
-
   def self.main
     puts "Abbyy test"
 
-    client = Client.new APP_ID, PASSWD
+    # client = Client.new APP_ID, PASSWD, Language::German
     # p client.get_application_info
 
     # req = ListTasksRequest.new
@@ -25,13 +21,13 @@ module Abbyy
     # params = HTTP::Params.encode(params)
     # pp params
 
-    req = ProcessImageRequest.new
-    req.file_path = "/home/szekeres/Dokumentumok/abbyy/Picture_samples/English/Scanned_documents/New Image.jpg"
+    req = ProcessImageRequest.new file_path: "/home/szekeres/Dokumentumok/abbyy/Picture_samples/English/Scanned_documents/New Image.jpg"
     req.language = [Language::English, Language::Hungarian]
     req.image_source = ImageSource::Scanner
     req.export_format = ExportFormat::PdfTextAndImages
 
     pp req.params
+    pp Client::USER_AGENT
 
     # response = client.process_image req
     # p response

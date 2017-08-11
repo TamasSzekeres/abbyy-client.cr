@@ -6,7 +6,7 @@ module Abbyy::Models
   # Request object for '/processBarcodeField' API-method.
   #
   # **See** [http://ocrsdk.com/documentation/apireference/processBarcodeField/](http://ocrsdk.com/documentation/apireference/processBarcodeField/).
-  class ProcessImageRequest < BaseRequest
+  class ProcessBarcodeFieldRequest < BaseRequest
     include FileBody
 
     property region : Region? = nil
