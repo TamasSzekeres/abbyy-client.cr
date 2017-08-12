@@ -3,7 +3,7 @@ require "xml"
 module Abbyy::Models
   # Task.
   #
-  # **See** [http://ocrsdk.com/documentation/specifications/status-codes/](http://ocrsdk.com/documentation/specifications/status-codes/)
+  # **See** [status-codes](http://ocrsdk.com/documentation/specifications/status-codes/)
   class Task < BaseModel
     TIME_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
 
