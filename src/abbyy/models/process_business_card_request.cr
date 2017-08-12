@@ -110,15 +110,16 @@ module Abbyy::Models
     # Cannot contain more than 255 characters.
     #
     # This parameter is **not required**.
-    property description : String? = nil
+    getter description : String? = nil
 
     # Contains a password for accessing password-protected images in PDF format.
     property pdf_password : String? = nil
 
-    def initialize(@file_path : String)
-      unless File.exists? @file_path
-        raise ArgumentError.new "File does not exists: #{@file_path}"
+    def initialize(file_path : String)
+      unless File.exists? file_path
+        raise ArgumentError.new "File does not exists: #{file_path}"
       end
+      @file_path = file_path
     end
 
     ALLOWED_EXPORT_FORMATS = [
@@ -134,6 +135,15 @@ module Abbyy::Models
         end
       end
       @export_format = export_format
+    end
+
+    def description=(description : String?)
+      if description.is_a? String
+        if description.as(String).size > 255
+          raise ArgumentError.new "'description' parameter cannot contain more than 255 characters"
+        end
+      end
+      @description = description
     end
 
     def params : Hash(String, String)

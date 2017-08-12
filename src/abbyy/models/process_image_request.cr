@@ -6,16 +6,16 @@ module Abbyy::Models
   class ProcessImageRequest < BaseRequest
     include FileBody
 
-    DEFAULT_LANGUAGE = Languages::English
-    DEFAULT_PROFILE = Profiles::DocumentConversion
-    DEFAULT_TEXT_TYPE = TextTypes::NORMAL
-    DEFAULT_IMAGE_SOURCE = ImageSources::Auto
+    DEFAULT_LANGUAGE = Language::English
+    DEFAULT_PROFILE = Profile::DocumentConversion
+    DEFAULT_TEXT_TYPE = TextType::Normal
+    DEFAULT_IMAGE_SOURCE = ImageSource::Auto
     DEFAULT_CORRECT_ORIENTATION = true
     DEFAULT_CORRENT_SKEW = true
     DEFAULT_READ_BARCODES = true
-    DEFAULT_EXPORT_FORMAT = ExportFormats::Rtf
+    DEFAULT_EXPORT_FORMAT = ExportFormat::Rtf
     DEFAULT_XML_WRITE_RECOGNITION_VARIANTS = false
-    DEFAULT_PDF_WRITE_TAGS = PdfWriteTags::Auto
+    DEFAULT_PDF_WRITE_TAGS = PdfWriteTag::Auto
     DEFAULT_DESCRITION = ""
     DEFAULT_PDF_PASSWORD = ""
 
@@ -180,17 +180,18 @@ module Abbyy::Models
     # Cannot contain more than 255 characters.
     #
     # This parameter is **not required**.
-    property description : String? = nil
+    getter description : String? = nil
 
     # Contains a password for accessing password-protected images in PDF format.
     #
     # This parameter is **not required**.
     property pdf_password : String? = nil
 
-    def initialize(@file_path : String)
-      unless File.exists? @file_path
-        raise ArgumentError.new "File does not exists: #{@file_path}"
+    def initialize(file_path : String)
+      unless File.exists? file_path
+        raise ArgumentError.new "File does not exists: #{file_path}"
       end
+      @file_path = file_path
     end
 
     ALLOWED_PROFILES = Profile.values - [Profile::FieldLevelRecognition]
@@ -244,6 +245,15 @@ module Abbyy::Models
         end
       end
       @export_format = export_format
+    end
+
+    def description=(description : String?)
+      if description.is_a? String
+        if description.as(String).size > 255
+          raise ArgumentError.new "'description' parameter cannot contain more than 255 characters"
+        end
+      end
+      @description = description
     end
 
     def params : Hash(String, String)

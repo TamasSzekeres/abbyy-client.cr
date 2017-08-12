@@ -17,7 +17,7 @@ module Abbyy::Models
       if task_id
         raise ArgumentError.new "Invalid taskId: #{task_id}" unless task_id.as(String).is_task_id?
       else
-        raise ArgumentError.new "task_id cannot be nil"
+        raise ArgumentError.new "task_id must be string"
       end
       @task_id = task_id
     end

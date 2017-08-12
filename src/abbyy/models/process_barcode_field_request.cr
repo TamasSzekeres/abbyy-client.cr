@@ -72,7 +72,7 @@ module Abbyy::Models
     # Cannot contain more than 255 characters.
     #
     # This parameter is **not required**.
-    property description : String? = nil
+    getter description : String? = nil
 
     # Contains a password for accessing password-protected images in PDF format.
     #
@@ -81,6 +81,15 @@ module Abbyy::Models
 
     def region=(coordinates : Array(Int32))
       @region = Region.new coordinates
+    end
+
+    def description=(description : String?)
+      if description.is_a? String
+        if description.as(String).size > 255
+          raise ArgumentError.new "'description' parameter cannot contain more than 255 characters"
+        end
+      end
+      @description = description
     end
 
     def params : Hash(String, String)

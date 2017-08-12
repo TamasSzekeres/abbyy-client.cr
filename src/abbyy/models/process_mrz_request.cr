@@ -6,10 +6,11 @@ module Abbyy::Models
   class ProcessMRZRequest < BaseRequest
     include FileBody
 
-    def initialize(@file_path : String)
-      unless File.exists? @file_path
-        raise ArgumentError.new "File does not exists: #{@file_path}"
+    def initialize(file_path : String)
+      unless File.exists? file_path
+        raise ArgumentError.new "File does not exists: #{file_path}"
       end
+      @file_path = file_path
     end
   end
 end
