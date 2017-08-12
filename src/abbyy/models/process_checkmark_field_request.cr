@@ -3,16 +3,52 @@ require "./file_body"
 require "./region"
 
 module Abbyy::Models
-  # Request object for '/processCheckmarkField' API-method.
-  #
-  # **See** [http://ocrsdk.com/documentation/apireference/processCheckmarkField/](http://ocrsdk.com/documentation/apireference/processCheckmarkField/).
+  # Request object for [/processCheckmarkField](http://ocrsdk.com/documentation/apireference/processCheckmarkField/) API-method.
   class ProcessCheckmarkFieldRequest < BaseRequest
     include FileBody
 
+    DEFAULT_REGION = Region.new(-1, -1, -1, -1)
+    DEFAULT_CHECKMARK_TYPE = CheckmarkType::Empty
+    DEFAULT_CORRECTION_ALLOWED = false
+    DEFAULT_DESCRIPTION = ""
+    DEFAULT_PASSWORD = ""
+
+    # Specifies the region of the text field on the image. The coordinates of
+    # the region are measured in pixels relative to the left top corner of the
+    # image and are specified in the following order: left, top, right, bottom.
+    # By default, the region of the whole image is used.
+    #
+    # This parameter is **not required**.
+    #
+    # Default value is `Region.new(-1, -1, -1, -1)`.
     property region : Region? = nil
-    property checkmark_type : (CheckmarkType | Array(CheckmarkType))? = nil
+
+    # Specifies the type of the checkmark. It can be one of the following:
+    # - `CheckmarkType::Circle` (checkmark in a circle)
+    # - `CheckmarkType::Empty` (checkmark against an empty background)
+    # - `CheckmarkType::Square` (checkmark in a square)
+    #
+    # This parameter is **not required**.
+    #
+    # Default value is `CheckmarkType::Empty`.
+    property checkmark_type : CheckmarkType? = nil
+
+    # This property set to true means that checkmark block can be selected and then corrected.
+    #
+    # This parameter is **not required**.
+    #
+    # Default value is **false**.
     property correction_allowed : Bool? = nil
+
+    # Contains the description of the processing task.
+    # Cannot contain more than 255 characters.
+    #
+    # This parameter is **not required**.
     property description : String? = nil
+
+    # Contains a password for accessing password-protected images in PDF format.
+    #
+    # This parameter is **not required**.
     property pdf_password : String? = nil
 
     def region=(coordinates : Array(Int32))
@@ -22,12 +58,7 @@ module Abbyy::Models
     def params : Hash(String, String)
       hash = {} of String => String
       hash["region"] = @region.to_s if @region
-      case @checkmark_type
-      when CheckmarkType
-        hash["checkmarkType"] = @checkmark_type.to_s
-      when Array(CheckmarkType)
-        hash["checkmarkType"] = @checkmark_type.as(Array(CheckmarkType)).map(&.to_s).join(",")
-      end
+      hash["checkmarkType"] = @checkmark_type.to_s if @checkmark_type
       hash["correctionAllowed"] = @correction_allowed.to_s if @correction_allowed
       hash["description"] = @description.to_s if @description
       hash["pdfPassword"] = @pdf_password.to_s if @pdf_password

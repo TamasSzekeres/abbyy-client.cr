@@ -24,7 +24,7 @@ module Abbyy
     FieldLevelRecognition
 
     # Suitable for barcode extraction. Extracts only barcodes (texts, pictures, or tables are not detected).
-    # See the list of supported barcode types (http://ocrsdk.com/documentation/specifications/barcode-types/).
+    # See the list of supported [barcode types](http://ocrsdk.com/documentation/specifications/barcode-types/).
     BarcodeRecognition
 
     def to_s

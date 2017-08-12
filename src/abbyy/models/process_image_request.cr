@@ -183,6 +183,8 @@ module Abbyy::Models
     property description : String? = nil
 
     # Contains a password for accessing password-protected images in PDF format.
+    #
+    # This parameter is **not required**.
     property pdf_password : String? = nil
 
     def initialize(@file_path : String)

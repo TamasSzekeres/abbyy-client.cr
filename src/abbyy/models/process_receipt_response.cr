@@ -1,9 +1,7 @@
 require "./task_response"
 
 module Abbyy::Models
-  # Response object for `/processReceipt` API-method.
-  #
-  # **See** [http://ocrsdk.com/documentation/apireference/processReceipt/](http://ocrsdk.com/documentation/apireference/processReceipt/)
+  # Response object for [/processReceipt](http://ocrsdk.com/documentation/apireference/processReceipt/) API-method.
   class ProcessReceiptResponse < TaskResponse
   end
 end

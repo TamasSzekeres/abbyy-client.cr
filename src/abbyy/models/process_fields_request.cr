@@ -2,14 +2,50 @@ require "./file_body"
 require "./task_id_request"
 
 module Abbyy::Models
-  # Request object for `/processFields` API-method.
-  #
-  # **See** [http://ocrsdk.com/documentation/apireference/processFields/](http://ocrsdk.com/documentation/apireference/processFields/).
+  # Request object for [/processFields](http://ocrsdk.com/documentation/apireference/processFields/) API-method.
   class ProcessFieldsRequest < TaskIdRequest
     include FileBody
 
+    DEFAULT_DESCRIPTION = ""
+    DEFAULT_WRITE_RECOGNITION_VARIANTS = false
+
+    # Contains the description of the processing task.
+    # Cannot contain more than 255 characters.
+    #
+    # This parameter is **not required**.
     property description : String? = nil
+
+    # Specifies whether the recognition variants should be written to the result.
+    # It can have either **true** or **false** value.
+    #
+    # If you set this value to **true**, additional recognition variants
+    # (charRecVariants) appear in the XML result file.
+    #
+    # This parameter is **not required**.
+    #
+    # Default value is **false**.
     property write_recognition_variants : Bool? = nil
+
+    def initialize(task_id : String, @file_path : String)
+      raise ArgumentError.new "Invalid taskId: #{task_id}" unless task_id.as(String).is_task_id?
+      unless File.exists? @file_path
+        raise ArgumentError.new "File does not exists: #{@file_path}"
+      end
+      @task_id = task_id
+    end
+
+    def task_id=(task_id : String)
+      raise ArgumentError.new "Invalid taskId: #{task_id}" unless task_id.as(String).is_task_id?
+      @task_id = task_id
+    end
+
+    def task_id=(@task_id : String?)
+      if @task_id
+        raise ArgumentError.new "Invalid taskId: #{@task_id}" unless @task_id.as(String).is_task_id?
+      else
+        raise ArgumentError.new "task_id cannot be nil"
+      end
+    end
 
     def params : Hash(String, String)
       hash = super.params

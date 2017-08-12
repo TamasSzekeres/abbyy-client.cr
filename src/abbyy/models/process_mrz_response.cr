@@ -1,9 +1,7 @@
 require "./task_response"
 
 module Abbyy::Models
-  # Response object for `/processMRZ` API-method.
-  #
-  # **See** [http://ocrsdk.com/documentation/apireference/processMRZ/](http://ocrsdk.com/documentation/apireference/processMRZ/)
+  # Response object for [/processMRZ](http://ocrsdk.com/documentation/apireference/processMRZ/) API-method.
   class ProcessMRZResponse < TaskResponse
   end
 end

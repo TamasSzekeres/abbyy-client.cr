@@ -4,13 +4,24 @@ module Abbyy::Models
   # Request object for holding only `taskId` parameter.
   class TaskIdRequest < BaseRequest
     # Specifies the identifier of the task.
-    property task_id : String
+    getter task_id : String? = nil
 
-    def initialize(@task_id : String)
+    def initialize(@task_id : String? = nil)
+      if @task_id
+        raise ArgumentError.new "Invalid taskId: #{@task_id}" unless @task_id.is_task_id?
+      end
+    end
+
+    def task_id=(@task_id : String?)
+      if @task_id
+        raise ArgumentError.new "Invalid taskId: #{@task_id}" unless @task_id.as(String).is_task_id?
+      end
     end
 
     def params : Hash(String, String)
-      {"taskId" => @taskId}
+      hash = {} of String => String
+      hash["taskId"] = @task if @task
+      hash
     end
   end
 end

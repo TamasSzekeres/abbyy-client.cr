@@ -5,7 +5,13 @@ require "./base_model"
 module Abbyy::Models
   # Base class for Response objects.
   abstract class BaseResponse < BaseModel
+    # The server can return the following HTTP status codes:
+    # - 200 – successful method call
+    # - 4xx – incorrect parameters of the method
+    # - 5xx – an error on the server side
     property status_code : Int32 = 0
+
+    # HTTP version.
     property protocol_version : String? = nil
     property headers : HTTP::Headers = HTTP::Headers.new
 

@@ -1,7 +1,5 @@
 module Abbyy::Models
-  # Response object for `/listTasks` API-method.
-  #
-  # **See** [http://ocrsdk.com/documentation/apireference/listTasks/](http://ocrsdk.com/documentation/apireference/listTasks/)
+  # Response object for [/listTasks](http://ocrsdk.com/documentation/apireference/listTasks/) API-method.
   class ListTasksResponse < BaseResponse
     property tasks : Array(Task) = Array(Task).new
 
