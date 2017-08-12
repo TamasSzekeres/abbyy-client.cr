@@ -1,5 +1,14 @@
 module Abbyy::Models
   # Response object for [/listTasks](http://ocrsdk.com/documentation/apireference/listTasks/) API-method.
+  #
+  # ###Status codes
+  #
+  # The following status codes can be returned when this method is called:
+  # - **200** Successful method call.
+  # - **450** Incorrect parameters have been passed. One of the following errors occurred:
+  #   - The incorrect start date has been specified.
+  #   - The incorrect end date has been specified.
+  #   - The start date exceeds the end date.
   class ListTasksResponse < BaseResponse
     property tasks : Array(Task) = Array(Task).new
 

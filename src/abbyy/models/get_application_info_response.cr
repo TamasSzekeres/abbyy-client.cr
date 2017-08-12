@@ -4,11 +4,15 @@ require "xml"
 require "./base_response"
 
 module Abbyy::Models
-  # Response object for `/getApplicationInfo` API-method.
+  # Response object for [/getApplicationInfo](http://ocrsdk.com/documentation/apireference/getApplicationInfo/) API-method.
   #
   # **See** `Abbyy::Client::get_application_info`.
   #
-  # **See** [http://ocrsdk.com/documentation/apireference/getApplicationInfo/](http://ocrsdk.com/documentation/apireference/getApplicationInfo/).
+  # ###Status codes
+  #
+  # The following status codes can be returned when this method is called:
+  # - **200** Successful method call.
+  # - **403** The call to this method is disabled in your application settings. 
   class GetApplicationInfoResponse < BaseResponse
     TIME_FORMAT = "%Y-%m-%dT%H:%M:%S"
 
