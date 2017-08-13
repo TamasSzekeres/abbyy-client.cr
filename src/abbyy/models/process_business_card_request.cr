@@ -151,7 +151,7 @@ module Abbyy::Models
     ]
 
     def export_format=(export_format : (ExportFormat | Array(ExportFormat))?)
-      set_export_format
+      set_export_format export_format
     end
 
     private def set_export_format(export_format : (ExportFormat | Array(ExportFormat))?)

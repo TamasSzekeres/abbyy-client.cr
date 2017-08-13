@@ -227,7 +227,7 @@ module Abbyy::Models
     ]
 
     def profile=(profile : Profile?)
-      set_profile
+      set_profile profile
     end
 
     private def set_profile(profile : Profile?)
