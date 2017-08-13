@@ -16,7 +16,7 @@ dependencies:
     github: TamasSzekeres/abbyy-client.cr
 ```
 
-Than run:
+Then run:
 ```shell
 crystal deps
 ```
