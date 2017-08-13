@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/TamasSzekeres/abbyy-client.cr">
+  <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../../js/doc.js"></script>
+  <title>Abbyy::Models::ProcessFieldsResponse - github.com/TamasSzekeres/abbyy-client.cr</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="../../index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent open current" data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy" data-name="abbyy">
+      <a href="../../Abbyy.html">Abbyy</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/ApplicationType" data-name="abbyy::applicationtype">
+      <a href="../../Abbyy/ApplicationType.html">ApplicationType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/BarcodeType" data-name="abbyy::barcodetype">
+      <a href="../../Abbyy/BarcodeType.html">BarcodeType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/CheckmarkType" data-name="abbyy::checkmarktype">
+      <a href="../../Abbyy/CheckmarkType.html">CheckmarkType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Client" data-name="abbyy::client">
+      <a href="../../Abbyy/Client.html">Client</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Country" data-name="abbyy::country">
+      <a href="../../Abbyy/Country.html">Country</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/ExportFormat" data-name="abbyy::exportformat">
+      <a href="../../Abbyy/ExportFormat.html">ExportFormat</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/FieldMarkingType" data-name="abbyy::fieldmarkingtype">
+      <a href="../../Abbyy/FieldMarkingType.html">FieldMarkingType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/ImageSource" data-name="abbyy::imagesource">
+      <a href="../../Abbyy/ImageSource.html">ImageSource</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Language" data-name="abbyy::language">
+      <a href="../../Abbyy/Language.html">Language</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models" data-name="abbyy::models">
+      <a href="../../Abbyy/Models.html">Models</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/BaseModel" data-name="abbyy::models::basemodel">
+      <a href="../../Abbyy/Models/BaseModel.html">BaseModel</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/BaseRequest" data-name="abbyy::models::baserequest">
+      <a href="../../Abbyy/Models/BaseRequest.html">BaseRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/BaseResponse" data-name="abbyy::models::baseresponse">
+      <a href="../../Abbyy/Models/BaseResponse.html">BaseResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/DeleteTaskRequest" data-name="abbyy::models::deletetaskrequest">
+      <a href="../../Abbyy/Models/DeleteTaskRequest.html">DeleteTaskRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/DeleteTaskResponse" data-name="abbyy::models::deletetaskresponse">
+      <a href="../../Abbyy/Models/DeleteTaskResponse.html">DeleteTaskResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/FileBody" data-name="abbyy::models::filebody">
+      <a href="../../Abbyy/Models/FileBody.html">FileBody</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/GetApplicationInfoResponse" data-name="abbyy::models::getapplicationinforesponse">
+      <a href="../../Abbyy/Models/GetApplicationInfoResponse.html">GetApplicationInfoResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/GetTaskStatusRequest" data-name="abbyy::models::gettaskstatusrequest">
+      <a href="../../Abbyy/Models/GetTaskStatusRequest.html">GetTaskStatusRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/GetTaskStatusResponse" data-name="abbyy::models::gettaskstatusresponse">
+      <a href="../../Abbyy/Models/GetTaskStatusResponse.html">GetTaskStatusResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ListTasksRequest" data-name="abbyy::models::listtasksrequest">
+      <a href="../../Abbyy/Models/ListTasksRequest.html">ListTasksRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ListTasksResponse" data-name="abbyy::models::listtasksresponse">
+      <a href="../../Abbyy/Models/ListTasksResponse.html">ListTasksResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBarcodeFieldRequest" data-name="abbyy::models::processbarcodefieldrequest">
+      <a href="../../Abbyy/Models/ProcessBarcodeFieldRequest.html">ProcessBarcodeFieldRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBarcodeFieldResponse" data-name="abbyy::models::processbarcodefieldresponse">
+      <a href="../../Abbyy/Models/ProcessBarcodeFieldResponse.html">ProcessBarcodeFieldResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBusinessCardRequest" data-name="abbyy::models::processbusinesscardrequest">
+      <a href="../../Abbyy/Models/ProcessBusinessCardRequest.html">ProcessBusinessCardRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBusinessCardResponse" data-name="abbyy::models::processbusinesscardresponse">
+      <a href="../../Abbyy/Models/ProcessBusinessCardResponse.html">ProcessBusinessCardResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessCheckmarkFieldRequest" data-name="abbyy::models::processcheckmarkfieldrequest">
+      <a href="../../Abbyy/Models/ProcessCheckmarkFieldRequest.html">ProcessCheckmarkFieldRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessCheckmarkFieldResponse" data-name="abbyy::models::processcheckmarkfieldresponse">
+      <a href="../../Abbyy/Models/ProcessCheckmarkFieldResponse.html">ProcessCheckmarkFieldResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessDocumentRequest" data-name="abbyy::models::processdocumentrequest">
+      <a href="../../Abbyy/Models/ProcessDocumentRequest.html">ProcessDocumentRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessDocumentResponse" data-name="abbyy::models::processdocumentresponse">
+      <a href="../../Abbyy/Models/ProcessDocumentResponse.html">ProcessDocumentResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessFieldsRequest" data-name="abbyy::models::processfieldsrequest">
+      <a href="../../Abbyy/Models/ProcessFieldsRequest.html">ProcessFieldsRequest</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessFieldsResponse" data-name="abbyy::models::processfieldsresponse">
+      <a href="../../Abbyy/Models/ProcessFieldsResponse.html">ProcessFieldsResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessImageRequest" data-name="abbyy::models::processimagerequest">
+      <a href="../../Abbyy/Models/ProcessImageRequest.html">ProcessImageRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessImageResponse" data-name="abbyy::models::processimageresponse">
+      <a href="../../Abbyy/Models/ProcessImageResponse.html">ProcessImageResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessMRZRequest" data-name="abbyy::models::processmrzrequest">
+      <a href="../../Abbyy/Models/ProcessMRZRequest.html">ProcessMRZRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessMRZResponse" data-name="abbyy::models::processmrzresponse">
+      <a href="../../Abbyy/Models/ProcessMRZResponse.html">ProcessMRZResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessReceiptRequest" data-name="abbyy::models::processreceiptrequest">
+      <a href="../../Abbyy/Models/ProcessReceiptRequest.html">ProcessReceiptRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessReceiptResponse" data-name="abbyy::models::processreceiptresponse">
+      <a href="../../Abbyy/Models/ProcessReceiptResponse.html">ProcessReceiptResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessTextFieldRequest" data-name="abbyy::models::processtextfieldrequest">
+      <a href="../../Abbyy/Models/ProcessTextFieldRequest.html">ProcessTextFieldRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessTextFieldResponse" data-name="abbyy::models::processtextfieldresponse">
+      <a href="../../Abbyy/Models/ProcessTextFieldResponse.html">ProcessTextFieldResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/Region" data-name="abbyy::models::region">
+      <a href="../../Abbyy/Models/Region.html">Region</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/SubmitImageRequest" data-name="abbyy::models::submitimagerequest">
+      <a href="../../Abbyy/Models/SubmitImageRequest.html">SubmitImageRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/SubmitImageResponse" data-name="abbyy::models::submitimageresponse">
+      <a href="../../Abbyy/Models/SubmitImageResponse.html">SubmitImageResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/Task" data-name="abbyy::models::task">
+      <a href="../../Abbyy/Models/Task.html">Task</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/TaskIdRequest" data-name="abbyy::models::taskidrequest">
+      <a href="../../Abbyy/Models/TaskIdRequest.html">TaskIdRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/TaskResponse" data-name="abbyy::models::taskresponse">
+      <a href="../../Abbyy/Models/TaskResponse.html">TaskResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/TaskResult" data-name="abbyy::models::taskresult">
+      <a href="../../Abbyy/Models/TaskResult.html">TaskResult</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/PdfWriteTag" data-name="abbyy::pdfwritetag">
+      <a href="../../Abbyy/PdfWriteTag.html">PdfWriteTag</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Profile" data-name="abbyy::profile">
+      <a href="../../Abbyy/Profile.html">Profile</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/TaskStatus" data-name="abbyy::taskstatus">
+      <a href="../../Abbyy/TaskStatus.html">TaskStatus</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/TextType" data-name="abbyy::texttype">
+      <a href="../../Abbyy/TextType.html">TextType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/WritingStyle" data-name="abbyy::writingstyle">
+      <a href="../../Abbyy/WritingStyle.html">WritingStyle</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/String" data-name="string">
+      <a href="../../String.html">String</a>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Abbyy::Models::ProcessFieldsResponse
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../../Abbyy/Models/ProcessFieldsResponse.html">Abbyy::Models::ProcessFieldsResponse</a></li><li class="superclass"><a href="../../Abbyy/Models/TaskResponse.html">Abbyy::Models::TaskResponse</a></li><li class="superclass"><a href="../../Abbyy/Models/BaseResponse.html">Abbyy::Models::BaseResponse</a></li><li class="superclass"><a href="../../Abbyy/Models/BaseModel.html">Abbyy::Models::BaseModel</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>Response object for <a href="http://ocrsdk.com/documentation/apireference/processFields/" target="_blank">/processFields</a> API-method.</p>
+
+<h3>Status codes</h3>
+
+<p>The following status codes can be returned when this method is called:</p>
+
+<ul><li><strong>200</strong> Successful method call.</li><li><strong>450</strong> Incorrect parameters have been passed. One of the following errors occurred:</li><ul><li>The identifier of the task has not been specified.</li><li>Incorrect XML file has been transmitted.</li><li>The task with the specified identifier cannot be started (e.g. it has already been started).</li><li>Task description length exceeds 255 characters.</li><li>Exceeded quota to add images. This error is returned if the number of
+images you have uploaded exceeds the number of images you can process with
+the credits available on your account plus some threshold. You can resolve
+this issue by topping up your account or by removing the tasks which have
+been submitted but have not been processed.</li></ul><li><strong>550</strong> An internal program error occurred while processing the image.</li></ul>
+
+<h3>Output file format</h3>
+
+<p>The output XML file has the following format:</p>
+
+<pre><code><span class="o"><</span>?xml version<span class="o">=</span><span class="s">&quot;1.0&quot;</span> encoding<span class="o">=</span><span class="s">&quot;utf-8&quot;</span> standalone<span class="o">=</span><span class="s">&quot;yes&quot;</span>?<span class="o">></span>
+<span class="o"><</span>document xmlns<span class="n">:xsi</span><span class="o">=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> xsi<span class="n">:schemaLocation</span><span class="o">=</span><span class="s">&quot;http://ocrsdk.com/schema/resultDescription-1.0.xsd http://ocrsdk.com/schema/resultDescription-1.0.xsd&quot;</span> xmlns<span class="o">=</span><span class="s">&quot;http://ocrsdk.com/schema/resultDescription-1.0.xsd&quot;</span><span class="o">></span>
+  <span class="o"><</span>page index<span class="o">=</span><span class="s">&quot;0&quot;</span><span class="o">></span>
+    <span class="o"><</span>text id<span class="o">=</span><span class="s">&quot;print&quot;</span> left<span class="o">=</span><span class="s">&quot;160&quot;</span> top<span class="o">=</span><span class="s">&quot;349&quot;</span> right<span class="o">=</span><span class="s">&quot;339&quot;</span> bottom<span class="o">=</span><span class="s">&quot;384&quot;</span><span class="o">></span>
+      <span class="o"><</span>value<span class="o">></span><span class="t">Vertraqsnummer</span><span class="n">:<</span><span class="s">/value&gt;
+      &lt;line left&#61;&quot;167&quot; top&#61;&quot;366&quot; right&#61;&quot;326&quot; bottom&#61;&quot;384&quot;&gt;
+        &lt;char left&#61;&quot;167&quot; top&#61;&quot;366&quot; right&#61;&quot;180&quot; bottom&#61;&quot;382&quot;&gt;V&lt;/</span>char<span class="o">></span>
+        <span class="o"><</span>char left<span class="o">=</span><span class="s">&quot;182&quot;</span> top<span class="o">=</span><span class="s">&quot;370&quot;</span> right<span class="o">=</span><span class="s">&quot;192&quot;</span> bottom<span class="o">=</span><span class="s">&quot;382&quot;</span><span class="o">></span>e<span class="o"><</span><span class="s">/char&gt;
+        &lt;char left&#61;&quot;194&quot; top&#61;&quot;370&quot; right&#61;&quot;199&quot; bottom&#61;&quot;382&quot;&gt;r&lt;/</span>char<span class="o">></span>
+        <span class="o"><</span>char left<span class="o">=</span><span class="s">&quot;199&quot;</span> top<span class="o">=</span><span class="s">&quot;367&quot;</span> right<span class="o">=</span><span class="s">&quot;205&quot;</span> bottom<span class="o">=</span><span class="s">&quot;382&quot;</span><span class="o">></span>t<span class="o"><</span><span class="s">/char&gt;
+        &lt;char left&#61;&quot;206&quot; top&#61;&quot;370&quot; right&#61;&quot;212&quot; bottom&#61;&quot;382&quot;&gt;r&lt;/</span>char<span class="o">></span>
+        <span class="o"><</span>char left<span class="o">=</span><span class="s">&quot;213&quot;</span> top<span class="o">=</span><span class="s">&quot;370&quot;</span> right<span class="o">=</span><span class="s">&quot;223&quot;</span> bottom<span class="o">=</span><span class="s">&quot;382&quot;</span><span class="o">></span>a<span class="o"><</span><span class="s">/char&gt;
+        &lt;char left&#61;&quot;224&quot; top&#61;&quot;370&quot; right&#61;&quot;234&quot; bottom&#61;&quot;384&quot;&gt;q&lt;/</span>char<span class="o">></span>
+        <span class="o"><</span>char left<span class="o">=</span><span class="s">&quot;236&quot;</span> top<span class="o">=</span><span class="s">&quot;371&quot;</span> right<span class="o">=</span><span class="s">&quot;245&quot;</span> bottom<span class="o">=</span><span class="s">&quot;383&quot;</span><span class="o">></span>s<span class="o"><</span><span class="s">/char&gt;
+        &lt;char left&#61;&quot;247&quot; top&#61;&quot;371&quot; right&#61;&quot;256&quot; bottom&#61;&quot;382&quot;&gt;n&lt;/</span>char<span class="o">></span>
+        <span class="o"><</span>char left<span class="o">=</span><span class="s">&quot;258&quot;</span> top<span class="o">=</span><span class="s">&quot;371&quot;</span> right<span class="o">=</span><span class="s">&quot;268&quot;</span> bottom<span class="o">=</span><span class="s">&quot;383&quot;</span><span class="o">></span>u<span class="o"><</span><span class="s">/char&gt;
+        &lt;char left&#61;&quot;270&quot; top&#61;&quot;370&quot; right&#61;&quot;285&quot; bottom&#61;&quot;383&quot;&gt;m&lt;/</span>char<span class="o">></span>
+        <span class="o"><</span>char left<span class="o">=</span><span class="s">&quot;287&quot;</span> top<span class="o">=</span><span class="s">&quot;370&quot;</span> right<span class="o">=</span><span class="s">&quot;302&quot;</span> bottom<span class="o">=</span><span class="s">&quot;382&quot;</span><span class="o">></span>
+          <span class="o"><</span>charRecVariants<span class="o">></span>
+            <span class="o"><</span>variant charConfidence<span class="o">=</span><span class="s">&quot;22&quot;</span><span class="o">></span>m<span class="o"><</span><span class="s">/variant&gt;
+            &lt;variant charConfidence&#61;&quot;-1&quot;&gt;rn&lt;/</span>variant<span class="o">></span>
+          <span class="o"><</span><span class="s">/charRecVariants&gt;m&lt;/</span>char<span class="o">></span>
+        <span class="o"><</span>char left<span class="o">=</span><span class="s">&quot;304&quot;</span> top<span class="o">=</span><span class="s">&quot;370&quot;</span> right<span class="o">=</span><span class="s">&quot;314&quot;</span> bottom<span class="o">=</span><span class="s">&quot;382&quot;</span><span class="o">></span>e<span class="o"><</span><span class="s">/char&gt;
+        &lt;char left&#61;&quot;316&quot; top&#61;&quot;370&quot; right&#61;&quot;322&quot; bottom&#61;&quot;382&quot;&gt;r&lt;/</span>char<span class="o">></span>
+        <span class="o"><</span>char left<span class="o">=</span><span class="s">&quot;324&quot;</span> top<span class="o">=</span><span class="s">&quot;370&quot;</span> right<span class="o">=</span><span class="s">&quot;326&quot;</span> bottom<span class="o">=</span><span class="s">&quot;382&quot;</span> suspicious<span class="o">=</span><span class="s">&quot;true&quot;</span><span class="o">></span><span class="n">:<</span><span class="s">/char&gt;
+      &lt;/</span>line<span class="o">></span>
+    <span class="o"><</span><span class="s">/text&gt;
+    &lt;text id&#61;&quot;handprint&quot; left&#61;&quot;387&quot; top&#61;&quot;1035&quot; right&#61;&quot;635&quot; bottom&#61;&quot;1089&quot;&gt;
+      &lt;value&gt;309.05&lt;/</span>value<span class="o">></span>
+      <span class="o"><</span>line left<span class="o">=</span><span class="s">&quot;398&quot;</span> top<span class="o">=</span><span class="s">&quot;1045&quot;</span> right<span class="o">=</span><span class="s">&quot;633&quot;</span> bottom<span class="o">=</span><span class="s">&quot;1089&quot;</span><span class="o">></span>
+        <span class="o"><</span>char left<span class="o">=</span><span class="s">&quot;398&quot;</span> top<span class="o">=</span><span class="s">&quot;1052&quot;</span> right<span class="o">=</span><span class="s">&quot;426&quot;</span> bottom<span class="o">=</span><span class="s">&quot;1088&quot;</span><span class="o">></span><span class="n">3</span><span class="o"><</span><span class="s">/char&gt;
+        &lt;char left&#61;&quot;423&quot; top&#61;&quot;1061&quot; right&#61;&quot;455&quot; bottom&#61;&quot;1089&quot; suspicious&#61;&quot;true&quot;&gt;0&lt;/</span>char<span class="o">></span>
+        <span class="o"><</span>char left<span class="o">=</span><span class="s">&quot;482&quot;</span> top<span class="o">=</span><span class="s">&quot;1055&quot;</span> right<span class="o">=</span><span class="s">&quot;505&quot;</span> bottom<span class="o">=</span><span class="s">&quot;1089&quot;</span><span class="o">></span><span class="n">9</span><span class="o"><</span><span class="s">/char&gt;
+        &lt;char left&#61;&quot;507&quot; top&#61;&quot;1084&quot; right&#61;&quot;512&quot; bottom&#61;&quot;1087&quot;&gt;.&lt;/</span>char<span class="o">></span>
+        <span class="o"><</span>char left<span class="o">=</span><span class="s">&quot;520&quot;</span> top<span class="o">=</span><span class="s">&quot;1058&quot;</span> right<span class="o">=</span><span class="s">&quot;549&quot;</span> bottom<span class="o">=</span><span class="s">&quot;1089&quot;</span><span class="o">></span><span class="n">0</span><span class="o"><</span><span class="s">/char&gt;
+        &lt;char left&#61;&quot;546&quot; top&#61;&quot;1045&quot; right&#61;&quot;633&quot; bottom&#61;&quot;1089&quot; suspicious&#61;&quot;true&quot;&gt;5&lt;/</span>char<span class="o">></span>
+      <span class="o"><</span><span class="s">/line&gt;
+    &lt;/</span>text<span class="o">></span>
+    <span class="o"><</span>checkmark id<span class="o">=</span><span class="s">&quot;checked&quot;</span> left<span class="o">=</span><span class="s">&quot;883&quot;</span> top<span class="o">=</span><span class="s">&quot;427&quot;</span> right<span class="o">=</span><span class="s">&quot;928&quot;</span> bottom<span class="o">=</span><span class="s">&quot;469&quot;</span><span class="o">></span>
+      <span class="o"><</span>value<span class="o">></span>checked<span class="o"><</span><span class="s">/value&gt;
+    &lt;/</span>checkmark<span class="o">></span>
+    <span class="o"><</span>checkmark id<span class="o">=</span><span class="s">&quot;not checked&quot;</span> left<span class="o">=</span><span class="s">&quot;884&quot;</span> top<span class="o">=</span><span class="s">&quot;511&quot;</span> right<span class="o">=</span><span class="s">&quot;928&quot;</span> bottom<span class="o">=</span><span class="s">&quot;554&quot;</span><span class="o">></span>
+      <span class="o"><</span>value<span class="o">></span>unchecked<span class="o"><</span><span class="s">/value&gt;
+    &lt;/</span>checkmark<span class="o">></span>
+    <span class="o"><</span>barcode id<span class="o">=</span><span class="s">&quot;leftBarcode&quot;</span> left<span class="o">=</span><span class="s">&quot;46&quot;</span> top<span class="o">=</span><span class="s">&quot;1048&quot;</span> right<span class="o">=</span><span class="s">&quot;128&quot;</span> bottom<span class="o">=</span><span class="s">&quot;1350&quot;</span><span class="o">></span>
+      <span class="o"><</span>value encoding<span class="o">=</span><span class="s">&quot;Base64&quot;</span><span class="o">></span><span class="t">QkYxMDExNQ</span><span class="o">==</span><span class="o"><</span><span class="s">/value&gt;
+    &lt;/</span>barcode<span class="o">></span>
+  <span class="o"><</span><span class="s">/page&gt;
+&lt;/</span>document<span class="o">></span></code></pre>
+
+<p>See the <a href="http://ocrsdk.com/schema/resultDescription-1.0.xsd" target="_blank">XSD schema</a> of the output file.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_fields_response.cr#L79" target="_blank">abbyy/models/process_fields_response.cr</a>
+    
+    <br/>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+  <h3>Instance methods inherited from class <code><a href="../../Abbyy/Models/TaskResponse.html">Abbyy::Models::TaskResponse</a></code></h3>
+  
+  
+    <a href="../../Abbyy/Models/TaskResponse.html#set_properties_from_xml%28xml_data%3AString%7CIO%29-instance-method" class="tooltip">
+      <span>set_properties_from_xml(xml_data : String | IO)</span>
+    set_properties_from_xml</a>, 
+    
+  
+    <a href="../../Abbyy/Models/TaskResponse.html#task%3ATask%3F-instance-method" class="tooltip">
+      <span>task : Task?</span>
+    task</a>, 
+    
+  
+    <a href="../../Abbyy/Models/TaskResponse.html#task%3D%28task%3ATask%3F%29-instance-method" class="tooltip">
+      <span>task=(task : Task?)</span>
+    task=</a>
+    
+  
+
+
+    
+
+
+    
+
+
+  
+    
+
+  <h3>Instance methods inherited from class <code><a href="../../Abbyy/Models/BaseResponse.html">Abbyy::Models::BaseResponse</a></code></h3>
+  
+  
+    <a href="../../Abbyy/Models/BaseResponse.html#headers%3AHTTP%3A%3AHeaders-instance-method" class="tooltip">
+      <span>headers : HTTP::Headers</span>
+    headers</a>, 
+    
+  
+    <a href="../../Abbyy/Models/BaseResponse.html#headers%3D%28headers%3AHTTP%3A%3AHeaders%29-instance-method" class="tooltip">
+      <span>headers=(headers : HTTP::Headers)</span>
+    headers=</a>, 
+    
+  
+    <a href="../../Abbyy/Models/BaseResponse.html#protocol_version%3AString%3F-instance-method" class="tooltip">
+      <span>protocol_version : String?</span>
+    protocol_version</a>, 
+    
+  
+    <a href="../../Abbyy/Models/BaseResponse.html#protocol_version%3D%28protocol_version%3AString%3F%29-instance-method" class="tooltip">
+      <span>protocol_version=(protocol_version : String?)</span>
+    protocol_version=</a>, 
+    
+  
+    <a href="../../Abbyy/Models/BaseResponse.html#set_properties_from_xml%28xml_data%3AString%7CIO%29-instance-method" class="tooltip">
+      <span>set_properties_from_xml(xml_data : String | IO)</span>
+    set_properties_from_xml</a>, 
+    
+  
+    <a href="../../Abbyy/Models/BaseResponse.html#status_code%3AInt32-instance-method" class="tooltip">
+      <span>status_code : Int32</span>
+    status_code</a>, 
+    
+  
+    <a href="../../Abbyy/Models/BaseResponse.html#status_code%3D%28status_code%3AInt32%29-instance-method" class="tooltip">
+      <span>status_code=(status_code : Int32)</span>
+    status_code=</a>, 
+    
+  
+    <a href="../../Abbyy/Models/BaseResponse.html#success%3F-instance-method" class="tooltip">
+      <span>success?</span>
+    success?</a>
+    
+  
+
+
+    
+
+  <h3>Constructor methods inherited from class <code><a href="../../Abbyy/Models/BaseResponse.html">Abbyy::Models::BaseResponse</a></code></h3>
+  
+  
+    <a href="../../Abbyy/Models/BaseResponse.html#new%28response%3AHTTP%3A%3AClient%3A%3AResponse%29-class-method" class="tooltip">
+      <span>new(response : HTTP::Client::Response)</span>
+    new</a>
+    
+  
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

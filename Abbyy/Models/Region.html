@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/TamasSzekeres/abbyy-client.cr">
+  <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../../js/doc.js"></script>
+  <title>Abbyy::Models::Region - github.com/TamasSzekeres/abbyy-client.cr</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="../../index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent open current" data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy" data-name="abbyy">
+      <a href="../../Abbyy.html">Abbyy</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/ApplicationType" data-name="abbyy::applicationtype">
+      <a href="../../Abbyy/ApplicationType.html">ApplicationType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/BarcodeType" data-name="abbyy::barcodetype">
+      <a href="../../Abbyy/BarcodeType.html">BarcodeType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/CheckmarkType" data-name="abbyy::checkmarktype">
+      <a href="../../Abbyy/CheckmarkType.html">CheckmarkType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Client" data-name="abbyy::client">
+      <a href="../../Abbyy/Client.html">Client</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Country" data-name="abbyy::country">
+      <a href="../../Abbyy/Country.html">Country</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/ExportFormat" data-name="abbyy::exportformat">
+      <a href="../../Abbyy/ExportFormat.html">ExportFormat</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/FieldMarkingType" data-name="abbyy::fieldmarkingtype">
+      <a href="../../Abbyy/FieldMarkingType.html">FieldMarkingType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/ImageSource" data-name="abbyy::imagesource">
+      <a href="../../Abbyy/ImageSource.html">ImageSource</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Language" data-name="abbyy::language">
+      <a href="../../Abbyy/Language.html">Language</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models" data-name="abbyy::models">
+      <a href="../../Abbyy/Models.html">Models</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/BaseModel" data-name="abbyy::models::basemodel">
+      <a href="../../Abbyy/Models/BaseModel.html">BaseModel</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/BaseRequest" data-name="abbyy::models::baserequest">
+      <a href="../../Abbyy/Models/BaseRequest.html">BaseRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/BaseResponse" data-name="abbyy::models::baseresponse">
+      <a href="../../Abbyy/Models/BaseResponse.html">BaseResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/DeleteTaskRequest" data-name="abbyy::models::deletetaskrequest">
+      <a href="../../Abbyy/Models/DeleteTaskRequest.html">DeleteTaskRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/DeleteTaskResponse" data-name="abbyy::models::deletetaskresponse">
+      <a href="../../Abbyy/Models/DeleteTaskResponse.html">DeleteTaskResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/FileBody" data-name="abbyy::models::filebody">
+      <a href="../../Abbyy/Models/FileBody.html">FileBody</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/GetApplicationInfoResponse" data-name="abbyy::models::getapplicationinforesponse">
+      <a href="../../Abbyy/Models/GetApplicationInfoResponse.html">GetApplicationInfoResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/GetTaskStatusRequest" data-name="abbyy::models::gettaskstatusrequest">
+      <a href="../../Abbyy/Models/GetTaskStatusRequest.html">GetTaskStatusRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/GetTaskStatusResponse" data-name="abbyy::models::gettaskstatusresponse">
+      <a href="../../Abbyy/Models/GetTaskStatusResponse.html">GetTaskStatusResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ListTasksRequest" data-name="abbyy::models::listtasksrequest">
+      <a href="../../Abbyy/Models/ListTasksRequest.html">ListTasksRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ListTasksResponse" data-name="abbyy::models::listtasksresponse">
+      <a href="../../Abbyy/Models/ListTasksResponse.html">ListTasksResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBarcodeFieldRequest" data-name="abbyy::models::processbarcodefieldrequest">
+      <a href="../../Abbyy/Models/ProcessBarcodeFieldRequest.html">ProcessBarcodeFieldRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBarcodeFieldResponse" data-name="abbyy::models::processbarcodefieldresponse">
+      <a href="../../Abbyy/Models/ProcessBarcodeFieldResponse.html">ProcessBarcodeFieldResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBusinessCardRequest" data-name="abbyy::models::processbusinesscardrequest">
+      <a href="../../Abbyy/Models/ProcessBusinessCardRequest.html">ProcessBusinessCardRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBusinessCardResponse" data-name="abbyy::models::processbusinesscardresponse">
+      <a href="../../Abbyy/Models/ProcessBusinessCardResponse.html">ProcessBusinessCardResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessCheckmarkFieldRequest" data-name="abbyy::models::processcheckmarkfieldrequest">
+      <a href="../../Abbyy/Models/ProcessCheckmarkFieldRequest.html">ProcessCheckmarkFieldRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessCheckmarkFieldResponse" data-name="abbyy::models::processcheckmarkfieldresponse">
+      <a href="../../Abbyy/Models/ProcessCheckmarkFieldResponse.html">ProcessCheckmarkFieldResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessDocumentRequest" data-name="abbyy::models::processdocumentrequest">
+      <a href="../../Abbyy/Models/ProcessDocumentRequest.html">ProcessDocumentRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessDocumentResponse" data-name="abbyy::models::processdocumentresponse">
+      <a href="../../Abbyy/Models/ProcessDocumentResponse.html">ProcessDocumentResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessFieldsRequest" data-name="abbyy::models::processfieldsrequest">
+      <a href="../../Abbyy/Models/ProcessFieldsRequest.html">ProcessFieldsRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessFieldsResponse" data-name="abbyy::models::processfieldsresponse">
+      <a href="../../Abbyy/Models/ProcessFieldsResponse.html">ProcessFieldsResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessImageRequest" data-name="abbyy::models::processimagerequest">
+      <a href="../../Abbyy/Models/ProcessImageRequest.html">ProcessImageRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessImageResponse" data-name="abbyy::models::processimageresponse">
+      <a href="../../Abbyy/Models/ProcessImageResponse.html">ProcessImageResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessMRZRequest" data-name="abbyy::models::processmrzrequest">
+      <a href="../../Abbyy/Models/ProcessMRZRequest.html">ProcessMRZRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessMRZResponse" data-name="abbyy::models::processmrzresponse">
+      <a href="../../Abbyy/Models/ProcessMRZResponse.html">ProcessMRZResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessReceiptRequest" data-name="abbyy::models::processreceiptrequest">
+      <a href="../../Abbyy/Models/ProcessReceiptRequest.html">ProcessReceiptRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessReceiptResponse" data-name="abbyy::models::processreceiptresponse">
+      <a href="../../Abbyy/Models/ProcessReceiptResponse.html">ProcessReceiptResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessTextFieldRequest" data-name="abbyy::models::processtextfieldrequest">
+      <a href="../../Abbyy/Models/ProcessTextFieldRequest.html">ProcessTextFieldRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessTextFieldResponse" data-name="abbyy::models::processtextfieldresponse">
+      <a href="../../Abbyy/Models/ProcessTextFieldResponse.html">ProcessTextFieldResponse</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/Region" data-name="abbyy::models::region">
+      <a href="../../Abbyy/Models/Region.html">Region</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/SubmitImageRequest" data-name="abbyy::models::submitimagerequest">
+      <a href="../../Abbyy/Models/SubmitImageRequest.html">SubmitImageRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/SubmitImageResponse" data-name="abbyy::models::submitimageresponse">
+      <a href="../../Abbyy/Models/SubmitImageResponse.html">SubmitImageResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/Task" data-name="abbyy::models::task">
+      <a href="../../Abbyy/Models/Task.html">Task</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/TaskIdRequest" data-name="abbyy::models::taskidrequest">
+      <a href="../../Abbyy/Models/TaskIdRequest.html">TaskIdRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/TaskResponse" data-name="abbyy::models::taskresponse">
+      <a href="../../Abbyy/Models/TaskResponse.html">TaskResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/TaskResult" data-name="abbyy::models::taskresult">
+      <a href="../../Abbyy/Models/TaskResult.html">TaskResult</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/PdfWriteTag" data-name="abbyy::pdfwritetag">
+      <a href="../../Abbyy/PdfWriteTag.html">PdfWriteTag</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Profile" data-name="abbyy::profile">
+      <a href="../../Abbyy/Profile.html">Profile</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/TaskStatus" data-name="abbyy::taskstatus">
+      <a href="../../Abbyy/TaskStatus.html">TaskStatus</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/TextType" data-name="abbyy::texttype">
+      <a href="../../Abbyy/TextType.html">TextType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/WritingStyle" data-name="abbyy::writingstyle">
+      <a href="../../Abbyy/WritingStyle.html">WritingStyle</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/String" data-name="string">
+      <a href="../../String.html">String</a>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Abbyy::Models::Region
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../../Abbyy/Models/Region.html">Abbyy::Models::Region</a></li><li class="superclass"><a href="../../Abbyy/Models/BaseModel.html">Abbyy::Models::BaseModel</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>Region.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/region.cr#L5" target="_blank">abbyy/models/region.cr</a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Constructors</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28left%3AInt32%3D-1%2Ctop%3AInt32%3D-1%2Cright%3AInt32%3D-1%2Cbottom%3AInt32%3D-1%29-class-method" class="signature"><strong>.new</strong>(left : Int32 = <span class="n">-1</span>, top : Int32 = <span class="n">-1</span>, right : Int32 = <span class="n">-1</span>, bottom : Int32 = <span class="n">-1</span>)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#new%28coordinates%3AArray%28Int32%29%29-class-method" class="signature"><strong>.new</strong>(coordinates : Array(Int32))</a>
+        
+          <div class="summary"><p>Constructs a <code><a href="../../Abbyy/Models/Region.html">Region</a></code> object from the given (indexed) array.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#bottom%3AInt32-instance-method" class="signature"><strong>#bottom</strong> : Int32</a>
+        
+          <div class="summary"><p>Bottom coordinate in pixels.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#bottom%3D%28bottom%3AInt32%29-instance-method" class="signature"><strong>#bottom=</strong>(bottom : Int32)</a>
+        
+          <div class="summary"><p>Bottom coordinate in pixels.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#left%3AInt32-instance-method" class="signature"><strong>#left</strong> : Int32</a>
+        
+          <div class="summary"><p>Left coordinate in pixels.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#left%3D%28left%3AInt32%29-instance-method" class="signature"><strong>#left=</strong>(left : Int32)</a>
+        
+          <div class="summary"><p>Left coordinate in pixels.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#right%3AInt32-instance-method" class="signature"><strong>#right</strong> : Int32</a>
+        
+          <div class="summary"><p>Right coordinate in pixels.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#right%3D%28right%3AInt32%29-instance-method" class="signature"><strong>#right=</strong>(right : Int32)</a>
+        
+          <div class="summary"><p>Right coordinate in pixels.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_a%3AArray%28Int32%29-instance-method" class="signature"><strong>#to_a</strong> : Array(Int32)</a>
+        
+          <div class="summary"><p>Return the coordinates in an array.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_s%3AString-instance-method" class="signature"><strong>#to_s</strong> : String</a>
+        
+          <div class="summary"><p>Return the string representation of the region.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#top%3AInt32-instance-method" class="signature"><strong>#top</strong> : Int32</a>
+        
+          <div class="summary"><p>Top coordinate in pixels.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#top%3D%28top%3AInt32%29-instance-method" class="signature"><strong>#top=</strong>(top : Int32)</a>
+        
+          <div class="summary"><p>Top coordinate in pixels.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Constructor Detail</h2>
+  
+    <div class="entry-detail" id="new&#40;left:Int32&#61;-1,top:Int32&#61;-1,right:Int32&#61;-1,bottom:Int32&#61;-1&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(left : Int32 = <span class="n">-1</span>, top : Int32 = <span class="n">-1</span>, right : Int32 = <span class="n">-1</span>, bottom : Int32 = <span class="n">-1</span>)
+
+        <a class="method-permalink" href="#new%28left%3AInt32%3D-1%2Ctop%3AInt32%3D-1%2Cright%3AInt32%3D-1%2Cbottom%3AInt32%3D-1%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/region.cr#L21" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="new&#40;coordinates:Array&#40;Int32&#41;&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(coordinates : Array(Int32))
+
+        <a class="method-permalink" href="#new%28coordinates%3AArray%28Int32%29%29-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Constructs a <code><a href="../../Abbyy/Models/Region.html">Region</a></code> object from the given (indexed) array.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/region.cr#L25" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="bottom:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>bottom</strong> : Int32
+
+        <a class="method-permalink" href="#bottom%3AInt32-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Bottom coordinate in pixels.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/region.cr#L16" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="bottom&#61;&#40;bottom:Int32&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>bottom=</strong>(bottom : Int32)
+
+        <a class="method-permalink" href="#bottom%3D%28bottom%3AInt32%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Bottom coordinate in pixels.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/region.cr#L16" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="left:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>left</strong> : Int32
+
+        <a class="method-permalink" href="#left%3AInt32-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Left coordinate in pixels.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/region.cr#L7" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="left&#61;&#40;left:Int32&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>left=</strong>(left : Int32)
+
+        <a class="method-permalink" href="#left%3D%28left%3AInt32%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Left coordinate in pixels.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/region.cr#L7" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="right:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>right</strong> : Int32
+
+        <a class="method-permalink" href="#right%3AInt32-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Right coordinate in pixels.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/region.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="right&#61;&#40;right:Int32&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>right=</strong>(right : Int32)
+
+        <a class="method-permalink" href="#right%3D%28right%3AInt32%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Right coordinate in pixels.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/region.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_a:Array&#40;Int32&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>to_a</strong> : Array(Int32)
+
+        <a class="method-permalink" href="#to_a%3AArray%28Int32%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return the coordinates in an array.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/region.cr#L36" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_s:String-instance-method">
+      <div class="signature">
+        
+        def <strong>to_s</strong> : <a href="../../String.html">String</a>
+
+        <a class="method-permalink" href="#to_s%3AString-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Return the string representation of the region.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/region.cr#L41" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="top:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>top</strong> : Int32
+
+        <a class="method-permalink" href="#top%3AInt32-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Top coordinate in pixels.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/region.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="top&#61;&#40;top:Int32&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>top=</strong>(top : Int32)
+
+        <a class="method-permalink" href="#top%3D%28top%3AInt32%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Top coordinate in pixels.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/region.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/TamasSzekeres/abbyy-client.cr">
+  <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../../js/doc.js"></script>
+  <title>Abbyy::Models::ProcessTextFieldRequest - github.com/TamasSzekeres/abbyy-client.cr</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="../../index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent open current" data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy" data-name="abbyy">
+      <a href="../../Abbyy.html">Abbyy</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/ApplicationType" data-name="abbyy::applicationtype">
+      <a href="../../Abbyy/ApplicationType.html">ApplicationType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/BarcodeType" data-name="abbyy::barcodetype">
+      <a href="../../Abbyy/BarcodeType.html">BarcodeType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/CheckmarkType" data-name="abbyy::checkmarktype">
+      <a href="../../Abbyy/CheckmarkType.html">CheckmarkType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Client" data-name="abbyy::client">
+      <a href="../../Abbyy/Client.html">Client</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Country" data-name="abbyy::country">
+      <a href="../../Abbyy/Country.html">Country</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/ExportFormat" data-name="abbyy::exportformat">
+      <a href="../../Abbyy/ExportFormat.html">ExportFormat</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/FieldMarkingType" data-name="abbyy::fieldmarkingtype">
+      <a href="../../Abbyy/FieldMarkingType.html">FieldMarkingType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/ImageSource" data-name="abbyy::imagesource">
+      <a href="../../Abbyy/ImageSource.html">ImageSource</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Language" data-name="abbyy::language">
+      <a href="../../Abbyy/Language.html">Language</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models" data-name="abbyy::models">
+      <a href="../../Abbyy/Models.html">Models</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/BaseModel" data-name="abbyy::models::basemodel">
+      <a href="../../Abbyy/Models/BaseModel.html">BaseModel</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/BaseRequest" data-name="abbyy::models::baserequest">
+      <a href="../../Abbyy/Models/BaseRequest.html">BaseRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/BaseResponse" data-name="abbyy::models::baseresponse">
+      <a href="../../Abbyy/Models/BaseResponse.html">BaseResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/DeleteTaskRequest" data-name="abbyy::models::deletetaskrequest">
+      <a href="../../Abbyy/Models/DeleteTaskRequest.html">DeleteTaskRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/DeleteTaskResponse" data-name="abbyy::models::deletetaskresponse">
+      <a href="../../Abbyy/Models/DeleteTaskResponse.html">DeleteTaskResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/FileBody" data-name="abbyy::models::filebody">
+      <a href="../../Abbyy/Models/FileBody.html">FileBody</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/GetApplicationInfoResponse" data-name="abbyy::models::getapplicationinforesponse">
+      <a href="../../Abbyy/Models/GetApplicationInfoResponse.html">GetApplicationInfoResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/GetTaskStatusRequest" data-name="abbyy::models::gettaskstatusrequest">
+      <a href="../../Abbyy/Models/GetTaskStatusRequest.html">GetTaskStatusRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/GetTaskStatusResponse" data-name="abbyy::models::gettaskstatusresponse">
+      <a href="../../Abbyy/Models/GetTaskStatusResponse.html">GetTaskStatusResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ListTasksRequest" data-name="abbyy::models::listtasksrequest">
+      <a href="../../Abbyy/Models/ListTasksRequest.html">ListTasksRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ListTasksResponse" data-name="abbyy::models::listtasksresponse">
+      <a href="../../Abbyy/Models/ListTasksResponse.html">ListTasksResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBarcodeFieldRequest" data-name="abbyy::models::processbarcodefieldrequest">
+      <a href="../../Abbyy/Models/ProcessBarcodeFieldRequest.html">ProcessBarcodeFieldRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBarcodeFieldResponse" data-name="abbyy::models::processbarcodefieldresponse">
+      <a href="../../Abbyy/Models/ProcessBarcodeFieldResponse.html">ProcessBarcodeFieldResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBusinessCardRequest" data-name="abbyy::models::processbusinesscardrequest">
+      <a href="../../Abbyy/Models/ProcessBusinessCardRequest.html">ProcessBusinessCardRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBusinessCardResponse" data-name="abbyy::models::processbusinesscardresponse">
+      <a href="../../Abbyy/Models/ProcessBusinessCardResponse.html">ProcessBusinessCardResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessCheckmarkFieldRequest" data-name="abbyy::models::processcheckmarkfieldrequest">
+      <a href="../../Abbyy/Models/ProcessCheckmarkFieldRequest.html">ProcessCheckmarkFieldRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessCheckmarkFieldResponse" data-name="abbyy::models::processcheckmarkfieldresponse">
+      <a href="../../Abbyy/Models/ProcessCheckmarkFieldResponse.html">ProcessCheckmarkFieldResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessDocumentRequest" data-name="abbyy::models::processdocumentrequest">
+      <a href="../../Abbyy/Models/ProcessDocumentRequest.html">ProcessDocumentRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessDocumentResponse" data-name="abbyy::models::processdocumentresponse">
+      <a href="../../Abbyy/Models/ProcessDocumentResponse.html">ProcessDocumentResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessFieldsRequest" data-name="abbyy::models::processfieldsrequest">
+      <a href="../../Abbyy/Models/ProcessFieldsRequest.html">ProcessFieldsRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessFieldsResponse" data-name="abbyy::models::processfieldsresponse">
+      <a href="../../Abbyy/Models/ProcessFieldsResponse.html">ProcessFieldsResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessImageRequest" data-name="abbyy::models::processimagerequest">
+      <a href="../../Abbyy/Models/ProcessImageRequest.html">ProcessImageRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessImageResponse" data-name="abbyy::models::processimageresponse">
+      <a href="../../Abbyy/Models/ProcessImageResponse.html">ProcessImageResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessMRZRequest" data-name="abbyy::models::processmrzrequest">
+      <a href="../../Abbyy/Models/ProcessMRZRequest.html">ProcessMRZRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessMRZResponse" data-name="abbyy::models::processmrzresponse">
+      <a href="../../Abbyy/Models/ProcessMRZResponse.html">ProcessMRZResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessReceiptRequest" data-name="abbyy::models::processreceiptrequest">
+      <a href="../../Abbyy/Models/ProcessReceiptRequest.html">ProcessReceiptRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessReceiptResponse" data-name="abbyy::models::processreceiptresponse">
+      <a href="../../Abbyy/Models/ProcessReceiptResponse.html">ProcessReceiptResponse</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessTextFieldRequest" data-name="abbyy::models::processtextfieldrequest">
+      <a href="../../Abbyy/Models/ProcessTextFieldRequest.html">ProcessTextFieldRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessTextFieldResponse" data-name="abbyy::models::processtextfieldresponse">
+      <a href="../../Abbyy/Models/ProcessTextFieldResponse.html">ProcessTextFieldResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/Region" data-name="abbyy::models::region">
+      <a href="../../Abbyy/Models/Region.html">Region</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/SubmitImageRequest" data-name="abbyy::models::submitimagerequest">
+      <a href="../../Abbyy/Models/SubmitImageRequest.html">SubmitImageRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/SubmitImageResponse" data-name="abbyy::models::submitimageresponse">
+      <a href="../../Abbyy/Models/SubmitImageResponse.html">SubmitImageResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/Task" data-name="abbyy::models::task">
+      <a href="../../Abbyy/Models/Task.html">Task</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/TaskIdRequest" data-name="abbyy::models::taskidrequest">
+      <a href="../../Abbyy/Models/TaskIdRequest.html">TaskIdRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/TaskResponse" data-name="abbyy::models::taskresponse">
+      <a href="../../Abbyy/Models/TaskResponse.html">TaskResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/TaskResult" data-name="abbyy::models::taskresult">
+      <a href="../../Abbyy/Models/TaskResult.html">TaskResult</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/PdfWriteTag" data-name="abbyy::pdfwritetag">
+      <a href="../../Abbyy/PdfWriteTag.html">PdfWriteTag</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Profile" data-name="abbyy::profile">
+      <a href="../../Abbyy/Profile.html">Profile</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/TaskStatus" data-name="abbyy::taskstatus">
+      <a href="../../Abbyy/TaskStatus.html">TaskStatus</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/TextType" data-name="abbyy::texttype">
+      <a href="../../Abbyy/TextType.html">TextType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/WritingStyle" data-name="abbyy::writingstyle">
+      <a href="../../Abbyy/WritingStyle.html">WritingStyle</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/String" data-name="string">
+      <a href="../../String.html">String</a>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Abbyy::Models::ProcessTextFieldRequest
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../../Abbyy/Models/ProcessTextFieldRequest.html">Abbyy::Models::ProcessTextFieldRequest</a></li><li class="superclass"><a href="../../Abbyy/Models/BaseRequest.html">Abbyy::Models::BaseRequest</a></li><li class="superclass"><a href="../../Abbyy/Models/BaseModel.html">Abbyy::Models::BaseModel</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>Request object for <a href="http://ocrsdk.com/documentation/apireference/processTextField/" target="_blank">/processTextField</a> API-method.</p>
+
+
+
+
+
+  <h2>Included Modules</h2>
+  <ul class="other-types-list">
+  
+    <li class="other-type"><a href="../../Abbyy/Models/FileBody.html">Abbyy::Models::FileBody</a></li>
+  
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L7" target="_blank">abbyy/models/process_text_field_request.cr</a>
+    
+    <br/>
+  
+
+
+
+  
+    <h2>Constant Summary</h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="ALLOWED_TEXT_TYPES">
+        <strong>ALLOWED_TEXT_TYPES</strong> = <code><span class="t">TextType</span>.values <span class="o">-</span> [<span class="t">TextType</span><span class="t">::</span><span class="t">Handprinted</span>]</code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_DESCRIPTION">
+        <strong>DEFAULT_DESCRIPTION</strong> = <code><span class="s">&quot;&quot;</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_LANGUAGE">
+        <strong>DEFAULT_LANGUAGE</strong> = <code><span class="t">Language</span><span class="t">::</span><span class="t">English</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_LETTER_SET">
+        <strong>DEFAULT_LETTER_SET</strong> = <code><span class="s">&quot;&quot;</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_MARKING_TYPE">
+        <strong>DEFAULT_MARKING_TYPE</strong> = <code><span class="t">FieldMarkingType</span><span class="t">::</span><span class="t">SimpleText</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_ONE_TEXT_LINE">
+        <strong>DEFAULT_ONE_TEXT_LINE</strong> = <code><span class="n">false</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_ONE_WORD_PER_TEXT_LINE">
+        <strong>DEFAULT_ONE_WORD_PER_TEXT_LINE</strong> = <code><span class="n">false</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_PASSWORD">
+        <strong>DEFAULT_PASSWORD</strong> = <code><span class="s">&quot;&quot;</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_PLACEHOLDERS_COUNT">
+        <strong>DEFAULT_PLACEHOLDERS_COUNT</strong> = <code><span class="n">1</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_REG_EXP">
+        <strong>DEFAULT_REG_EXP</strong> = <code><span class="s">&quot;&quot;</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_REGION">
+        <strong>DEFAULT_REGION</strong> = <code><span class="t">Region</span>.<span class="k">new</span>(<span class="n">-1</span>, <span class="n">-1</span>, <span class="n">-1</span>, <span class="n">-1</span>)</code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_TEXT_TYPE">
+        <strong>DEFAULT_TEXT_TYPE</strong> = <code><span class="t">TextType</span><span class="t">::</span><span class="t">Normal</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_WRITING_STYLE">
+        <strong>DEFAULT_WRITING_STYLE</strong> = <code><span class="t">WritingStyle</span><span class="t">::</span><span class="t">Default</span></code>
+      </dt>
+      
+    
+  </dl>
+
+
+
+  <h2>Constructors</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28file_path%3AString%2Cregion%3ARegion%3F%3Dnil%2Clanguage%3ALanguage%7CArray%28Language%29%3F%3Dnil%2Cletter_set%3AString%3F%3Dnil%2Creg_exp%3AString%3F%3Dnil%2Ctext_type%3ATextType%7CArray%28TextType%29%3F%3Dnil%2Cone_text_line%3ABool%3F%3Dnil%2Cone_word_per_text_line%3ABool%3F%3Dnil%2Cmarking_type%3AFieldMarkingType%3F%3Dnil%2Cplaceholders_count%3AInt32%3F%3Dnil%2Cwriting_style%3AWritingStyle%3F%3Dnil%2Cdescription%3AString%3F%3Dnil%2Cpdf_password%3AString%3F%3Dnil%29-class-method" class="signature"><strong>.new</strong>(file_path : String, region : Region? = <span class="n">nil</span>, language : Language | Array(Language)? = <span class="n">nil</span>, letter_set : String? = <span class="n">nil</span>, reg_exp : String? = <span class="n">nil</span>, text_type : TextType | Array(TextType)? = <span class="n">nil</span>, one_text_line : Bool? = <span class="n">nil</span>, one_word_per_text_line : Bool? = <span class="n">nil</span>, marking_type : FieldMarkingType? = <span class="n">nil</span>, placeholders_count : Int32? = <span class="n">nil</span>, writing_style : WritingStyle? = <span class="n">nil</span>, description : String? = <span class="n">nil</span>, pdf_password : String? = <span class="n">nil</span>)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#description%3AString%3F-instance-method" class="signature"><strong>#description</strong> : String?</a>
+        
+          <div class="summary"><p>Contains the description of the processing task.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#description%3D%28description%3AString%3F%29-instance-method" class="signature"><strong>#description=</strong>(description : String?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#language%3ALanguage%7CArray%28Language%29%7CNil-instance-method" class="signature"><strong>#language</strong> : Language | Array(Language) | Nil</a>
+        
+          <div class="summary"><p>Specifies recognition language of the document.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#language%3D%28language%3ALanguage%7CArray%28Language%29%7CNil%29-instance-method" class="signature"><strong>#language=</strong>(language : Language | Array(Language) | Nil)</a>
+        
+          <div class="summary"><p>Specifies recognition language of the document.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#letter_set%3AString%3F-instance-method" class="signature"><strong>#letter_set</strong> : String?</a>
+        
+          <div class="summary"><p>Specifies the letter set, which should be used during recognition.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#letter_set%3D%28letter_set%3AString%3F%29-instance-method" class="signature"><strong>#letter_set=</strong>(letter_set : String?)</a>
+        
+          <div class="summary"><p>Specifies the letter set, which should be used during recognition.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#marking_type%3AFieldMarkingType%3F-instance-method" class="signature"><strong>#marking_type</strong> : FieldMarkingType?</a>
+        
+          <div class="summary"><p>This property is valid only for the handprint recognition.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#marking_type%3D%28marking_type%3AFieldMarkingType%3F%29-instance-method" class="signature"><strong>#marking_type=</strong>(marking_type : FieldMarkingType?)</a>
+        
+          <div class="summary"><p>This property is valid only for the handprint recognition.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#one_text_line%3ABool%3F-instance-method" class="signature"><strong>#one_text_line</strong> : Bool?</a>
+        
+          <div class="summary"><p>Specifies whether the field contains only one text line.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#one_text_line%3D%28one_text_line%3ABool%3F%29-instance-method" class="signature"><strong>#one_text_line=</strong>(one_text_line : Bool?)</a>
+        
+          <div class="summary"><p>Specifies whether the field contains only one text line.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#one_word_per_text_line%3ABool%3F-instance-method" class="signature"><strong>#one_word_per_text_line</strong> : Bool?</a>
+        
+          <div class="summary"><p>Specifies whether the field contains only one word in each text line.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#one_word_per_text_line%3D%28one_word_per_text_line%3ABool%3F%29-instance-method" class="signature"><strong>#one_word_per_text_line=</strong>(one_word_per_text_line : Bool?)</a>
+        
+          <div class="summary"><p>Specifies whether the field contains only one word in each text line.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#params%3AHash%28String%2CString%29-instance-method" class="signature"><strong>#params</strong> : Hash(String, String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#pdf_password%3AString%3F-instance-method" class="signature"><strong>#pdf_password</strong> : String?</a>
+        
+          <div class="summary"><p>Contains a password for accessing password-protected images in PDF format.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#pdf_password%3D%28pdf_password%3AString%3F%29-instance-method" class="signature"><strong>#pdf_password=</strong>(pdf_password : String?)</a>
+        
+          <div class="summary"><p>Contains a password for accessing password-protected images in PDF format.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#placeholders_count%3AInt32%3F-instance-method" class="signature"><strong>#placeholders_count</strong> : Int32?</a>
+        
+          <div class="summary"><p>Specifies the number of character cells for the field.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#placeholders_count%3D%28placeholders_count%3AInt32%3F%29-instance-method" class="signature"><strong>#placeholders_count=</strong>(placeholders_count : Int32?)</a>
+        
+          <div class="summary"><p>Specifies the number of character cells for the field.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#reg_exp%3AString%3F-instance-method" class="signature"><strong>#reg_exp</strong> : String?</a>
+        
+          <div class="summary"><p>Specifies the regular expression which defines which words are allowed in the field and which are not.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#reg_exp%3D%28reg_exp%3AString%3F%29-instance-method" class="signature"><strong>#reg_exp=</strong>(reg_exp : String?)</a>
+        
+          <div class="summary"><p>Specifies the regular expression which defines which words are allowed in the field and which are not.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#region%3ARegion%3F-instance-method" class="signature"><strong>#region</strong> : Region?</a>
+        
+          <div class="summary"><p>Specifies the region of the text field on the image.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#region%3D%28coordinates%3AArray%28Int32%29%29-instance-method" class="signature"><strong>#region=</strong>(coordinates : Array(Int32))</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#region%3D%28region%3ARegion%3F%29-instance-method" class="signature"><strong>#region=</strong>(region : Region?)</a>
+        
+          <div class="summary"><p>Specifies the region of the text field on the image.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#text_type%3ATextType%7CArray%28TextType%29%7CNil-instance-method" class="signature"><strong>#text_type</strong> : TextType | Array(TextType) | Nil</a>
+        
+          <div class="summary"><p>Specifies the type of the text on a page.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#text_type%3D%28text_type%3ATextType%7CArray%28TextType%29%3F%29-instance-method" class="signature"><strong>#text_type=</strong>(text_type : TextType | Array(TextType)?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#writing_style%3AWritingStyle%3F-instance-method" class="signature"><strong>#writing_style</strong> : WritingStyle?</a>
+        
+          <div class="summary"><p>Provides additional information about handprinted letters writing style.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#writing_style%3D%28writing_style%3AWritingStyle%3F%29-instance-method" class="signature"><strong>#writing_style=</strong>(writing_style : WritingStyle?)</a>
+        
+          <div class="summary"><p>Provides additional information about handprinted letters writing style.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+  <h3>Instance methods inherited from module <code><a href="../../Abbyy/Models/FileBody.html">Abbyy::Models::FileBody</a></code></h3>
+  
+  
+    <a href="../../Abbyy/Models/FileBody.html#body%3AHTTP%3A%3AClient%3A%3ABodyType-instance-method" class="tooltip">
+      <span>body : HTTP::Client::BodyType</span>
+    body</a>, 
+    
+  
+    <a href="../../Abbyy/Models/FileBody.html#file_path%3AString-instance-method" class="tooltip">
+      <span>file_path : String</span>
+    file_path</a>, 
+    
+  
+    <a href="../../Abbyy/Models/FileBody.html#file_path%3D%28file_path%3AString%29-instance-method" class="tooltip">
+      <span>file_path=(file_path : String)</span>
+    file_path=</a>
+    
+  
+
+
+    
+
+  <h3>Constructor methods inherited from module <code><a href="../../Abbyy/Models/FileBody.html">Abbyy::Models::FileBody</a></code></h3>
+  
+  
+    <a href="../../Abbyy/Models/FileBody.html#new%28file_path%3AString%29-class-method" class="tooltip">
+      <span>new(file_path : String)</span>
+    new</a>
+    
+  
+
+
+    
+
+
+  
+    
+
+  <h3>Instance methods inherited from class <code><a href="../../Abbyy/Models/BaseRequest.html">Abbyy::Models::BaseRequest</a></code></h3>
+  
+  
+    <a href="../../Abbyy/Models/BaseRequest.html#body%3AHTTP%3A%3AClient%3A%3ABodyType-instance-method" class="tooltip">
+      <span>body : HTTP::Client::BodyType</span>
+    body</a>, 
+    
+  
+    <a href="../../Abbyy/Models/BaseRequest.html#params%3AHash%28String%2CString%29-instance-method" class="tooltip">
+      <span>params : Hash(String, String)</span>
+    params</a>
+    
+  
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Constructor Detail</h2>
+  
+    <div class="entry-detail" id="new&#40;file_path:String,region:Region?&#61;nil,language:Language|Array&#40;Language&#41;?&#61;nil,letter_set:String?&#61;nil,reg_exp:String?&#61;nil,text_type:TextType|Array&#40;TextType&#41;?&#61;nil,one_text_line:Bool?&#61;nil,one_word_per_text_line:Bool?&#61;nil,marking_type:FieldMarkingType?&#61;nil,placeholders_count:Int32?&#61;nil,writing_style:WritingStyle?&#61;nil,description:String?&#61;nil,pdf_password:String?&#61;nil&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(file_path : <a href="../../String.html">String</a>, region : <a href="../../Abbyy/Models/Region.html">Region</a>? = <span class="n">nil</span>, language : <a href="../../Abbyy/Language.html">Language</a> | Array(<a href="../../Abbyy/Language.html">Language</a>)? = <span class="n">nil</span>, letter_set : <a href="../../String.html">String</a>? = <span class="n">nil</span>, reg_exp : <a href="../../String.html">String</a>? = <span class="n">nil</span>, text_type : <a href="../../Abbyy/TextType.html">TextType</a> | Array(<a href="../../Abbyy/TextType.html">TextType</a>)? = <span class="n">nil</span>, one_text_line : Bool? = <span class="n">nil</span>, one_word_per_text_line : Bool? = <span class="n">nil</span>, marking_type : <a href="../../Abbyy/FieldMarkingType.html">FieldMarkingType</a>? = <span class="n">nil</span>, placeholders_count : Int32? = <span class="n">nil</span>, writing_style : <a href="../../Abbyy/WritingStyle.html">WritingStyle</a>? = <span class="n">nil</span>, description : <a href="../../String.html">String</a>? = <span class="n">nil</span>, pdf_password : <a href="../../String.html">String</a>? = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#new%28file_path%3AString%2Cregion%3ARegion%3F%3Dnil%2Clanguage%3ALanguage%7CArray%28Language%29%3F%3Dnil%2Cletter_set%3AString%3F%3Dnil%2Creg_exp%3AString%3F%3Dnil%2Ctext_type%3ATextType%7CArray%28TextType%29%3F%3Dnil%2Cone_text_line%3ABool%3F%3Dnil%2Cone_word_per_text_line%3ABool%3F%3Dnil%2Cmarking_type%3AFieldMarkingType%3F%3Dnil%2Cplaceholders_count%3AInt32%3F%3Dnil%2Cwriting_style%3AWritingStyle%3F%3Dnil%2Cdescription%3AString%3F%3Dnil%2Cpdf_password%3AString%3F%3Dnil%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L176" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="description:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>description</strong> : <a href="../../String.html">String</a>?
+
+        <a class="method-permalink" href="#description%3AString%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Contains the description of the processing task.
+Cannot contain more than 255 characters.</p>
+
+<p>This parameter is <strong>not required</strong>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L165" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="description&#61;&#40;description:String?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>description=</strong>(description : <a href="../../String.html">String</a>?)
+
+        <a class="method-permalink" href="#description%3D%28description%3AString%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L230" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="language:Language|Array&#40;Language&#41;|Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>language</strong> : <a href="../../Abbyy/Language.html">Language</a> | Array(<a href="../../Abbyy/Language.html">Language</a>) | Nil
+
+        <a class="method-permalink" href="#language%3ALanguage%7CArray%28Language%29%7CNil-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies recognition language of the document. This parameter can contain
+one language or several languages in an array,
+for example:</p>
+
+<pre><code>request.language <span class="o">=</span> <span class="t">Language</span><span class="t">::</span><span class="t">Spanish</span>
+<span class="c"># or</span>
+request.language <span class="o">=</span> [
+  <span class="t">Language</span><span class="t">::</span><span class="t">English</span>,
+  <span class="t">Language</span><span class="t">::</span><span class="t">French</span>,
+  <span class="t">Language</span><span class="t">::</span><span class="t">German</span>,
+]</code></pre>
+
+<p>See the <a href="http://ocrsdk.com/documentation/specifications/recognition-languages/" target="_blank">list of available recognition languages</a>.</p>
+
+<p>Note that not all languages are available for handprint recognition.
+The languages which are available for handprint recognition are marked with a special comment.</p>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <code><a href="../../Abbyy/Language.html#English">Language::English</a></code>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="language&#61;&#40;language:Language|Array&#40;Language&#41;|Nil&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>language=</strong>(language : <a href="../../Abbyy/Language.html">Language</a> | Array(<a href="../../Abbyy/Language.html">Language</a>) | Nil)
+
+        <a class="method-permalink" href="#language%3D%28language%3ALanguage%7CArray%28Language%29%7CNil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies recognition language of the document. This parameter can contain
+one language or several languages in an array,
+for example:</p>
+
+<pre><code>request.language <span class="o">=</span> <span class="t">Language</span><span class="t">::</span><span class="t">Spanish</span>
+<span class="c"># or</span>
+request.language <span class="o">=</span> [
+  <span class="t">Language</span><span class="t">::</span><span class="t">English</span>,
+  <span class="t">Language</span><span class="t">::</span><span class="t">French</span>,
+  <span class="t">Language</span><span class="t">::</span><span class="t">German</span>,
+]</code></pre>
+
+<p>See the <a href="http://ocrsdk.com/documentation/specifications/recognition-languages/" target="_blank">list of available recognition languages</a>.</p>
+
+<p>Note that not all languages are available for handprint recognition.
+The languages which are available for handprint recognition are marked with a special comment.</p>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <code><a href="../../Abbyy/Language.html#English">Language::English</a></code>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="letter_set:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>letter_set</strong> : <a href="../../String.html">String</a>?
+
+        <a class="method-permalink" href="#letter_set%3AString%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies the letter set, which should be used during recognition.
+Contains a string with the letter set characters. For example,
+<code>"ABCDabcd'-."</code>. By default, the letter set of the language, specified in
+the language parameter, is used.</p>
+
+<p>This parameter is <strong>not required</strong>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L61" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="letter_set&#61;&#40;letter_set:String?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>letter_set=</strong>(letter_set : <a href="../../String.html">String</a>?)
+
+        <a class="method-permalink" href="#letter_set%3D%28letter_set%3AString%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies the letter set, which should be used during recognition.
+Contains a string with the letter set characters. For example,
+<code>"ABCDabcd'-."</code>. By default, the letter set of the language, specified in
+the language parameter, is used.</p>
+
+<p>This parameter is <strong>not required</strong>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L61" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="marking_type:FieldMarkingType?-instance-method">
+      <div class="signature">
+        
+        def <strong>marking_type</strong> : <a href="../../Abbyy/FieldMarkingType.html">FieldMarkingType</a>?
+
+        <a class="method-permalink" href="#marking_type%3AFieldMarkingType%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>This property is valid only for the handprint recognition. Specifies the
+type of <a href="http://ocrsdk.com/documentation/specifications/field-marking/" target="_blank">marking around letters</a>
+(for example, underline, frame, box, etc.). By default, there is no
+marking around letters. The value can be one of the following:</p>
+
+<ul><li><code><a href="../../Abbyy/FieldMarkingType.html#SimpleText">FieldMarkingType::SimpleText</a></code></li><li><code><a href="../../Abbyy/FieldMarkingType.html#UnderlinedText">FieldMarkingType::UnderlinedText</a></code></li><li><code><a href="../../Abbyy/FieldMarkingType.html#TextInFrame">FieldMarkingType::TextInFrame</a></code></li><li><code><a href="../../Abbyy/FieldMarkingType.html#GreyBoxes">FieldMarkingType::GreyBoxes</a></code></li><li><code><a href="../../Abbyy/FieldMarkingType.html#CharBoxSeries">FieldMarkingType::CharBoxSeries</a></code></li><li><code><a href="../../Abbyy/FieldMarkingType.html#SimpleComb">FieldMarkingType::SimpleComb</a></code></li><li><code><a href="../../Abbyy/FieldMarkingType.html#CombInFrame">FieldMarkingType::CombInFrame</a></code></li><li><code><a href="../../Abbyy/FieldMarkingType.html#PartitionedFrame">FieldMarkingType::PartitionedFrame</a></code></li></ul>
+
+<p><strong>Note</strong>: For correct handprint recognition specify the value of the
+<code><a href="../../Abbyy/Models/ProcessTextFieldRequest.html#placeholders_count%3AInt32%3F-instance-method">#placeholders_count</a></code> parameter.</p>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <code><a href="../../Abbyy/FieldMarkingType.html#SimpleText">FieldMarkingType::SimpleText</a></code>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L140" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="marking_type&#61;&#40;marking_type:FieldMarkingType?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>marking_type=</strong>(marking_type : <a href="../../Abbyy/FieldMarkingType.html">FieldMarkingType</a>?)
+
+        <a class="method-permalink" href="#marking_type%3D%28marking_type%3AFieldMarkingType%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>This property is valid only for the handprint recognition. Specifies the
+type of <a href="http://ocrsdk.com/documentation/specifications/field-marking/" target="_blank">marking around letters</a>
+(for example, underline, frame, box, etc.). By default, there is no
+marking around letters. The value can be one of the following:</p>
+
+<ul><li><code><a href="../../Abbyy/FieldMarkingType.html#SimpleText">FieldMarkingType::SimpleText</a></code></li><li><code><a href="../../Abbyy/FieldMarkingType.html#UnderlinedText">FieldMarkingType::UnderlinedText</a></code></li><li><code><a href="../../Abbyy/FieldMarkingType.html#TextInFrame">FieldMarkingType::TextInFrame</a></code></li><li><code><a href="../../Abbyy/FieldMarkingType.html#GreyBoxes">FieldMarkingType::GreyBoxes</a></code></li><li><code><a href="../../Abbyy/FieldMarkingType.html#CharBoxSeries">FieldMarkingType::CharBoxSeries</a></code></li><li><code><a href="../../Abbyy/FieldMarkingType.html#SimpleComb">FieldMarkingType::SimpleComb</a></code></li><li><code><a href="../../Abbyy/FieldMarkingType.html#CombInFrame">FieldMarkingType::CombInFrame</a></code></li><li><code><a href="../../Abbyy/FieldMarkingType.html#PartitionedFrame">FieldMarkingType::PartitionedFrame</a></code></li></ul>
+
+<p><strong>Note</strong>: For correct handprint recognition specify the value of the
+<code><a href="../../Abbyy/Models/ProcessTextFieldRequest.html#placeholders_count%3AInt32%3F-instance-method">#placeholders_count</a></code> parameter.</p>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <code><a href="../../Abbyy/FieldMarkingType.html#SimpleText">FieldMarkingType::SimpleText</a></code>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L140" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="one_text_line:Bool?-instance-method">
+      <div class="signature">
+        
+        def <strong>one_text_line</strong> : Bool?
+
+        <a class="method-permalink" href="#one_text_line%3ABool%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies whether the field contains only one text line. The value should
+be <strong>true</strong>, if there is one text line in the field; otherwise it should be <strong>false</strong>.</p>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <em>false</em>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L110" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="one_text_line&#61;&#40;one_text_line:Bool?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>one_text_line=</strong>(one_text_line : Bool?)
+
+        <a class="method-permalink" href="#one_text_line%3D%28one_text_line%3ABool%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies whether the field contains only one text line. The value should
+be <strong>true</strong>, if there is one text line in the field; otherwise it should be <strong>false</strong>.</p>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <em>false</em>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L110" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="one_word_per_text_line:Bool?-instance-method">
+      <div class="signature">
+        
+        def <strong>one_word_per_text_line</strong> : Bool?
+
+        <a class="method-permalink" href="#one_word_per_text_line%3ABool%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies whether the field contains only one word in each text line.
+The value should be <strong>true</strong>, if no text line contains more than one word
+(so the lines of text will be recognized as a single word); otherwise it should be <strong>false</strong>.</p>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <em>false</em>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L119" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="one_word_per_text_line&#61;&#40;one_word_per_text_line:Bool?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>one_word_per_text_line=</strong>(one_word_per_text_line : Bool?)
+
+        <a class="method-permalink" href="#one_word_per_text_line%3D%28one_word_per_text_line%3ABool%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies whether the field contains only one word in each text line.
+The value should be <strong>true</strong>, if no text line contains more than one word
+(so the lines of text will be recognized as a single word); otherwise it should be <strong>false</strong>.</p>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <em>false</em>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L119" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="params:Hash&#40;String,String&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>params</strong> : Hash(<a href="../../String.html">String</a>, <a href="../../String.html">String</a>)
+
+        <a class="method-permalink" href="#params%3AHash%28String%2CString%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L243" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="pdf_password:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>pdf_password</strong> : <a href="../../String.html">String</a>?
+
+        <a class="method-permalink" href="#pdf_password%3AString%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Contains a password for accessing password-protected images in PDF format.</p>
+
+<p>This parameter is <strong>not required</strong>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L170" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="pdf_password&#61;&#40;pdf_password:String?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>pdf_password=</strong>(pdf_password : <a href="../../String.html">String</a>?)
+
+        <a class="method-permalink" href="#pdf_password%3D%28pdf_password%3AString%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Contains a password for accessing password-protected images in PDF format.</p>
+
+<p>This parameter is <strong>not required</strong>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L170" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="placeholders_count:Int32?-instance-method">
+      <div class="signature">
+        
+        def <strong>placeholders_count</strong> : Int32?
+
+        <a class="method-permalink" href="#placeholders_count%3AInt32%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies the number of character cells for the field.</p>
+
+<p>This property has a sense only for the field marking types
+(the <code><a href="../../Abbyy/Models/ProcessTextFieldRequest.html#marking_type%3AFieldMarkingType%3F-instance-method">#marking_type</a></code> parameter) that imply splitting the text in cells.</p>
+
+<p>Default value for this property is 1, but you should set the appropriate
+value to recognize the text correctly.
+<code><a href="../../Abbyy/Models/ProcessTextFieldRequest.html#placeholders_count%3AInt32%3F-instance-method">#placeholders_count</a></code> parameter.</p>
+
+<p>This parameter is <strong>not required</strong>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L152" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="placeholders_count&#61;&#40;placeholders_count:Int32?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>placeholders_count=</strong>(placeholders_count : Int32?)
+
+        <a class="method-permalink" href="#placeholders_count%3D%28placeholders_count%3AInt32%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies the number of character cells for the field.</p>
+
+<p>This property has a sense only for the field marking types
+(the <code><a href="../../Abbyy/Models/ProcessTextFieldRequest.html#marking_type%3AFieldMarkingType%3F-instance-method">#marking_type</a></code> parameter) that imply splitting the text in cells.</p>
+
+<p>Default value for this property is 1, but you should set the appropriate
+value to recognize the text correctly.
+<code><a href="../../Abbyy/Models/ProcessTextFieldRequest.html#placeholders_count%3AInt32%3F-instance-method">#placeholders_count</a></code> parameter.</p>
+
+<p>This parameter is <strong>not required</strong>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L152" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="reg_exp:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>reg_exp</strong> : <a href="../../String.html">String</a>?
+
+        <a class="method-permalink" href="#reg_exp%3AString%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies the regular expression which defines which words are allowed in
+the field and which are not. See the description of
+<a href="http://ocrsdk.com/documentation/specifications/regular-expressions/" target="_blank">regular expressions</a>.
+By default, the set of allowed words is defined by the dictionary of the
+language, specified in the <code><a href="../../Abbyy/Models/ProcessTextFieldRequest.html#language%3ALanguage%7CArray%28Language%29%7CNil-instance-method">#language</a></code> parameter.</p>
+
+<p>Note that regular expressions do not strictly limit the set of characters
+of the output result, i.e. the recognized value may contain characters
+which are not included into the regular expression. During recognition all
+hypotheses of a word recognition are checked against the specified regular
+expression. If a given recognition variant conforms to the expression, it
+has higher probability of being selected as final recognition output. But
+if there is no variant that matches regular expression, the result will
+not conform to the expression. If you want to limit the set of characters,
+which can be recognized, the best way to do it is to use <code>letterSet</code> parameter.</p>
+
+<p>This parameter is <strong>not required</strong>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L80" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="reg_exp&#61;&#40;reg_exp:String?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>reg_exp=</strong>(reg_exp : <a href="../../String.html">String</a>?)
+
+        <a class="method-permalink" href="#reg_exp%3D%28reg_exp%3AString%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies the regular expression which defines which words are allowed in
+the field and which are not. See the description of
+<a href="http://ocrsdk.com/documentation/specifications/regular-expressions/" target="_blank">regular expressions</a>.
+By default, the set of allowed words is defined by the dictionary of the
+language, specified in the <code><a href="../../Abbyy/Models/ProcessTextFieldRequest.html#language%3ALanguage%7CArray%28Language%29%7CNil-instance-method">#language</a></code> parameter.</p>
+
+<p>Note that regular expressions do not strictly limit the set of characters
+of the output result, i.e. the recognized value may contain characters
+which are not included into the regular expression. During recognition all
+hypotheses of a word recognition are checked against the specified regular
+expression. If a given recognition variant conforms to the expression, it
+has higher probability of being selected as final recognition output. But
+if there is no variant that matches regular expression, the result will
+not conform to the expression. If you want to limit the set of characters,
+which can be recognized, the best way to do it is to use <code>letterSet</code> parameter.</p>
+
+<p>This parameter is <strong>not required</strong>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L80" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="region:Region?-instance-method">
+      <div class="signature">
+        
+        def <strong>region</strong> : <a href="../../Abbyy/Models/Region.html">Region</a>?
+
+        <a class="method-permalink" href="#region%3ARegion%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies the region of the text field on the image. The coordinates of
+the region are measured in pixels relative to the left top corner of the
+image and are specified in the following order: left, top, right, bottom.
+By default, the region of the whole image is used.</p>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <code>Region.new(-1, -1, -1, -1)</code>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L31" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="region&#61;&#40;coordinates:Array&#40;Int32&#41;&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>region=</strong>(coordinates : Array(Int32))
+
+        <a class="method-permalink" href="#region%3D%28coordinates%3AArray%28Int32%29%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L206" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="region&#61;&#40;region:Region?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>region=</strong>(region : <a href="../../Abbyy/Models/Region.html">Region</a>?)
+
+        <a class="method-permalink" href="#region%3D%28region%3ARegion%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies the region of the text field on the image. The coordinates of
+the region are measured in pixels relative to the left top corner of the
+image and are specified in the following order: left, top, right, bottom.
+By default, the region of the whole image is used.</p>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <code>Region.new(-1, -1, -1, -1)</code>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L31" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="text_type:TextType|Array&#40;TextType&#41;|Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>text_type</strong> : <a href="../../Abbyy/TextType.html">TextType</a> | Array(<a href="../../Abbyy/TextType.html">TextType</a>) | Nil
+
+        <a class="method-permalink" href="#text_type%3ATextType%7CArray%28TextType%29%7CNil-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies the type of the text on a page. This parameter may also contain
+several <a href="http://ocrsdk.com/documentation/specifications/text-types/" target="_blank">text types</a>
+in an array, for example:</p>
+
+<pre><code>[<span class="t">TextType</span><span class="t">::</span><span class="t">Normal</span>, <span class="t">TextType</span><span class="t">::</span><span class="t">Matrix</span>]</code></pre>
+
+<p>The following values can be used:</p>
+
+<ul><li>TextType::Normal</li><li>TextType::Typewriter</li><li>TextType::Matrix</li><li>TextType::Index</li><li>TextType::OcrA</li><li>TextType::OcrB</li><li>TextType::E13b</li><li>TextType::Cmc7</li><li>TextType::Gothic</li></ul>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <code><a href="../../Abbyy/TextType.html#Normal">TextType::Normal</a></code>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L102" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="text_type&#61;&#40;text_type:TextType|Array&#40;TextType&#41;?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>text_type=</strong>(text_type : <a href="../../Abbyy/TextType.html">TextType</a> | Array(<a href="../../Abbyy/TextType.html">TextType</a>)?)
+
+        <a class="method-permalink" href="#text_type%3D%28text_type%3ATextType%7CArray%28TextType%29%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L210" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="writing_style:WritingStyle?-instance-method">
+      <div class="signature">
+        
+        def <strong>writing_style</strong> : <a href="../../Abbyy/WritingStyle.html">WritingStyle</a>?
+
+        <a class="method-permalink" href="#writing_style%3AWritingStyle%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Provides additional information about handprinted letters writing style.</p>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <code><a href="../../Abbyy/WritingStyle.html#Default">WritingStyle::Default</a></code>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L159" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="writing_style&#61;&#40;writing_style:WritingStyle?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>writing_style=</strong>(writing_style : <a href="../../Abbyy/WritingStyle.html">WritingStyle</a>?)
+
+        <a class="method-permalink" href="#writing_style%3D%28writing_style%3AWritingStyle%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Provides additional information about handprinted letters writing style.</p>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <code><a href="../../Abbyy/WritingStyle.html#Default">WritingStyle::Default</a></code>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_text_field_request.cr#L159" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

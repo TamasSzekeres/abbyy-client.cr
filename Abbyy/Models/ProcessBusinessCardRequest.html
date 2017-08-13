@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/TamasSzekeres/abbyy-client.cr">
+  <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../../js/doc.js"></script>
+  <title>Abbyy::Models::ProcessBusinessCardRequest - github.com/TamasSzekeres/abbyy-client.cr</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="../../index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent open current" data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy" data-name="abbyy">
+      <a href="../../Abbyy.html">Abbyy</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/ApplicationType" data-name="abbyy::applicationtype">
+      <a href="../../Abbyy/ApplicationType.html">ApplicationType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/BarcodeType" data-name="abbyy::barcodetype">
+      <a href="../../Abbyy/BarcodeType.html">BarcodeType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/CheckmarkType" data-name="abbyy::checkmarktype">
+      <a href="../../Abbyy/CheckmarkType.html">CheckmarkType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Client" data-name="abbyy::client">
+      <a href="../../Abbyy/Client.html">Client</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Country" data-name="abbyy::country">
+      <a href="../../Abbyy/Country.html">Country</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/ExportFormat" data-name="abbyy::exportformat">
+      <a href="../../Abbyy/ExportFormat.html">ExportFormat</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/FieldMarkingType" data-name="abbyy::fieldmarkingtype">
+      <a href="../../Abbyy/FieldMarkingType.html">FieldMarkingType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/ImageSource" data-name="abbyy::imagesource">
+      <a href="../../Abbyy/ImageSource.html">ImageSource</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Language" data-name="abbyy::language">
+      <a href="../../Abbyy/Language.html">Language</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models" data-name="abbyy::models">
+      <a href="../../Abbyy/Models.html">Models</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/BaseModel" data-name="abbyy::models::basemodel">
+      <a href="../../Abbyy/Models/BaseModel.html">BaseModel</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/BaseRequest" data-name="abbyy::models::baserequest">
+      <a href="../../Abbyy/Models/BaseRequest.html">BaseRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/BaseResponse" data-name="abbyy::models::baseresponse">
+      <a href="../../Abbyy/Models/BaseResponse.html">BaseResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/DeleteTaskRequest" data-name="abbyy::models::deletetaskrequest">
+      <a href="../../Abbyy/Models/DeleteTaskRequest.html">DeleteTaskRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/DeleteTaskResponse" data-name="abbyy::models::deletetaskresponse">
+      <a href="../../Abbyy/Models/DeleteTaskResponse.html">DeleteTaskResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/FileBody" data-name="abbyy::models::filebody">
+      <a href="../../Abbyy/Models/FileBody.html">FileBody</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/GetApplicationInfoResponse" data-name="abbyy::models::getapplicationinforesponse">
+      <a href="../../Abbyy/Models/GetApplicationInfoResponse.html">GetApplicationInfoResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/GetTaskStatusRequest" data-name="abbyy::models::gettaskstatusrequest">
+      <a href="../../Abbyy/Models/GetTaskStatusRequest.html">GetTaskStatusRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/GetTaskStatusResponse" data-name="abbyy::models::gettaskstatusresponse">
+      <a href="../../Abbyy/Models/GetTaskStatusResponse.html">GetTaskStatusResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ListTasksRequest" data-name="abbyy::models::listtasksrequest">
+      <a href="../../Abbyy/Models/ListTasksRequest.html">ListTasksRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ListTasksResponse" data-name="abbyy::models::listtasksresponse">
+      <a href="../../Abbyy/Models/ListTasksResponse.html">ListTasksResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBarcodeFieldRequest" data-name="abbyy::models::processbarcodefieldrequest">
+      <a href="../../Abbyy/Models/ProcessBarcodeFieldRequest.html">ProcessBarcodeFieldRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBarcodeFieldResponse" data-name="abbyy::models::processbarcodefieldresponse">
+      <a href="../../Abbyy/Models/ProcessBarcodeFieldResponse.html">ProcessBarcodeFieldResponse</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBusinessCardRequest" data-name="abbyy::models::processbusinesscardrequest">
+      <a href="../../Abbyy/Models/ProcessBusinessCardRequest.html">ProcessBusinessCardRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBusinessCardResponse" data-name="abbyy::models::processbusinesscardresponse">
+      <a href="../../Abbyy/Models/ProcessBusinessCardResponse.html">ProcessBusinessCardResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessCheckmarkFieldRequest" data-name="abbyy::models::processcheckmarkfieldrequest">
+      <a href="../../Abbyy/Models/ProcessCheckmarkFieldRequest.html">ProcessCheckmarkFieldRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessCheckmarkFieldResponse" data-name="abbyy::models::processcheckmarkfieldresponse">
+      <a href="../../Abbyy/Models/ProcessCheckmarkFieldResponse.html">ProcessCheckmarkFieldResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessDocumentRequest" data-name="abbyy::models::processdocumentrequest">
+      <a href="../../Abbyy/Models/ProcessDocumentRequest.html">ProcessDocumentRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessDocumentResponse" data-name="abbyy::models::processdocumentresponse">
+      <a href="../../Abbyy/Models/ProcessDocumentResponse.html">ProcessDocumentResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessFieldsRequest" data-name="abbyy::models::processfieldsrequest">
+      <a href="../../Abbyy/Models/ProcessFieldsRequest.html">ProcessFieldsRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessFieldsResponse" data-name="abbyy::models::processfieldsresponse">
+      <a href="../../Abbyy/Models/ProcessFieldsResponse.html">ProcessFieldsResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessImageRequest" data-name="abbyy::models::processimagerequest">
+      <a href="../../Abbyy/Models/ProcessImageRequest.html">ProcessImageRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessImageResponse" data-name="abbyy::models::processimageresponse">
+      <a href="../../Abbyy/Models/ProcessImageResponse.html">ProcessImageResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessMRZRequest" data-name="abbyy::models::processmrzrequest">
+      <a href="../../Abbyy/Models/ProcessMRZRequest.html">ProcessMRZRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessMRZResponse" data-name="abbyy::models::processmrzresponse">
+      <a href="../../Abbyy/Models/ProcessMRZResponse.html">ProcessMRZResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessReceiptRequest" data-name="abbyy::models::processreceiptrequest">
+      <a href="../../Abbyy/Models/ProcessReceiptRequest.html">ProcessReceiptRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessReceiptResponse" data-name="abbyy::models::processreceiptresponse">
+      <a href="../../Abbyy/Models/ProcessReceiptResponse.html">ProcessReceiptResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessTextFieldRequest" data-name="abbyy::models::processtextfieldrequest">
+      <a href="../../Abbyy/Models/ProcessTextFieldRequest.html">ProcessTextFieldRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessTextFieldResponse" data-name="abbyy::models::processtextfieldresponse">
+      <a href="../../Abbyy/Models/ProcessTextFieldResponse.html">ProcessTextFieldResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/Region" data-name="abbyy::models::region">
+      <a href="../../Abbyy/Models/Region.html">Region</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/SubmitImageRequest" data-name="abbyy::models::submitimagerequest">
+      <a href="../../Abbyy/Models/SubmitImageRequest.html">SubmitImageRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/SubmitImageResponse" data-name="abbyy::models::submitimageresponse">
+      <a href="../../Abbyy/Models/SubmitImageResponse.html">SubmitImageResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/Task" data-name="abbyy::models::task">
+      <a href="../../Abbyy/Models/Task.html">Task</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/TaskIdRequest" data-name="abbyy::models::taskidrequest">
+      <a href="../../Abbyy/Models/TaskIdRequest.html">TaskIdRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/TaskResponse" data-name="abbyy::models::taskresponse">
+      <a href="../../Abbyy/Models/TaskResponse.html">TaskResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/TaskResult" data-name="abbyy::models::taskresult">
+      <a href="../../Abbyy/Models/TaskResult.html">TaskResult</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/PdfWriteTag" data-name="abbyy::pdfwritetag">
+      <a href="../../Abbyy/PdfWriteTag.html">PdfWriteTag</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Profile" data-name="abbyy::profile">
+      <a href="../../Abbyy/Profile.html">Profile</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/TaskStatus" data-name="abbyy::taskstatus">
+      <a href="../../Abbyy/TaskStatus.html">TaskStatus</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/TextType" data-name="abbyy::texttype">
+      <a href="../../Abbyy/TextType.html">TextType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/WritingStyle" data-name="abbyy::writingstyle">
+      <a href="../../Abbyy/WritingStyle.html">WritingStyle</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/String" data-name="string">
+      <a href="../../String.html">String</a>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Abbyy::Models::ProcessBusinessCardRequest
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../../Abbyy/Models/ProcessBusinessCardRequest.html">Abbyy::Models::ProcessBusinessCardRequest</a></li><li class="superclass"><a href="../../Abbyy/Models/BaseRequest.html">Abbyy::Models::BaseRequest</a></li><li class="superclass"><a href="../../Abbyy/Models/BaseModel.html">Abbyy::Models::BaseModel</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>Request object for <a href="http://ocrsdk.com/documentation/apireference/processBusinessCard/" target="_blank">/processBusinessCard</a> API-method.</p>
+
+
+
+
+
+  <h2>Included Modules</h2>
+  <ul class="other-types-list">
+  
+    <li class="other-type"><a href="../../Abbyy/Models/FileBody.html">Abbyy::Models::FileBody</a></li>
+  
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_business_card_request.cr#L6" target="_blank">abbyy/models/process_business_card_request.cr</a>
+    
+    <br/>
+  
+
+
+
+  
+    <h2>Constant Summary</h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="ALLOWED_EXPORT_FORMATS">
+        <strong>ALLOWED_EXPORT_FORMATS</strong> = <code>[<span class="t">ExportFormat</span><span class="t">::</span><span class="t">V_Card</span>, <span class="t">ExportFormat</span><span class="t">::</span><span class="t">Csv</span>, <span class="t">ExportFormat</span><span class="t">::</span><span class="t">Xml</span>]</code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_CORRECT_ORIENTATION">
+        <strong>DEFAULT_CORRECT_ORIENTATION</strong> = <code><span class="n">true</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_CORRENT_SKEW">
+        <strong>DEFAULT_CORRENT_SKEW</strong> = <code><span class="n">true</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_DESCRITION">
+        <strong>DEFAULT_DESCRITION</strong> = <code><span class="s">&quot;&quot;</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_EXPORT_FORMAT">
+        <strong>DEFAULT_EXPORT_FORMAT</strong> = <code><span class="t">ExportFormat</span><span class="t">::</span><span class="t">V_Card</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_IMAGE_SOURCE">
+        <strong>DEFAULT_IMAGE_SOURCE</strong> = <code><span class="t">ImageSource</span><span class="t">::</span><span class="t">Auto</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_LANGUAGE">
+        <strong>DEFAULT_LANGUAGE</strong> = <code><span class="t">Language</span><span class="t">::</span><span class="t">English</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_PDF_PASSWORD">
+        <strong>DEFAULT_PDF_PASSWORD</strong> = <code><span class="s">&quot;&quot;</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_PXML_WRITE_FIELD_COMPONENTS">
+        <strong>DEFAULT_PXML_WRITE_FIELD_COMPONENTS</strong> = <code><span class="n">false</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_XML_WRITE_EXTENDED_CHARACTER_INFO">
+        <strong>DEFAULT_XML_WRITE_EXTENDED_CHARACTER_INFO</strong> = <code><span class="n">false</span></code>
+      </dt>
+      
+    
+  </dl>
+
+
+
+  <h2>Constructors</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28file_path%3AString%2Clanguage%3ALanguage%7CArray%28Language%29%3F%3Dnil%2Cimage_source%3AImageSource%3F%3Dnil%2Ccorrect_orientation%3ABool%3F%3Dnil%2Ccorrect_skew%3ABool%3F%3Dnil%2Cexport_format%3AExportFormat%3F%3Dnil%2Cxml_write_extended_character_info%3ABool%3F%3Dnil%2Cpdf_write_field_components%3ABool%3F%3Dnil%2Cdescription%3AString%3F%3Dnil%2Cpdf_password%3AString%3F%3Dnil%29-class-method" class="signature"><strong>.new</strong>(file_path : String, language : Language | Array(Language)? = <span class="n">nil</span>, image_source : ImageSource? = <span class="n">nil</span>, correct_orientation : Bool? = <span class="n">nil</span>, correct_skew : Bool? = <span class="n">nil</span>, export_format : ExportFormat? = <span class="n">nil</span>, xml_write_extended_character_info : Bool? = <span class="n">nil</span>, pdf_write_field_components : Bool? = <span class="n">nil</span>, description : String? = <span class="n">nil</span>, pdf_password : String? = <span class="n">nil</span>)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#correct_orientation%3ABool%3F-instance-method" class="signature"><strong>#correct_orientation</strong> : Bool?</a>
+        
+          <div class="summary"><p>Specifies whether the orientation of the image should be automatically detected and corrected.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#correct_orientation%3D%28correct_orientation%3ABool%3F%29-instance-method" class="signature"><strong>#correct_orientation=</strong>(correct_orientation : Bool?)</a>
+        
+          <div class="summary"><p>Specifies whether the orientation of the image should be automatically detected and corrected.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#correct_skew%3ABool%3F-instance-method" class="signature"><strong>#correct_skew</strong> : Bool?</a>
+        
+          <div class="summary"><p>Specifies whether the skew of the image should be automatically detected and corrected.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#correct_skew%3D%28correct_skew%3ABool%3F%29-instance-method" class="signature"><strong>#correct_skew=</strong>(correct_skew : Bool?)</a>
+        
+          <div class="summary"><p>Specifies whether the skew of the image should be automatically detected and corrected.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#description%3AString%3F-instance-method" class="signature"><strong>#description</strong> : String?</a>
+        
+          <div class="summary"><p>Contains the description of the processing task.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#description%3D%28description%3AString%3F%29-instance-method" class="signature"><strong>#description=</strong>(description : String?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#export_format%3AExportFormat%3F-instance-method" class="signature"><strong>#export_format</strong> : ExportFormat?</a>
+        
+          <div class="summary"><p>Specifies the export format.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#export_format%3D%28export_format%3AExportFormat%7CArray%28ExportFormat%29%3F%29-instance-method" class="signature"><strong>#export_format=</strong>(export_format : ExportFormat | Array(ExportFormat)?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#image_source%3AImageSource%3F-instance-method" class="signature"><strong>#image_source</strong> : ImageSource?</a>
+        
+          <div class="summary"><p>Specifies the source of the image.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#image_source%3D%28image_source%3AImageSource%3F%29-instance-method" class="signature"><strong>#image_source=</strong>(image_source : ImageSource?)</a>
+        
+          <div class="summary"><p>Specifies the source of the image.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#language%3ALanguage%7CArray%28Language%29%7CNil-instance-method" class="signature"><strong>#language</strong> : Language | Array(Language) | Nil</a>
+        
+          <div class="summary"><p>Specifies recognition language of the document.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#language%3D%28language%3ALanguage%7CArray%28Language%29%7CNil%29-instance-method" class="signature"><strong>#language=</strong>(language : Language | Array(Language) | Nil)</a>
+        
+          <div class="summary"><p>Specifies recognition language of the document.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#params%3AHash%28String%2CString%29-instance-method" class="signature"><strong>#params</strong> : Hash(String, String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#pdf_password%3AString%3F-instance-method" class="signature"><strong>#pdf_password</strong> : String?</a>
+        
+          <div class="summary"><p>Contains a password for accessing password-protected images in PDF format.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#pdf_password%3D%28pdf_password%3AString%3F%29-instance-method" class="signature"><strong>#pdf_password=</strong>(pdf_password : String?)</a>
+        
+          <div class="summary"><p>Contains a password for accessing password-protected images in PDF format.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#pdf_write_field_components%3ABool%3F-instance-method" class="signature"><strong>#pdf_write_field_components</strong> : Bool?</a>
+        
+          <div class="summary"><p>Specifies whether the field components should be written to an output file in XML format.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#pdf_write_field_components%3D%28pdf_write_field_components%3ABool%3F%29-instance-method" class="signature"><strong>#pdf_write_field_components=</strong>(pdf_write_field_components : Bool?)</a>
+        
+          <div class="summary"><p>Specifies whether the field components should be written to an output file in XML format.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#xml_write_extended_character_info%3ABool%3F-instance-method" class="signature"><strong>#xml_write_extended_character_info</strong> : Bool?</a>
+        
+          <div class="summary"><p>Specifies whether the additional information on the recognized characters (e.g.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#xml_write_extended_character_info%3D%28xml_write_extended_character_info%3ABool%3F%29-instance-method" class="signature"><strong>#xml_write_extended_character_info=</strong>(xml_write_extended_character_info : Bool?)</a>
+        
+          <div class="summary"><p>Specifies whether the additional information on the recognized characters (e.g.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+  <h3>Instance methods inherited from module <code><a href="../../Abbyy/Models/FileBody.html">Abbyy::Models::FileBody</a></code></h3>
+  
+  
+    <a href="../../Abbyy/Models/FileBody.html#body%3AHTTP%3A%3AClient%3A%3ABodyType-instance-method" class="tooltip">
+      <span>body : HTTP::Client::BodyType</span>
+    body</a>, 
+    
+  
+    <a href="../../Abbyy/Models/FileBody.html#file_path%3AString-instance-method" class="tooltip">
+      <span>file_path : String</span>
+    file_path</a>, 
+    
+  
+    <a href="../../Abbyy/Models/FileBody.html#file_path%3D%28file_path%3AString%29-instance-method" class="tooltip">
+      <span>file_path=(file_path : String)</span>
+    file_path=</a>
+    
+  
+
+
+    
+
+  <h3>Constructor methods inherited from module <code><a href="../../Abbyy/Models/FileBody.html">Abbyy::Models::FileBody</a></code></h3>
+  
+  
+    <a href="../../Abbyy/Models/FileBody.html#new%28file_path%3AString%29-class-method" class="tooltip">
+      <span>new(file_path : String)</span>
+    new</a>
+    
+  
+
+
+    
+
+
+  
+    
+
+  <h3>Instance methods inherited from class <code><a href="../../Abbyy/Models/BaseRequest.html">Abbyy::Models::BaseRequest</a></code></h3>
+  
+  
+    <a href="../../Abbyy/Models/BaseRequest.html#body%3AHTTP%3A%3AClient%3A%3ABodyType-instance-method" class="tooltip">
+      <span>body : HTTP::Client::BodyType</span>
+    body</a>, 
+    
+  
+    <a href="../../Abbyy/Models/BaseRequest.html#params%3AHash%28String%2CString%29-instance-method" class="tooltip">
+      <span>params : Hash(String, String)</span>
+    params</a>
+    
+  
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Constructor Detail</h2>
+  
+    <div class="entry-detail" id="new&#40;file_path:String,language:Language|Array&#40;Language&#41;?&#61;nil,image_source:ImageSource?&#61;nil,correct_orientation:Bool?&#61;nil,correct_skew:Bool?&#61;nil,export_format:ExportFormat?&#61;nil,xml_write_extended_character_info:Bool?&#61;nil,pdf_write_field_components:Bool?&#61;nil,description:String?&#61;nil,pdf_password:String?&#61;nil&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(file_path : <a href="../../String.html">String</a>, language : <a href="../../Abbyy/Language.html">Language</a> | Array(<a href="../../Abbyy/Language.html">Language</a>)? = <span class="n">nil</span>, image_source : <a href="../../Abbyy/ImageSource.html">ImageSource</a>? = <span class="n">nil</span>, correct_orientation : Bool? = <span class="n">nil</span>, correct_skew : Bool? = <span class="n">nil</span>, export_format : <a href="../../Abbyy/ExportFormat.html">ExportFormat</a>? = <span class="n">nil</span>, xml_write_extended_character_info : Bool? = <span class="n">nil</span>, pdf_write_field_components : Bool? = <span class="n">nil</span>, description : <a href="../../String.html">String</a>? = <span class="n">nil</span>, pdf_password : <a href="../../String.html">String</a>? = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#new%28file_path%3AString%2Clanguage%3ALanguage%7CArray%28Language%29%3F%3Dnil%2Cimage_source%3AImageSource%3F%3Dnil%2Ccorrect_orientation%3ABool%3F%3Dnil%2Ccorrect_skew%3ABool%3F%3Dnil%2Cexport_format%3AExportFormat%3F%3Dnil%2Cxml_write_extended_character_info%3ABool%3F%3Dnil%2Cpdf_write_field_components%3ABool%3F%3Dnil%2Cdescription%3AString%3F%3Dnil%2Cpdf_password%3AString%3F%3Dnil%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_business_card_request.cr#L122" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="correct_orientation:Bool?-instance-method">
+      <div class="signature">
+        
+        def <strong>correct_orientation</strong> : Bool?
+
+        <a class="method-permalink" href="#correct_orientation%3ABool%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies whether the orientation of the image should be automatically
+detected and corrected. It can have one of the following values:</p>
+
+<ul><li><strong>true</strong> The page orientation is automatically detected, and if it differs
+from normal the image is rotated.</li><li><strong>false</strong> The page orientation detection and correction is not performed.</li></ul>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <strong>true</strong>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_business_card_request.cr#L62" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="correct_orientation&#61;&#40;correct_orientation:Bool?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>correct_orientation=</strong>(correct_orientation : Bool?)
+
+        <a class="method-permalink" href="#correct_orientation%3D%28correct_orientation%3ABool%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies whether the orientation of the image should be automatically
+detected and corrected. It can have one of the following values:</p>
+
+<ul><li><strong>true</strong> The page orientation is automatically detected, and if it differs
+from normal the image is rotated.</li><li><strong>false</strong> The page orientation detection and correction is not performed.</li></ul>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <strong>true</strong>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_business_card_request.cr#L62" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="correct_skew:Bool?-instance-method">
+      <div class="signature">
+        
+        def <strong>correct_skew</strong> : Bool?
+
+        <a class="method-permalink" href="#correct_skew%3ABool%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies whether the skew of the image should be automatically detected
+and corrected. It can have either <strong>true</strong> or <strong>false</strong> value.</p>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <strong>true</strong>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_business_card_request.cr#L70" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="correct_skew&#61;&#40;correct_skew:Bool?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>correct_skew=</strong>(correct_skew : Bool?)
+
+        <a class="method-permalink" href="#correct_skew%3D%28correct_skew%3ABool%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies whether the skew of the image should be automatically detected
+and corrected. It can have either <strong>true</strong> or <strong>false</strong> value.</p>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <strong>true</strong>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_business_card_request.cr#L70" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="description:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>description</strong> : <a href="../../String.html">String</a>?
+
+        <a class="method-permalink" href="#description%3AString%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Contains the description of the processing task.
+Cannot contain more than 255 characters.</p>
+
+<p>This parameter is <strong>not required</strong>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_business_card_request.cr#L113" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="description&#61;&#40;description:String?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>description=</strong>(description : <a href="../../String.html">String</a>?)
+
+        <a class="method-permalink" href="#description%3D%28description%3AString%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_business_card_request.cr#L166" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="export_format:ExportFormat?-instance-method">
+      <div class="signature">
+        
+        def <strong>export_format</strong> : <a href="../../Abbyy/ExportFormat.html">ExportFormat</a>?
+
+        <a class="method-permalink" href="#export_format%3AExportFormat%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies the export format. It can be one of the following:</p>
+
+<ul><li><code><a href="../../Abbyy/ExportFormat.html#V_Card">ExportFormat::V_Card</a></code></li><li><code><a href="../../Abbyy/ExportFormat.html#Csv">ExportFormat::Csv</a></code></li><li><code><a href="../../Abbyy/ExportFormat.html#Xml">ExportFormat::Xml</a></code></li></ul>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <code><a href="../../Abbyy/ExportFormat.html#Xml">ExportFormat::Xml</a></code>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_business_card_request.cr#L80" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="export_format&#61;&#40;export_format:ExportFormat|Array&#40;ExportFormat&#41;?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>export_format=</strong>(export_format : <a href="../../Abbyy/ExportFormat.html">ExportFormat</a> | Array(<a href="../../Abbyy/ExportFormat.html">ExportFormat</a>)?)
+
+        <a class="method-permalink" href="#export_format%3D%28export_format%3AExportFormat%7CArray%28ExportFormat%29%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_business_card_request.cr#L153" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="image_source:ImageSource?-instance-method">
+      <div class="signature">
+        
+        def <strong>image_source</strong> : <a href="../../Abbyy/ImageSource.html">ImageSource</a>?
+
+        <a class="method-permalink" href="#image_source%3AImageSource%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies the source of the image. It can be either a scanned image, or a
+photograph created with a digital camera. Special preprocessing operations
+can be performed with the image depending on the selected source. For example,
+the system can automatically correct distorted text lines, poor focus and lighting on photos.</p>
+
+<p>The value of this parameter can be one of the following:</p>
+
+<ul><li><code><a href="../../Abbyy/ImageSource.html#Auto">ImageSource::Auto</a></code> The image source is detected automatically.</li><li><code><a href="../../Abbyy/ImageSource.html#Photo">ImageSource::Photo</a></code></li><li><code><a href="../../Abbyy/ImageSource.html#Scanner">ImageSource::Scanner</a></code></li></ul>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <code><a href="../../Abbyy/ImageSource.html#Auto">ImageSource::Auto</a></code>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_business_card_request.cr#L51" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="image_source&#61;&#40;image_source:ImageSource?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>image_source=</strong>(image_source : <a href="../../Abbyy/ImageSource.html">ImageSource</a>?)
+
+        <a class="method-permalink" href="#image_source%3D%28image_source%3AImageSource%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies the source of the image. It can be either a scanned image, or a
+photograph created with a digital camera. Special preprocessing operations
+can be performed with the image depending on the selected source. For example,
+the system can automatically correct distorted text lines, poor focus and lighting on photos.</p>
+
+<p>The value of this parameter can be one of the following:</p>
+
+<ul><li><code><a href="../../Abbyy/ImageSource.html#Auto">ImageSource::Auto</a></code> The image source is detected automatically.</li><li><code><a href="../../Abbyy/ImageSource.html#Photo">ImageSource::Photo</a></code></li><li><code><a href="../../Abbyy/ImageSource.html#Scanner">ImageSource::Scanner</a></code></li></ul>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <code><a href="../../Abbyy/ImageSource.html#Auto">ImageSource::Auto</a></code>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_business_card_request.cr#L51" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="language:Language|Array&#40;Language&#41;|Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>language</strong> : <a href="../../Abbyy/Language.html">Language</a> | Array(<a href="../../Abbyy/Language.html">Language</a>) | Nil
+
+        <a class="method-permalink" href="#language%3ALanguage%7CArray%28Language%29%7CNil-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies recognition language of the document. This parameter can contain
+one language or several languages in an array,
+for example:</p>
+
+<pre><code>request.language <span class="o">=</span> <span class="t">Language</span><span class="t">::</span><span class="t">Spanish</span>
+<span class="c"># or</span>
+request.language <span class="o">=</span> [
+  <span class="t">Language</span><span class="t">::</span><span class="t">English</span>,
+  <span class="t">Language</span><span class="t">::</span><span class="t">French</span>,
+  <span class="t">Language</span><span class="t">::</span><span class="t">German</span>,
+]</code></pre>
+
+<p>See the <a href="http://ocrsdk.com/documentation/specifications/recognition-languages/" target="_blank">list of available recognition languages</a>.</p>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <code><a href="../../Abbyy/Language.html#English">Language::English</a></code>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_business_card_request.cr#L36" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="language&#61;&#40;language:Language|Array&#40;Language&#41;|Nil&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>language=</strong>(language : <a href="../../Abbyy/Language.html">Language</a> | Array(<a href="../../Abbyy/Language.html">Language</a>) | Nil)
+
+        <a class="method-permalink" href="#language%3D%28language%3ALanguage%7CArray%28Language%29%7CNil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies recognition language of the document. This parameter can contain
+one language or several languages in an array,
+for example:</p>
+
+<pre><code>request.language <span class="o">=</span> <span class="t">Language</span><span class="t">::</span><span class="t">Spanish</span>
+<span class="c"># or</span>
+request.language <span class="o">=</span> [
+  <span class="t">Language</span><span class="t">::</span><span class="t">English</span>,
+  <span class="t">Language</span><span class="t">::</span><span class="t">French</span>,
+  <span class="t">Language</span><span class="t">::</span><span class="t">German</span>,
+]</code></pre>
+
+<p>See the <a href="http://ocrsdk.com/documentation/specifications/recognition-languages/" target="_blank">list of available recognition languages</a>.</p>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <code><a href="../../Abbyy/Language.html#English">Language::English</a></code>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_business_card_request.cr#L36" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="params:Hash&#40;String,String&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>params</strong> : Hash(<a href="../../String.html">String</a>, <a href="../../String.html">String</a>)
+
+        <a class="method-permalink" href="#params%3AHash%28String%2CString%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_business_card_request.cr#L179" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="pdf_password:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>pdf_password</strong> : <a href="../../String.html">String</a>?
+
+        <a class="method-permalink" href="#pdf_password%3AString%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Contains a password for accessing password-protected images in PDF format.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_business_card_request.cr#L116" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="pdf_password&#61;&#40;pdf_password:String?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>pdf_password=</strong>(pdf_password : <a href="../../String.html">String</a>?)
+
+        <a class="method-permalink" href="#pdf_password%3D%28pdf_password%3AString%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Contains a password for accessing password-protected images in PDF format.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_business_card_request.cr#L116" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="pdf_write_field_components:Bool?-instance-method">
+      <div class="signature">
+        
+        def <strong>pdf_write_field_components</strong> : Bool?
+
+        <a class="method-permalink" href="#pdf_write_field_components%3ABool%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies whether the field components should be written to an output file
+in XML format. For example, for the <strong>Name</strong> field the components can
+include first name and last name, returned separately.</p>
+
+<p>This parameter can be used only if the <code><a href="../../Abbyy/Models/ProcessBusinessCardRequest.html#export_format%3AExportFormat%3F-instance-method">#export_format</a></code> parameter is set
+to xml. The parameter can have one of the following values:</p>
+
+<ul><li><strong>true</strong></li><li><strong>false</strong></li></ul>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <strong>false</strong>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_business_card_request.cr#L107" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="pdf_write_field_components&#61;&#40;pdf_write_field_components:Bool?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>pdf_write_field_components=</strong>(pdf_write_field_components : Bool?)
+
+        <a class="method-permalink" href="#pdf_write_field_components%3D%28pdf_write_field_components%3ABool%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies whether the field components should be written to an output file
+in XML format. For example, for the <strong>Name</strong> field the components can
+include first name and last name, returned separately.</p>
+
+<p>This parameter can be used only if the <code><a href="../../Abbyy/Models/ProcessBusinessCardRequest.html#export_format%3AExportFormat%3F-instance-method">#export_format</a></code> parameter is set
+to xml. The parameter can have one of the following values:</p>
+
+<ul><li><strong>true</strong></li><li><strong>false</strong></li></ul>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <strong>false</strong>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_business_card_request.cr#L107" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="xml_write_extended_character_info:Bool?-instance-method">
+      <div class="signature">
+        
+        def <strong>xml_write_extended_character_info</strong> : Bool?
+
+        <a class="method-permalink" href="#xml_write_extended_character_info%3ABool%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies whether the additional information on the recognized characters
+(e.g. whether the character is recognized uncertainly) should be written
+to an output file in XML format. This parameter can be used only if the
+<code><a href="../../Abbyy/Models/ProcessBusinessCardRequest.html#export_format%3AExportFormat%3F-instance-method">#export_format</a></code> parameter is set to xml.
+The parameter can have one of the following values:</p>
+
+<ul><li><strong>true</strong></li><li><strong>false</strong></li></ul>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <strong>false</strong>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_business_card_request.cr#L93" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="xml_write_extended_character_info&#61;&#40;xml_write_extended_character_info:Bool?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>xml_write_extended_character_info=</strong>(xml_write_extended_character_info : Bool?)
+
+        <a class="method-permalink" href="#xml_write_extended_character_info%3D%28xml_write_extended_character_info%3ABool%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies whether the additional information on the recognized characters
+(e.g. whether the character is recognized uncertainly) should be written
+to an output file in XML format. This parameter can be used only if the
+<code><a href="../../Abbyy/Models/ProcessBusinessCardRequest.html#export_format%3AExportFormat%3F-instance-method">#export_format</a></code> parameter is set to xml.
+The parameter can have one of the following values:</p>
+
+<ul><li><strong>true</strong></li><li><strong>false</strong></li></ul>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <strong>false</strong>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_business_card_request.cr#L93" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

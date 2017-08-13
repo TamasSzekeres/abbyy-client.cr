@@ -1,0 +1,5508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/TamasSzekeres/abbyy-client.cr">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../js/doc.js"></script>
+  <title>Abbyy::Language - github.com/TamasSzekeres/abbyy-client.cr</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="../index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent open current" data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy" data-name="abbyy">
+      <a href="../Abbyy.html">Abbyy</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/ApplicationType" data-name="abbyy::applicationtype">
+      <a href="../Abbyy/ApplicationType.html">ApplicationType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/BarcodeType" data-name="abbyy::barcodetype">
+      <a href="../Abbyy/BarcodeType.html">BarcodeType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/CheckmarkType" data-name="abbyy::checkmarktype">
+      <a href="../Abbyy/CheckmarkType.html">CheckmarkType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Client" data-name="abbyy::client">
+      <a href="../Abbyy/Client.html">Client</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Country" data-name="abbyy::country">
+      <a href="../Abbyy/Country.html">Country</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/ExportFormat" data-name="abbyy::exportformat">
+      <a href="../Abbyy/ExportFormat.html">ExportFormat</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/FieldMarkingType" data-name="abbyy::fieldmarkingtype">
+      <a href="../Abbyy/FieldMarkingType.html">FieldMarkingType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/ImageSource" data-name="abbyy::imagesource">
+      <a href="../Abbyy/ImageSource.html">ImageSource</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Language" data-name="abbyy::language">
+      <a href="../Abbyy/Language.html">Language</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models" data-name="abbyy::models">
+      <a href="../Abbyy/Models.html">Models</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/BaseModel" data-name="abbyy::models::basemodel">
+      <a href="../Abbyy/Models/BaseModel.html">BaseModel</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/BaseRequest" data-name="abbyy::models::baserequest">
+      <a href="../Abbyy/Models/BaseRequest.html">BaseRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/BaseResponse" data-name="abbyy::models::baseresponse">
+      <a href="../Abbyy/Models/BaseResponse.html">BaseResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/DeleteTaskRequest" data-name="abbyy::models::deletetaskrequest">
+      <a href="../Abbyy/Models/DeleteTaskRequest.html">DeleteTaskRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/DeleteTaskResponse" data-name="abbyy::models::deletetaskresponse">
+      <a href="../Abbyy/Models/DeleteTaskResponse.html">DeleteTaskResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/FileBody" data-name="abbyy::models::filebody">
+      <a href="../Abbyy/Models/FileBody.html">FileBody</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/GetApplicationInfoResponse" data-name="abbyy::models::getapplicationinforesponse">
+      <a href="../Abbyy/Models/GetApplicationInfoResponse.html">GetApplicationInfoResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/GetTaskStatusRequest" data-name="abbyy::models::gettaskstatusrequest">
+      <a href="../Abbyy/Models/GetTaskStatusRequest.html">GetTaskStatusRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/GetTaskStatusResponse" data-name="abbyy::models::gettaskstatusresponse">
+      <a href="../Abbyy/Models/GetTaskStatusResponse.html">GetTaskStatusResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ListTasksRequest" data-name="abbyy::models::listtasksrequest">
+      <a href="../Abbyy/Models/ListTasksRequest.html">ListTasksRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ListTasksResponse" data-name="abbyy::models::listtasksresponse">
+      <a href="../Abbyy/Models/ListTasksResponse.html">ListTasksResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBarcodeFieldRequest" data-name="abbyy::models::processbarcodefieldrequest">
+      <a href="../Abbyy/Models/ProcessBarcodeFieldRequest.html">ProcessBarcodeFieldRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBarcodeFieldResponse" data-name="abbyy::models::processbarcodefieldresponse">
+      <a href="../Abbyy/Models/ProcessBarcodeFieldResponse.html">ProcessBarcodeFieldResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBusinessCardRequest" data-name="abbyy::models::processbusinesscardrequest">
+      <a href="../Abbyy/Models/ProcessBusinessCardRequest.html">ProcessBusinessCardRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBusinessCardResponse" data-name="abbyy::models::processbusinesscardresponse">
+      <a href="../Abbyy/Models/ProcessBusinessCardResponse.html">ProcessBusinessCardResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessCheckmarkFieldRequest" data-name="abbyy::models::processcheckmarkfieldrequest">
+      <a href="../Abbyy/Models/ProcessCheckmarkFieldRequest.html">ProcessCheckmarkFieldRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessCheckmarkFieldResponse" data-name="abbyy::models::processcheckmarkfieldresponse">
+      <a href="../Abbyy/Models/ProcessCheckmarkFieldResponse.html">ProcessCheckmarkFieldResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessDocumentRequest" data-name="abbyy::models::processdocumentrequest">
+      <a href="../Abbyy/Models/ProcessDocumentRequest.html">ProcessDocumentRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessDocumentResponse" data-name="abbyy::models::processdocumentresponse">
+      <a href="../Abbyy/Models/ProcessDocumentResponse.html">ProcessDocumentResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessFieldsRequest" data-name="abbyy::models::processfieldsrequest">
+      <a href="../Abbyy/Models/ProcessFieldsRequest.html">ProcessFieldsRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessFieldsResponse" data-name="abbyy::models::processfieldsresponse">
+      <a href="../Abbyy/Models/ProcessFieldsResponse.html">ProcessFieldsResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessImageRequest" data-name="abbyy::models::processimagerequest">
+      <a href="../Abbyy/Models/ProcessImageRequest.html">ProcessImageRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessImageResponse" data-name="abbyy::models::processimageresponse">
+      <a href="../Abbyy/Models/ProcessImageResponse.html">ProcessImageResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessMRZRequest" data-name="abbyy::models::processmrzrequest">
+      <a href="../Abbyy/Models/ProcessMRZRequest.html">ProcessMRZRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessMRZResponse" data-name="abbyy::models::processmrzresponse">
+      <a href="../Abbyy/Models/ProcessMRZResponse.html">ProcessMRZResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessReceiptRequest" data-name="abbyy::models::processreceiptrequest">
+      <a href="../Abbyy/Models/ProcessReceiptRequest.html">ProcessReceiptRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessReceiptResponse" data-name="abbyy::models::processreceiptresponse">
+      <a href="../Abbyy/Models/ProcessReceiptResponse.html">ProcessReceiptResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessTextFieldRequest" data-name="abbyy::models::processtextfieldrequest">
+      <a href="../Abbyy/Models/ProcessTextFieldRequest.html">ProcessTextFieldRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessTextFieldResponse" data-name="abbyy::models::processtextfieldresponse">
+      <a href="../Abbyy/Models/ProcessTextFieldResponse.html">ProcessTextFieldResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/Region" data-name="abbyy::models::region">
+      <a href="../Abbyy/Models/Region.html">Region</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/SubmitImageRequest" data-name="abbyy::models::submitimagerequest">
+      <a href="../Abbyy/Models/SubmitImageRequest.html">SubmitImageRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/SubmitImageResponse" data-name="abbyy::models::submitimageresponse">
+      <a href="../Abbyy/Models/SubmitImageResponse.html">SubmitImageResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/Task" data-name="abbyy::models::task">
+      <a href="../Abbyy/Models/Task.html">Task</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/TaskIdRequest" data-name="abbyy::models::taskidrequest">
+      <a href="../Abbyy/Models/TaskIdRequest.html">TaskIdRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/TaskResponse" data-name="abbyy::models::taskresponse">
+      <a href="../Abbyy/Models/TaskResponse.html">TaskResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/TaskResult" data-name="abbyy::models::taskresult">
+      <a href="../Abbyy/Models/TaskResult.html">TaskResult</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/PdfWriteTag" data-name="abbyy::pdfwritetag">
+      <a href="../Abbyy/PdfWriteTag.html">PdfWriteTag</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Profile" data-name="abbyy::profile">
+      <a href="../Abbyy/Profile.html">Profile</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/TaskStatus" data-name="abbyy::taskstatus">
+      <a href="../Abbyy/TaskStatus.html">TaskStatus</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/TextType" data-name="abbyy::texttype">
+      <a href="../Abbyy/TextType.html">TextType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/WritingStyle" data-name="abbyy::writingstyle">
+      <a href="../Abbyy/WritingStyle.html">WritingStyle</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/String" data-name="string">
+      <a href="../String.html">String</a>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">enum</span> Abbyy::Language
+
+</h1>
+
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>Supported languages.</p>
+
+<p><strong>See</strong> <a href="http://ocrsdk.com/documentation/specifications/recognition-languages/" target="_blank">http://ocrsdk.com/documentation/specifications/recognition-languages/</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L5" target="_blank">abbyy/language.cr</a>
+    
+    <br/>
+  
+
+
+
+  
+    <h2>Enum Members</h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="Abkhaz">
+        <strong>Abkhaz</strong> = <code><span class="n">0</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Adyghe">
+        <strong>Adyghe</strong> = <code><span class="n">1</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Afrikaans">
+        <strong>Afrikaans</strong> = <code><span class="n">2</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Agul">
+        <strong>Agul</strong> = <code><span class="n">3</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Albanian">
+        <strong>Albanian</strong> = <code><span class="n">4</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Altaic">
+        <strong>Altaic</strong> = <code><span class="n">5</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Arabic">
+        <strong>Arabic</strong> = <code><span class="n">6</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="ArmenianEastern">
+        <strong>ArmenianEastern</strong> = <code><span class="n">7</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="ArmenianGrabar">
+        <strong>ArmenianGrabar</strong> = <code><span class="n">8</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="ArmenianWestern">
+        <strong>ArmenianWestern</strong> = <code><span class="n">9</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Awar">
+        <strong>Awar</strong> = <code><span class="n">10</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Aymara">
+        <strong>Aymara</strong> = <code><span class="n">11</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="AzeriCyrillic">
+        <strong>AzeriCyrillic</strong> = <code><span class="n">12</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="AzeriLatin">
+        <strong>AzeriLatin</strong> = <code><span class="n">13</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Bashkir">
+        <strong>Bashkir</strong> = <code><span class="n">14</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Basque">
+        <strong>Basque</strong> = <code><span class="n">15</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Belarusian">
+        <strong>Belarusian</strong> = <code><span class="n">16</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Bemba">
+        <strong>Bemba</strong> = <code><span class="n">17</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Blackfoot">
+        <strong>Blackfoot</strong> = <code><span class="n">18</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Breton">
+        <strong>Breton</strong> = <code><span class="n">19</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Bugotu">
+        <strong>Bugotu</strong> = <code><span class="n">20</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Bulgarian">
+        <strong>Bulgarian</strong> = <code><span class="n">21</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Buryat">
+        <strong>Buryat</strong> = <code><span class="n">22</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Catalan">
+        <strong>Catalan</strong> = <code><span class="n">23</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Chamorro">
+        <strong>Chamorro</strong> = <code><span class="n">24</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Chechen">
+        <strong>Chechen</strong> = <code><span class="n">25</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="ChinesePRC">
+        <strong>ChinesePRC</strong> = <code><span class="n">26</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="ChineseTaiwan">
+        <strong>ChineseTaiwan</strong> = <code><span class="n">27</span></code>
+      </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Chinese Simplified</p>
+      </dd>
+      
+    
+      <dt class="entry-const" id="Chukcha">
+        <strong>Chukcha</strong> = <code><span class="n">28</span></code>
+      </dt>
+      
+      <dd class="entry-const-doc">
+        <p>Chinese Traditional</p>
+      </dd>
+      
+    
+      <dt class="entry-const" id="Chuvash">
+        <strong>Chuvash</strong> = <code><span class="n">29</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="CMC7">
+        <strong>CMC7</strong> = <code><span class="n">30</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Corsican">
+        <strong>Corsican</strong> = <code><span class="n">31</span></code>
+      </dt>
+      
+      <dd class="entry-const-doc">
+        <p>For MICR CMC-7 text type</p>
+      </dd>
+      
+    
+      <dt class="entry-const" id="CrimeanTatar">
+        <strong>CrimeanTatar</strong> = <code><span class="n">32</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Croatian">
+        <strong>Croatian</strong> = <code><span class="n">33</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Crow">
+        <strong>Crow</strong> = <code><span class="n">34</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Czech">
+        <strong>Czech</strong> = <code><span class="n">35</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Danish">
+        <strong>Danish</strong> = <code><span class="n">36</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Dargwa">
+        <strong>Dargwa</strong> = <code><span class="n">37</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Digits">
+        <strong>Digits</strong> = <code><span class="n">38</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Dungan">
+        <strong>Dungan</strong> = <code><span class="n">39</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Dutch">
+        <strong>Dutch</strong> = <code><span class="n">40</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DutchBelgian">
+        <strong>DutchBelgian</strong> = <code><span class="n">41</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="E13B">
+        <strong>E13B</strong> = <code><span class="n">42</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="English">
+        <strong>English</strong> = <code><span class="n">43</span></code>
+      </dt>
+      
+      <dd class="entry-const-doc">
+        <p>For MICR (E-13B) text type</p>
+      </dd>
+      
+    
+      <dt class="entry-const" id="EskimoCyrillic">
+        <strong>EskimoCyrillic</strong> = <code><span class="n">44</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="EskimoLatin">
+        <strong>EskimoLatin</strong> = <code><span class="n">45</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Esperanto">
+        <strong>Esperanto</strong> = <code><span class="n">46</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Estonian">
+        <strong>Estonian</strong> = <code><span class="n">47</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Even">
+        <strong>Even</strong> = <code><span class="n">48</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Evenki">
+        <strong>Evenki</strong> = <code><span class="n">49</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Farsi">
+        <strong>Farsi</strong> = <code><span class="n">50</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Faeroese">
+        <strong>Faeroese</strong> = <code><span class="n">51</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Fijian">
+        <strong>Fijian</strong> = <code><span class="n">52</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Finnish">
+        <strong>Finnish</strong> = <code><span class="n">53</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="French">
+        <strong>French</strong> = <code><span class="n">54</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Frisian">
+        <strong>Frisian</strong> = <code><span class="n">55</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Friulian">
+        <strong>Friulian</strong> = <code><span class="n">56</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="GaelicScottish">
+        <strong>GaelicScottish</strong> = <code><span class="n">57</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Gagauz">
+        <strong>Gagauz</strong> = <code><span class="n">58</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Galician">
+        <strong>Galician</strong> = <code><span class="n">59</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Ganda">
+        <strong>Ganda</strong> = <code><span class="n">60</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="German">
+        <strong>German</strong> = <code><span class="n">61</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="GermanLuxembourg">
+        <strong>GermanLuxembourg</strong> = <code><span class="n">62</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="GermanNewSpelling">
+        <strong>GermanNewSpelling</strong> = <code><span class="n">63</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Greek">
+        <strong>Greek</strong> = <code><span class="n">64</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Guarani">
+        <strong>Guarani</strong> = <code><span class="n">65</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Hani">
+        <strong>Hani</strong> = <code><span class="n">66</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Hausa">
+        <strong>Hausa</strong> = <code><span class="n">67</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Hawaiian">
+        <strong>Hawaiian</strong> = <code><span class="n">68</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Hebrew">
+        <strong>Hebrew</strong> = <code><span class="n">69</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Hungarian">
+        <strong>Hungarian</strong> = <code><span class="n">70</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Icelandic">
+        <strong>Icelandic</strong> = <code><span class="n">71</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Ido">
+        <strong>Ido</strong> = <code><span class="n">72</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Indonesian">
+        <strong>Indonesian</strong> = <code><span class="n">73</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Ingush">
+        <strong>Ingush</strong> = <code><span class="n">74</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Interlingua">
+        <strong>Interlingua</strong> = <code><span class="n">75</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Irish">
+        <strong>Irish</strong> = <code><span class="n">76</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Italian">
+        <strong>Italian</strong> = <code><span class="n">77</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Japanese">
+        <strong>Japanese</strong> = <code><span class="n">78</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Kabardian">
+        <strong>Kabardian</strong> = <code><span class="n">79</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Kalmyk">
+        <strong>Kalmyk</strong> = <code><span class="n">80</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="KarachayBalkar">
+        <strong>KarachayBalkar</strong> = <code><span class="n">81</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Karakalpak">
+        <strong>Karakalpak</strong> = <code><span class="n">82</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Kasub">
+        <strong>Kasub</strong> = <code><span class="n">83</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Kawa">
+        <strong>Kawa</strong> = <code><span class="n">84</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Kazakh">
+        <strong>Kazakh</strong> = <code><span class="n">85</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Khakas">
+        <strong>Khakas</strong> = <code><span class="n">86</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Khanty">
+        <strong>Khanty</strong> = <code><span class="n">87</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Kikuyu">
+        <strong>Kikuyu</strong> = <code><span class="n">88</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Kirgiz">
+        <strong>Kirgiz</strong> = <code><span class="n">89</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Kongo">
+        <strong>Kongo</strong> = <code><span class="n">90</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Korean">
+        <strong>Korean</strong> = <code><span class="n">91</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="KoreanHangul">
+        <strong>KoreanHangul</strong> = <code><span class="n">92</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Koryak">
+        <strong>Koryak</strong> = <code><span class="n">93</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Kpelle">
+        <strong>Kpelle</strong> = <code><span class="n">94</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Kumyk">
+        <strong>Kumyk</strong> = <code><span class="n">95</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Kurdish">
+        <strong>Kurdish</strong> = <code><span class="n">96</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Lak">
+        <strong>Lak</strong> = <code><span class="n">97</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Lappish">
+        <strong>Lappish</strong> = <code><span class="n">98</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Latin">
+        <strong>Latin</strong> = <code><span class="n">99</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Latvian">
+        <strong>Latvian</strong> = <code><span class="n">100</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="LatvianGothic">
+        <strong>LatvianGothic</strong> = <code><span class="n">101</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Lezgin">
+        <strong>Lezgin</strong> = <code><span class="n">102</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Lithuanian">
+        <strong>Lithuanian</strong> = <code><span class="n">103</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Luba">
+        <strong>Luba</strong> = <code><span class="n">104</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Macedonian">
+        <strong>Macedonian</strong> = <code><span class="n">105</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Malagasy">
+        <strong>Malagasy</strong> = <code><span class="n">106</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Malay">
+        <strong>Malay</strong> = <code><span class="n">107</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Malinke">
+        <strong>Malinke</strong> = <code><span class="n">108</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Maltese">
+        <strong>Maltese</strong> = <code><span class="n">109</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Mansi">
+        <strong>Mansi</strong> = <code><span class="n">110</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Maori">
+        <strong>Maori</strong> = <code><span class="n">111</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Mari">
+        <strong>Mari</strong> = <code><span class="n">112</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Maya">
+        <strong>Maya</strong> = <code><span class="n">113</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Miao">
+        <strong>Miao</strong> = <code><span class="n">114</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Minankabaw">
+        <strong>Minankabaw</strong> = <code><span class="n">115</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Mohawk">
+        <strong>Mohawk</strong> = <code><span class="n">116</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Mongol">
+        <strong>Mongol</strong> = <code><span class="n">117</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Mordvin">
+        <strong>Mordvin</strong> = <code><span class="n">118</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Nahuatl">
+        <strong>Nahuatl</strong> = <code><span class="n">119</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Nenets">
+        <strong>Nenets</strong> = <code><span class="n">120</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Nivkh">
+        <strong>Nivkh</strong> = <code><span class="n">121</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Nogay">
+        <strong>Nogay</strong> = <code><span class="n">122</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Norwegian">
+        <strong>Norwegian</strong> = <code><span class="n">123</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="NorwegianBokmal">
+        <strong>NorwegianBokmal</strong> = <code><span class="n">124</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="NorwegianNynorsk">
+        <strong>NorwegianNynorsk</strong> = <code><span class="n">125</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Nyanja">
+        <strong>Nyanja</strong> = <code><span class="n">126</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Occidental">
+        <strong>Occidental</strong> = <code><span class="n">127</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Ojibway">
+        <strong>Ojibway</strong> = <code><span class="n">128</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="OldEnglish">
+        <strong>OldEnglish</strong> = <code><span class="n">129</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="OldFrench">
+        <strong>OldFrench</strong> = <code><span class="n">130</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="OldGerman">
+        <strong>OldGerman</strong> = <code><span class="n">131</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="OldItalian">
+        <strong>OldItalian</strong> = <code><span class="n">132</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="OldSlavonic">
+        <strong>OldSlavonic</strong> = <code><span class="n">133</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="OldSpanish">
+        <strong>OldSpanish</strong> = <code><span class="n">134</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Ossetic">
+        <strong>Ossetic</strong> = <code><span class="n">135</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Papiamento">
+        <strong>Papiamento</strong> = <code><span class="n">136</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="PidginEnglish">
+        <strong>PidginEnglish</strong> = <code><span class="n">137</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Polish">
+        <strong>Polish</strong> = <code><span class="n">138</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="PortugueseBrazilian">
+        <strong>PortugueseBrazilian</strong> = <code><span class="n">139</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="PortugueseStandard">
+        <strong>PortugueseStandard</strong> = <code><span class="n">140</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Provencal">
+        <strong>Provencal</strong> = <code><span class="n">141</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Quechua">
+        <strong>Quechua</strong> = <code><span class="n">142</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="RhaetoRomanic">
+        <strong>RhaetoRomanic</strong> = <code><span class="n">143</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Romanian">
+        <strong>Romanian</strong> = <code><span class="n">144</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="RomanianMoldavia">
+        <strong>RomanianMoldavia</strong> = <code><span class="n">145</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Romany">
+        <strong>Romany</strong> = <code><span class="n">146</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Ruanda">
+        <strong>Ruanda</strong> = <code><span class="n">147</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Rundi">
+        <strong>Rundi</strong> = <code><span class="n">148</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="RussianOldSpelling">
+        <strong>RussianOldSpelling</strong> = <code><span class="n">149</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Russian">
+        <strong>Russian</strong> = <code><span class="n">150</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Samoan">
+        <strong>Samoan</strong> = <code><span class="n">151</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Selkup">
+        <strong>Selkup</strong> = <code><span class="n">152</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="SerbianCyrillic">
+        <strong>SerbianCyrillic</strong> = <code><span class="n">153</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="SerbianLatin">
+        <strong>SerbianLatin</strong> = <code><span class="n">154</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Shona">
+        <strong>Shona</strong> = <code><span class="n">155</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Sioux">
+        <strong>Sioux</strong> = <code><span class="n">156</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Slovak">
+        <strong>Slovak</strong> = <code><span class="n">157</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Slovenian">
+        <strong>Slovenian</strong> = <code><span class="n">158</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Somali">
+        <strong>Somali</strong> = <code><span class="n">159</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Sorbian">
+        <strong>Sorbian</strong> = <code><span class="n">160</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Sotho">
+        <strong>Sotho</strong> = <code><span class="n">161</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Spanish">
+        <strong>Spanish</strong> = <code><span class="n">162</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Sunda">
+        <strong>Sunda</strong> = <code><span class="n">163</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Swahili">
+        <strong>Swahili</strong> = <code><span class="n">164</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Swazi">
+        <strong>Swazi</strong> = <code><span class="n">165</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Swedish">
+        <strong>Swedish</strong> = <code><span class="n">166</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Tabassaran">
+        <strong>Tabassaran</strong> = <code><span class="n">167</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Tagalog">
+        <strong>Tagalog</strong> = <code><span class="n">168</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Tahitian">
+        <strong>Tahitian</strong> = <code><span class="n">169</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Tajik">
+        <strong>Tajik</strong> = <code><span class="n">170</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Tatar">
+        <strong>Tatar</strong> = <code><span class="n">171</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Thai">
+        <strong>Thai</strong> = <code><span class="n">172</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Tinpo">
+        <strong>Tinpo</strong> = <code><span class="n">173</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Tongan">
+        <strong>Tongan</strong> = <code><span class="n">174</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Tswana">
+        <strong>Tswana</strong> = <code><span class="n">175</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Tun">
+        <strong>Tun</strong> = <code><span class="n">176</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Turkish">
+        <strong>Turkish</strong> = <code><span class="n">177</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Turkmen">
+        <strong>Turkmen</strong> = <code><span class="n">178</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Tuvin">
+        <strong>Tuvin</strong> = <code><span class="n">179</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Udmurt">
+        <strong>Udmurt</strong> = <code><span class="n">180</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="UighurCyrillic">
+        <strong>UighurCyrillic</strong> = <code><span class="n">181</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="UighurLatin">
+        <strong>UighurLatin</strong> = <code><span class="n">182</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Ukrainian">
+        <strong>Ukrainian</strong> = <code><span class="n">183</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="UzbekCyrillic">
+        <strong>UzbekCyrillic</strong> = <code><span class="n">184</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="UzbekLatin">
+        <strong>UzbekLatin</strong> = <code><span class="n">185</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Vietnamese">
+        <strong>Vietnamese</strong> = <code><span class="n">186</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Visayan">
+        <strong>Visayan</strong> = <code><span class="n">187</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Welsh">
+        <strong>Welsh</strong> = <code><span class="n">188</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Wolof">
+        <strong>Wolof</strong> = <code><span class="n">189</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Xhosa">
+        <strong>Xhosa</strong> = <code><span class="n">190</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Yakut">
+        <strong>Yakut</strong> = <code><span class="n">191</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Yiddish">
+        <strong>Yiddish</strong> = <code><span class="n">192</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Zapotec">
+        <strong>Zapotec</strong> = <code><span class="n">193</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="Zulu">
+        <strong>Zulu</strong> = <code><span class="n">194</span></code>
+      </dt>
+      
+    
+  </dl>
+
+
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#abkhaz%3F-instance-method" class="signature"><strong>#abkhaz?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#adyghe%3F-instance-method" class="signature"><strong>#adyghe?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#afrikaans%3F-instance-method" class="signature"><strong>#afrikaans?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#agul%3F-instance-method" class="signature"><strong>#agul?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#albanian%3F-instance-method" class="signature"><strong>#albanian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#altaic%3F-instance-method" class="signature"><strong>#altaic?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#arabic%3F-instance-method" class="signature"><strong>#arabic?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#armenian_eastern%3F-instance-method" class="signature"><strong>#armenian_eastern?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#armenian_grabar%3F-instance-method" class="signature"><strong>#armenian_grabar?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#armenian_western%3F-instance-method" class="signature"><strong>#armenian_western?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#awar%3F-instance-method" class="signature"><strong>#awar?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#aymara%3F-instance-method" class="signature"><strong>#aymara?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#azeri_cyrillic%3F-instance-method" class="signature"><strong>#azeri_cyrillic?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#azeri_latin%3F-instance-method" class="signature"><strong>#azeri_latin?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#bashkir%3F-instance-method" class="signature"><strong>#bashkir?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#basque%3F-instance-method" class="signature"><strong>#basque?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#belarusian%3F-instance-method" class="signature"><strong>#belarusian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#bemba%3F-instance-method" class="signature"><strong>#bemba?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#blackfoot%3F-instance-method" class="signature"><strong>#blackfoot?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#breton%3F-instance-method" class="signature"><strong>#breton?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#bugotu%3F-instance-method" class="signature"><strong>#bugotu?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#bulgarian%3F-instance-method" class="signature"><strong>#bulgarian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#buryat%3F-instance-method" class="signature"><strong>#buryat?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#catalan%3F-instance-method" class="signature"><strong>#catalan?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#chamorro%3F-instance-method" class="signature"><strong>#chamorro?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#chechen%3F-instance-method" class="signature"><strong>#chechen?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#chinese_prc%3F-instance-method" class="signature"><strong>#chinese_prc?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#chinese_taiwan%3F-instance-method" class="signature"><strong>#chinese_taiwan?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#chukcha%3F-instance-method" class="signature"><strong>#chukcha?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#chuvash%3F-instance-method" class="signature"><strong>#chuvash?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#cmc7%3F-instance-method" class="signature"><strong>#cmc7?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#corsican%3F-instance-method" class="signature"><strong>#corsican?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#crimean_tatar%3F-instance-method" class="signature"><strong>#crimean_tatar?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#croatian%3F-instance-method" class="signature"><strong>#croatian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#crow%3F-instance-method" class="signature"><strong>#crow?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#czech%3F-instance-method" class="signature"><strong>#czech?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#danish%3F-instance-method" class="signature"><strong>#danish?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#dargwa%3F-instance-method" class="signature"><strong>#dargwa?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#digits%3F-instance-method" class="signature"><strong>#digits?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#dungan%3F-instance-method" class="signature"><strong>#dungan?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#dutch%3F-instance-method" class="signature"><strong>#dutch?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#dutch_belgian%3F-instance-method" class="signature"><strong>#dutch_belgian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#e13_b%3F-instance-method" class="signature"><strong>#e13_b?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#english%3F-instance-method" class="signature"><strong>#english?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#eskimo_cyrillic%3F-instance-method" class="signature"><strong>#eskimo_cyrillic?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#eskimo_latin%3F-instance-method" class="signature"><strong>#eskimo_latin?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#esperanto%3F-instance-method" class="signature"><strong>#esperanto?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#estonian%3F-instance-method" class="signature"><strong>#estonian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#even%3F-instance-method" class="signature"><strong>#even?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#evenki%3F-instance-method" class="signature"><strong>#evenki?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#faeroese%3F-instance-method" class="signature"><strong>#faeroese?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#farsi%3F-instance-method" class="signature"><strong>#farsi?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#fijian%3F-instance-method" class="signature"><strong>#fijian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#finnish%3F-instance-method" class="signature"><strong>#finnish?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#french%3F-instance-method" class="signature"><strong>#french?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#frisian%3F-instance-method" class="signature"><strong>#frisian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#friulian%3F-instance-method" class="signature"><strong>#friulian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#gaelic_scottish%3F-instance-method" class="signature"><strong>#gaelic_scottish?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#gagauz%3F-instance-method" class="signature"><strong>#gagauz?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#galician%3F-instance-method" class="signature"><strong>#galician?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ganda%3F-instance-method" class="signature"><strong>#ganda?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#german%3F-instance-method" class="signature"><strong>#german?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#german_luxembourg%3F-instance-method" class="signature"><strong>#german_luxembourg?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#german_new_spelling%3F-instance-method" class="signature"><strong>#german_new_spelling?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#greek%3F-instance-method" class="signature"><strong>#greek?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#guarani%3F-instance-method" class="signature"><strong>#guarani?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#hani%3F-instance-method" class="signature"><strong>#hani?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#hausa%3F-instance-method" class="signature"><strong>#hausa?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#hawaiian%3F-instance-method" class="signature"><strong>#hawaiian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#hebrew%3F-instance-method" class="signature"><strong>#hebrew?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#hungarian%3F-instance-method" class="signature"><strong>#hungarian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#icelandic%3F-instance-method" class="signature"><strong>#icelandic?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ido%3F-instance-method" class="signature"><strong>#ido?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#indonesian%3F-instance-method" class="signature"><strong>#indonesian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ingush%3F-instance-method" class="signature"><strong>#ingush?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#interlingua%3F-instance-method" class="signature"><strong>#interlingua?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#irish%3F-instance-method" class="signature"><strong>#irish?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#italian%3F-instance-method" class="signature"><strong>#italian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#japanese%3F-instance-method" class="signature"><strong>#japanese?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#kabardian%3F-instance-method" class="signature"><strong>#kabardian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#kalmyk%3F-instance-method" class="signature"><strong>#kalmyk?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#karachay_balkar%3F-instance-method" class="signature"><strong>#karachay_balkar?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#karakalpak%3F-instance-method" class="signature"><strong>#karakalpak?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#kasub%3F-instance-method" class="signature"><strong>#kasub?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#kawa%3F-instance-method" class="signature"><strong>#kawa?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#kazakh%3F-instance-method" class="signature"><strong>#kazakh?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#khakas%3F-instance-method" class="signature"><strong>#khakas?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#khanty%3F-instance-method" class="signature"><strong>#khanty?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#kikuyu%3F-instance-method" class="signature"><strong>#kikuyu?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#kirgiz%3F-instance-method" class="signature"><strong>#kirgiz?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#kongo%3F-instance-method" class="signature"><strong>#kongo?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#korean%3F-instance-method" class="signature"><strong>#korean?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#korean_hangul%3F-instance-method" class="signature"><strong>#korean_hangul?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#koryak%3F-instance-method" class="signature"><strong>#koryak?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#kpelle%3F-instance-method" class="signature"><strong>#kpelle?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#kumyk%3F-instance-method" class="signature"><strong>#kumyk?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#kurdish%3F-instance-method" class="signature"><strong>#kurdish?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#lak%3F-instance-method" class="signature"><strong>#lak?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#lappish%3F-instance-method" class="signature"><strong>#lappish?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#latin%3F-instance-method" class="signature"><strong>#latin?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#latvian%3F-instance-method" class="signature"><strong>#latvian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#latvian_gothic%3F-instance-method" class="signature"><strong>#latvian_gothic?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#lezgin%3F-instance-method" class="signature"><strong>#lezgin?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#lithuanian%3F-instance-method" class="signature"><strong>#lithuanian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#luba%3F-instance-method" class="signature"><strong>#luba?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#macedonian%3F-instance-method" class="signature"><strong>#macedonian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#malagasy%3F-instance-method" class="signature"><strong>#malagasy?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#malay%3F-instance-method" class="signature"><strong>#malay?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#malinke%3F-instance-method" class="signature"><strong>#malinke?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#maltese%3F-instance-method" class="signature"><strong>#maltese?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#mansi%3F-instance-method" class="signature"><strong>#mansi?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#maori%3F-instance-method" class="signature"><strong>#maori?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#mari%3F-instance-method" class="signature"><strong>#mari?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#maya%3F-instance-method" class="signature"><strong>#maya?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#miao%3F-instance-method" class="signature"><strong>#miao?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#minankabaw%3F-instance-method" class="signature"><strong>#minankabaw?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#mohawk%3F-instance-method" class="signature"><strong>#mohawk?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#mongol%3F-instance-method" class="signature"><strong>#mongol?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#mordvin%3F-instance-method" class="signature"><strong>#mordvin?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#nahuatl%3F-instance-method" class="signature"><strong>#nahuatl?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#nenets%3F-instance-method" class="signature"><strong>#nenets?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#nivkh%3F-instance-method" class="signature"><strong>#nivkh?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#nogay%3F-instance-method" class="signature"><strong>#nogay?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#norwegian%3F-instance-method" class="signature"><strong>#norwegian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#norwegian_bokmal%3F-instance-method" class="signature"><strong>#norwegian_bokmal?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#norwegian_nynorsk%3F-instance-method" class="signature"><strong>#norwegian_nynorsk?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#nyanja%3F-instance-method" class="signature"><strong>#nyanja?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#occidental%3F-instance-method" class="signature"><strong>#occidental?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ojibway%3F-instance-method" class="signature"><strong>#ojibway?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#old_english%3F-instance-method" class="signature"><strong>#old_english?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#old_french%3F-instance-method" class="signature"><strong>#old_french?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#old_german%3F-instance-method" class="signature"><strong>#old_german?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#old_italian%3F-instance-method" class="signature"><strong>#old_italian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#old_slavonic%3F-instance-method" class="signature"><strong>#old_slavonic?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#old_spanish%3F-instance-method" class="signature"><strong>#old_spanish?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ossetic%3F-instance-method" class="signature"><strong>#ossetic?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#papiamento%3F-instance-method" class="signature"><strong>#papiamento?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#pidgin_english%3F-instance-method" class="signature"><strong>#pidgin_english?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#polish%3F-instance-method" class="signature"><strong>#polish?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#portuguese_brazilian%3F-instance-method" class="signature"><strong>#portuguese_brazilian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#portuguese_standard%3F-instance-method" class="signature"><strong>#portuguese_standard?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#provencal%3F-instance-method" class="signature"><strong>#provencal?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#quechua%3F-instance-method" class="signature"><strong>#quechua?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#rhaeto_romanic%3F-instance-method" class="signature"><strong>#rhaeto_romanic?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#romanian%3F-instance-method" class="signature"><strong>#romanian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#romanian_moldavia%3F-instance-method" class="signature"><strong>#romanian_moldavia?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#romany%3F-instance-method" class="signature"><strong>#romany?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ruanda%3F-instance-method" class="signature"><strong>#ruanda?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#rundi%3F-instance-method" class="signature"><strong>#rundi?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#russian%3F-instance-method" class="signature"><strong>#russian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#russian_old_spelling%3F-instance-method" class="signature"><strong>#russian_old_spelling?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#samoan%3F-instance-method" class="signature"><strong>#samoan?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#selkup%3F-instance-method" class="signature"><strong>#selkup?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#serbian_cyrillic%3F-instance-method" class="signature"><strong>#serbian_cyrillic?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#serbian_latin%3F-instance-method" class="signature"><strong>#serbian_latin?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#shona%3F-instance-method" class="signature"><strong>#shona?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#sioux%3F-instance-method" class="signature"><strong>#sioux?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#slovak%3F-instance-method" class="signature"><strong>#slovak?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#slovenian%3F-instance-method" class="signature"><strong>#slovenian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#somali%3F-instance-method" class="signature"><strong>#somali?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#sorbian%3F-instance-method" class="signature"><strong>#sorbian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#sotho%3F-instance-method" class="signature"><strong>#sotho?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#spanish%3F-instance-method" class="signature"><strong>#spanish?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#sunda%3F-instance-method" class="signature"><strong>#sunda?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#swahili%3F-instance-method" class="signature"><strong>#swahili?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#swazi%3F-instance-method" class="signature"><strong>#swazi?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#swedish%3F-instance-method" class="signature"><strong>#swedish?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tabassaran%3F-instance-method" class="signature"><strong>#tabassaran?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tagalog%3F-instance-method" class="signature"><strong>#tagalog?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tahitian%3F-instance-method" class="signature"><strong>#tahitian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tajik%3F-instance-method" class="signature"><strong>#tajik?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tatar%3F-instance-method" class="signature"><strong>#tatar?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#thai%3F-instance-method" class="signature"><strong>#thai?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tinpo%3F-instance-method" class="signature"><strong>#tinpo?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tongan%3F-instance-method" class="signature"><strong>#tongan?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tswana%3F-instance-method" class="signature"><strong>#tswana?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tun%3F-instance-method" class="signature"><strong>#tun?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#turkish%3F-instance-method" class="signature"><strong>#turkish?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#turkmen%3F-instance-method" class="signature"><strong>#turkmen?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tuvin%3F-instance-method" class="signature"><strong>#tuvin?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#udmurt%3F-instance-method" class="signature"><strong>#udmurt?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#uighur_cyrillic%3F-instance-method" class="signature"><strong>#uighur_cyrillic?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#uighur_latin%3F-instance-method" class="signature"><strong>#uighur_latin?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ukrainian%3F-instance-method" class="signature"><strong>#ukrainian?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#uzbek_cyrillic%3F-instance-method" class="signature"><strong>#uzbek_cyrillic?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#uzbek_latin%3F-instance-method" class="signature"><strong>#uzbek_latin?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#vietnamese%3F-instance-method" class="signature"><strong>#vietnamese?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#visayan%3F-instance-method" class="signature"><strong>#visayan?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#welsh%3F-instance-method" class="signature"><strong>#welsh?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#wolof%3F-instance-method" class="signature"><strong>#wolof?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#xhosa%3F-instance-method" class="signature"><strong>#xhosa?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#yakut%3F-instance-method" class="signature"><strong>#yakut?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#yiddish%3F-instance-method" class="signature"><strong>#yiddish?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#zapotec%3F-instance-method" class="signature"><strong>#zapotec?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#zulu%3F-instance-method" class="signature"><strong>#zulu?</strong></a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="abkhaz?-instance-method">
+      <div class="signature">
+        
+        def <strong>abkhaz?</strong>
+
+        <a class="method-permalink" href="#abkhaz%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L6" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="adyghe?-instance-method">
+      <div class="signature">
+        
+        def <strong>adyghe?</strong>
+
+        <a class="method-permalink" href="#adyghe%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L7" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="afrikaans?-instance-method">
+      <div class="signature">
+        
+        def <strong>afrikaans?</strong>
+
+        <a class="method-permalink" href="#afrikaans%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L8" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="agul?-instance-method">
+      <div class="signature">
+        
+        def <strong>agul?</strong>
+
+        <a class="method-permalink" href="#agul%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L9" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="albanian?-instance-method">
+      <div class="signature">
+        
+        def <strong>albanian?</strong>
+
+        <a class="method-permalink" href="#albanian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="altaic?-instance-method">
+      <div class="signature">
+        
+        def <strong>altaic?</strong>
+
+        <a class="method-permalink" href="#altaic%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L11" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="arabic?-instance-method">
+      <div class="signature">
+        
+        def <strong>arabic?</strong>
+
+        <a class="method-permalink" href="#arabic%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="armenian_eastern?-instance-method">
+      <div class="signature">
+        
+        def <strong>armenian_eastern?</strong>
+
+        <a class="method-permalink" href="#armenian_eastern%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="armenian_grabar?-instance-method">
+      <div class="signature">
+        
+        def <strong>armenian_grabar?</strong>
+
+        <a class="method-permalink" href="#armenian_grabar%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L14" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="armenian_western?-instance-method">
+      <div class="signature">
+        
+        def <strong>armenian_western?</strong>
+
+        <a class="method-permalink" href="#armenian_western%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L15" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="awar?-instance-method">
+      <div class="signature">
+        
+        def <strong>awar?</strong>
+
+        <a class="method-permalink" href="#awar%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L16" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="aymara?-instance-method">
+      <div class="signature">
+        
+        def <strong>aymara?</strong>
+
+        <a class="method-permalink" href="#aymara%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L17" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="azeri_cyrillic?-instance-method">
+      <div class="signature">
+        
+        def <strong>azeri_cyrillic?</strong>
+
+        <a class="method-permalink" href="#azeri_cyrillic%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L18" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="azeri_latin?-instance-method">
+      <div class="signature">
+        
+        def <strong>azeri_latin?</strong>
+
+        <a class="method-permalink" href="#azeri_latin%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L19" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="bashkir?-instance-method">
+      <div class="signature">
+        
+        def <strong>bashkir?</strong>
+
+        <a class="method-permalink" href="#bashkir%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L20" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="basque?-instance-method">
+      <div class="signature">
+        
+        def <strong>basque?</strong>
+
+        <a class="method-permalink" href="#basque%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L21" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="belarusian?-instance-method">
+      <div class="signature">
+        
+        def <strong>belarusian?</strong>
+
+        <a class="method-permalink" href="#belarusian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L22" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="bemba?-instance-method">
+      <div class="signature">
+        
+        def <strong>bemba?</strong>
+
+        <a class="method-permalink" href="#bemba%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L23" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="blackfoot?-instance-method">
+      <div class="signature">
+        
+        def <strong>blackfoot?</strong>
+
+        <a class="method-permalink" href="#blackfoot%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L24" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="breton?-instance-method">
+      <div class="signature">
+        
+        def <strong>breton?</strong>
+
+        <a class="method-permalink" href="#breton%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L25" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="bugotu?-instance-method">
+      <div class="signature">
+        
+        def <strong>bugotu?</strong>
+
+        <a class="method-permalink" href="#bugotu%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L26" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="bulgarian?-instance-method">
+      <div class="signature">
+        
+        def <strong>bulgarian?</strong>
+
+        <a class="method-permalink" href="#bulgarian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L27" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="buryat?-instance-method">
+      <div class="signature">
+        
+        def <strong>buryat?</strong>
+
+        <a class="method-permalink" href="#buryat%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L28" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="catalan?-instance-method">
+      <div class="signature">
+        
+        def <strong>catalan?</strong>
+
+        <a class="method-permalink" href="#catalan%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L29" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="chamorro?-instance-method">
+      <div class="signature">
+        
+        def <strong>chamorro?</strong>
+
+        <a class="method-permalink" href="#chamorro%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L30" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="chechen?-instance-method">
+      <div class="signature">
+        
+        def <strong>chechen?</strong>
+
+        <a class="method-permalink" href="#chechen%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L31" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="chinese_prc?-instance-method">
+      <div class="signature">
+        
+        def <strong>chinese_prc?</strong>
+
+        <a class="method-permalink" href="#chinese_prc%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L32" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="chinese_taiwan?-instance-method">
+      <div class="signature">
+        
+        def <strong>chinese_taiwan?</strong>
+
+        <a class="method-permalink" href="#chinese_taiwan%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L33" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="chukcha?-instance-method">
+      <div class="signature">
+        
+        def <strong>chukcha?</strong>
+
+        <a class="method-permalink" href="#chukcha%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L34" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="chuvash?-instance-method">
+      <div class="signature">
+        
+        def <strong>chuvash?</strong>
+
+        <a class="method-permalink" href="#chuvash%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L35" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="cmc7?-instance-method">
+      <div class="signature">
+        
+        def <strong>cmc7?</strong>
+
+        <a class="method-permalink" href="#cmc7%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L36" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="corsican?-instance-method">
+      <div class="signature">
+        
+        def <strong>corsican?</strong>
+
+        <a class="method-permalink" href="#corsican%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L37" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="crimean_tatar?-instance-method">
+      <div class="signature">
+        
+        def <strong>crimean_tatar?</strong>
+
+        <a class="method-permalink" href="#crimean_tatar%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L38" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="croatian?-instance-method">
+      <div class="signature">
+        
+        def <strong>croatian?</strong>
+
+        <a class="method-permalink" href="#croatian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L39" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="crow?-instance-method">
+      <div class="signature">
+        
+        def <strong>crow?</strong>
+
+        <a class="method-permalink" href="#crow%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L40" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="czech?-instance-method">
+      <div class="signature">
+        
+        def <strong>czech?</strong>
+
+        <a class="method-permalink" href="#czech%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L41" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="danish?-instance-method">
+      <div class="signature">
+        
+        def <strong>danish?</strong>
+
+        <a class="method-permalink" href="#danish%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L42" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="dargwa?-instance-method">
+      <div class="signature">
+        
+        def <strong>dargwa?</strong>
+
+        <a class="method-permalink" href="#dargwa%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L43" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="digits?-instance-method">
+      <div class="signature">
+        
+        def <strong>digits?</strong>
+
+        <a class="method-permalink" href="#digits%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="dungan?-instance-method">
+      <div class="signature">
+        
+        def <strong>dungan?</strong>
+
+        <a class="method-permalink" href="#dungan%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L45" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="dutch?-instance-method">
+      <div class="signature">
+        
+        def <strong>dutch?</strong>
+
+        <a class="method-permalink" href="#dutch%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L46" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="dutch_belgian?-instance-method">
+      <div class="signature">
+        
+        def <strong>dutch_belgian?</strong>
+
+        <a class="method-permalink" href="#dutch_belgian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L47" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="e13_b?-instance-method">
+      <div class="signature">
+        
+        def <strong>e13_b?</strong>
+
+        <a class="method-permalink" href="#e13_b%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L48" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="english?-instance-method">
+      <div class="signature">
+        
+        def <strong>english?</strong>
+
+        <a class="method-permalink" href="#english%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L49" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="eskimo_cyrillic?-instance-method">
+      <div class="signature">
+        
+        def <strong>eskimo_cyrillic?</strong>
+
+        <a class="method-permalink" href="#eskimo_cyrillic%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L50" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="eskimo_latin?-instance-method">
+      <div class="signature">
+        
+        def <strong>eskimo_latin?</strong>
+
+        <a class="method-permalink" href="#eskimo_latin%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L51" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="esperanto?-instance-method">
+      <div class="signature">
+        
+        def <strong>esperanto?</strong>
+
+        <a class="method-permalink" href="#esperanto%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L52" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="estonian?-instance-method">
+      <div class="signature">
+        
+        def <strong>estonian?</strong>
+
+        <a class="method-permalink" href="#estonian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="even?-instance-method">
+      <div class="signature">
+        
+        def <strong>even?</strong>
+
+        <a class="method-permalink" href="#even%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L54" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="evenki?-instance-method">
+      <div class="signature">
+        
+        def <strong>evenki?</strong>
+
+        <a class="method-permalink" href="#evenki%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L55" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="faeroese?-instance-method">
+      <div class="signature">
+        
+        def <strong>faeroese?</strong>
+
+        <a class="method-permalink" href="#faeroese%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L57" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="farsi?-instance-method">
+      <div class="signature">
+        
+        def <strong>farsi?</strong>
+
+        <a class="method-permalink" href="#farsi%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L56" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="fijian?-instance-method">
+      <div class="signature">
+        
+        def <strong>fijian?</strong>
+
+        <a class="method-permalink" href="#fijian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L58" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="finnish?-instance-method">
+      <div class="signature">
+        
+        def <strong>finnish?</strong>
+
+        <a class="method-permalink" href="#finnish%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L59" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="french?-instance-method">
+      <div class="signature">
+        
+        def <strong>french?</strong>
+
+        <a class="method-permalink" href="#french%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L60" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="frisian?-instance-method">
+      <div class="signature">
+        
+        def <strong>frisian?</strong>
+
+        <a class="method-permalink" href="#frisian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L61" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="friulian?-instance-method">
+      <div class="signature">
+        
+        def <strong>friulian?</strong>
+
+        <a class="method-permalink" href="#friulian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L62" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="gaelic_scottish?-instance-method">
+      <div class="signature">
+        
+        def <strong>gaelic_scottish?</strong>
+
+        <a class="method-permalink" href="#gaelic_scottish%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L63" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="gagauz?-instance-method">
+      <div class="signature">
+        
+        def <strong>gagauz?</strong>
+
+        <a class="method-permalink" href="#gagauz%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L64" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="galician?-instance-method">
+      <div class="signature">
+        
+        def <strong>galician?</strong>
+
+        <a class="method-permalink" href="#galician%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L65" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ganda?-instance-method">
+      <div class="signature">
+        
+        def <strong>ganda?</strong>
+
+        <a class="method-permalink" href="#ganda%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L66" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="german?-instance-method">
+      <div class="signature">
+        
+        def <strong>german?</strong>
+
+        <a class="method-permalink" href="#german%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L67" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="german_luxembourg?-instance-method">
+      <div class="signature">
+        
+        def <strong>german_luxembourg?</strong>
+
+        <a class="method-permalink" href="#german_luxembourg%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L68" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="german_new_spelling?-instance-method">
+      <div class="signature">
+        
+        def <strong>german_new_spelling?</strong>
+
+        <a class="method-permalink" href="#german_new_spelling%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L69" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="greek?-instance-method">
+      <div class="signature">
+        
+        def <strong>greek?</strong>
+
+        <a class="method-permalink" href="#greek%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L70" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="guarani?-instance-method">
+      <div class="signature">
+        
+        def <strong>guarani?</strong>
+
+        <a class="method-permalink" href="#guarani%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L71" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="hani?-instance-method">
+      <div class="signature">
+        
+        def <strong>hani?</strong>
+
+        <a class="method-permalink" href="#hani%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L72" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="hausa?-instance-method">
+      <div class="signature">
+        
+        def <strong>hausa?</strong>
+
+        <a class="method-permalink" href="#hausa%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L73" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="hawaiian?-instance-method">
+      <div class="signature">
+        
+        def <strong>hawaiian?</strong>
+
+        <a class="method-permalink" href="#hawaiian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L74" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="hebrew?-instance-method">
+      <div class="signature">
+        
+        def <strong>hebrew?</strong>
+
+        <a class="method-permalink" href="#hebrew%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L75" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="hungarian?-instance-method">
+      <div class="signature">
+        
+        def <strong>hungarian?</strong>
+
+        <a class="method-permalink" href="#hungarian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L76" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="icelandic?-instance-method">
+      <div class="signature">
+        
+        def <strong>icelandic?</strong>
+
+        <a class="method-permalink" href="#icelandic%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L77" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ido?-instance-method">
+      <div class="signature">
+        
+        def <strong>ido?</strong>
+
+        <a class="method-permalink" href="#ido%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L78" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="indonesian?-instance-method">
+      <div class="signature">
+        
+        def <strong>indonesian?</strong>
+
+        <a class="method-permalink" href="#indonesian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L79" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ingush?-instance-method">
+      <div class="signature">
+        
+        def <strong>ingush?</strong>
+
+        <a class="method-permalink" href="#ingush%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L80" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="interlingua?-instance-method">
+      <div class="signature">
+        
+        def <strong>interlingua?</strong>
+
+        <a class="method-permalink" href="#interlingua%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L81" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="irish?-instance-method">
+      <div class="signature">
+        
+        def <strong>irish?</strong>
+
+        <a class="method-permalink" href="#irish%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L82" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="italian?-instance-method">
+      <div class="signature">
+        
+        def <strong>italian?</strong>
+
+        <a class="method-permalink" href="#italian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L83" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="japanese?-instance-method">
+      <div class="signature">
+        
+        def <strong>japanese?</strong>
+
+        <a class="method-permalink" href="#japanese%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L84" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="kabardian?-instance-method">
+      <div class="signature">
+        
+        def <strong>kabardian?</strong>
+
+        <a class="method-permalink" href="#kabardian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L85" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="kalmyk?-instance-method">
+      <div class="signature">
+        
+        def <strong>kalmyk?</strong>
+
+        <a class="method-permalink" href="#kalmyk%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L86" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="karachay_balkar?-instance-method">
+      <div class="signature">
+        
+        def <strong>karachay_balkar?</strong>
+
+        <a class="method-permalink" href="#karachay_balkar%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L87" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="karakalpak?-instance-method">
+      <div class="signature">
+        
+        def <strong>karakalpak?</strong>
+
+        <a class="method-permalink" href="#karakalpak%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L88" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="kasub?-instance-method">
+      <div class="signature">
+        
+        def <strong>kasub?</strong>
+
+        <a class="method-permalink" href="#kasub%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L89" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="kawa?-instance-method">
+      <div class="signature">
+        
+        def <strong>kawa?</strong>
+
+        <a class="method-permalink" href="#kawa%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L90" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="kazakh?-instance-method">
+      <div class="signature">
+        
+        def <strong>kazakh?</strong>
+
+        <a class="method-permalink" href="#kazakh%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L91" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="khakas?-instance-method">
+      <div class="signature">
+        
+        def <strong>khakas?</strong>
+
+        <a class="method-permalink" href="#khakas%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L92" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="khanty?-instance-method">
+      <div class="signature">
+        
+        def <strong>khanty?</strong>
+
+        <a class="method-permalink" href="#khanty%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L93" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="kikuyu?-instance-method">
+      <div class="signature">
+        
+        def <strong>kikuyu?</strong>
+
+        <a class="method-permalink" href="#kikuyu%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L94" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="kirgiz?-instance-method">
+      <div class="signature">
+        
+        def <strong>kirgiz?</strong>
+
+        <a class="method-permalink" href="#kirgiz%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L95" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="kongo?-instance-method">
+      <div class="signature">
+        
+        def <strong>kongo?</strong>
+
+        <a class="method-permalink" href="#kongo%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L96" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="korean?-instance-method">
+      <div class="signature">
+        
+        def <strong>korean?</strong>
+
+        <a class="method-permalink" href="#korean%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L97" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="korean_hangul?-instance-method">
+      <div class="signature">
+        
+        def <strong>korean_hangul?</strong>
+
+        <a class="method-permalink" href="#korean_hangul%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L98" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="koryak?-instance-method">
+      <div class="signature">
+        
+        def <strong>koryak?</strong>
+
+        <a class="method-permalink" href="#koryak%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L99" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="kpelle?-instance-method">
+      <div class="signature">
+        
+        def <strong>kpelle?</strong>
+
+        <a class="method-permalink" href="#kpelle%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L100" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="kumyk?-instance-method">
+      <div class="signature">
+        
+        def <strong>kumyk?</strong>
+
+        <a class="method-permalink" href="#kumyk%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L101" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="kurdish?-instance-method">
+      <div class="signature">
+        
+        def <strong>kurdish?</strong>
+
+        <a class="method-permalink" href="#kurdish%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L102" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="lak?-instance-method">
+      <div class="signature">
+        
+        def <strong>lak?</strong>
+
+        <a class="method-permalink" href="#lak%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L103" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="lappish?-instance-method">
+      <div class="signature">
+        
+        def <strong>lappish?</strong>
+
+        <a class="method-permalink" href="#lappish%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L104" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="latin?-instance-method">
+      <div class="signature">
+        
+        def <strong>latin?</strong>
+
+        <a class="method-permalink" href="#latin%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L105" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="latvian?-instance-method">
+      <div class="signature">
+        
+        def <strong>latvian?</strong>
+
+        <a class="method-permalink" href="#latvian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L106" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="latvian_gothic?-instance-method">
+      <div class="signature">
+        
+        def <strong>latvian_gothic?</strong>
+
+        <a class="method-permalink" href="#latvian_gothic%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L107" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="lezgin?-instance-method">
+      <div class="signature">
+        
+        def <strong>lezgin?</strong>
+
+        <a class="method-permalink" href="#lezgin%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L108" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="lithuanian?-instance-method">
+      <div class="signature">
+        
+        def <strong>lithuanian?</strong>
+
+        <a class="method-permalink" href="#lithuanian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L109" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="luba?-instance-method">
+      <div class="signature">
+        
+        def <strong>luba?</strong>
+
+        <a class="method-permalink" href="#luba%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L110" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="macedonian?-instance-method">
+      <div class="signature">
+        
+        def <strong>macedonian?</strong>
+
+        <a class="method-permalink" href="#macedonian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L111" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="malagasy?-instance-method">
+      <div class="signature">
+        
+        def <strong>malagasy?</strong>
+
+        <a class="method-permalink" href="#malagasy%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L112" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="malay?-instance-method">
+      <div class="signature">
+        
+        def <strong>malay?</strong>
+
+        <a class="method-permalink" href="#malay%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L113" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="malinke?-instance-method">
+      <div class="signature">
+        
+        def <strong>malinke?</strong>
+
+        <a class="method-permalink" href="#malinke%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L114" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="maltese?-instance-method">
+      <div class="signature">
+        
+        def <strong>maltese?</strong>
+
+        <a class="method-permalink" href="#maltese%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L115" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="mansi?-instance-method">
+      <div class="signature">
+        
+        def <strong>mansi?</strong>
+
+        <a class="method-permalink" href="#mansi%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L116" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="maori?-instance-method">
+      <div class="signature">
+        
+        def <strong>maori?</strong>
+
+        <a class="method-permalink" href="#maori%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L117" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="mari?-instance-method">
+      <div class="signature">
+        
+        def <strong>mari?</strong>
+
+        <a class="method-permalink" href="#mari%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L118" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="maya?-instance-method">
+      <div class="signature">
+        
+        def <strong>maya?</strong>
+
+        <a class="method-permalink" href="#maya%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L119" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="miao?-instance-method">
+      <div class="signature">
+        
+        def <strong>miao?</strong>
+
+        <a class="method-permalink" href="#miao%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L120" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="minankabaw?-instance-method">
+      <div class="signature">
+        
+        def <strong>minankabaw?</strong>
+
+        <a class="method-permalink" href="#minankabaw%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L121" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="mohawk?-instance-method">
+      <div class="signature">
+        
+        def <strong>mohawk?</strong>
+
+        <a class="method-permalink" href="#mohawk%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L122" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="mongol?-instance-method">
+      <div class="signature">
+        
+        def <strong>mongol?</strong>
+
+        <a class="method-permalink" href="#mongol%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L123" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="mordvin?-instance-method">
+      <div class="signature">
+        
+        def <strong>mordvin?</strong>
+
+        <a class="method-permalink" href="#mordvin%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L124" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="nahuatl?-instance-method">
+      <div class="signature">
+        
+        def <strong>nahuatl?</strong>
+
+        <a class="method-permalink" href="#nahuatl%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L125" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="nenets?-instance-method">
+      <div class="signature">
+        
+        def <strong>nenets?</strong>
+
+        <a class="method-permalink" href="#nenets%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L126" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="nivkh?-instance-method">
+      <div class="signature">
+        
+        def <strong>nivkh?</strong>
+
+        <a class="method-permalink" href="#nivkh%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L127" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="nogay?-instance-method">
+      <div class="signature">
+        
+        def <strong>nogay?</strong>
+
+        <a class="method-permalink" href="#nogay%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L128" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="norwegian?-instance-method">
+      <div class="signature">
+        
+        def <strong>norwegian?</strong>
+
+        <a class="method-permalink" href="#norwegian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L129" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="norwegian_bokmal?-instance-method">
+      <div class="signature">
+        
+        def <strong>norwegian_bokmal?</strong>
+
+        <a class="method-permalink" href="#norwegian_bokmal%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L130" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="norwegian_nynorsk?-instance-method">
+      <div class="signature">
+        
+        def <strong>norwegian_nynorsk?</strong>
+
+        <a class="method-permalink" href="#norwegian_nynorsk%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L131" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="nyanja?-instance-method">
+      <div class="signature">
+        
+        def <strong>nyanja?</strong>
+
+        <a class="method-permalink" href="#nyanja%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L132" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="occidental?-instance-method">
+      <div class="signature">
+        
+        def <strong>occidental?</strong>
+
+        <a class="method-permalink" href="#occidental%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L133" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ojibway?-instance-method">
+      <div class="signature">
+        
+        def <strong>ojibway?</strong>
+
+        <a class="method-permalink" href="#ojibway%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L134" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="old_english?-instance-method">
+      <div class="signature">
+        
+        def <strong>old_english?</strong>
+
+        <a class="method-permalink" href="#old_english%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L135" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="old_french?-instance-method">
+      <div class="signature">
+        
+        def <strong>old_french?</strong>
+
+        <a class="method-permalink" href="#old_french%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L136" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="old_german?-instance-method">
+      <div class="signature">
+        
+        def <strong>old_german?</strong>
+
+        <a class="method-permalink" href="#old_german%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L137" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="old_italian?-instance-method">
+      <div class="signature">
+        
+        def <strong>old_italian?</strong>
+
+        <a class="method-permalink" href="#old_italian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L138" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="old_slavonic?-instance-method">
+      <div class="signature">
+        
+        def <strong>old_slavonic?</strong>
+
+        <a class="method-permalink" href="#old_slavonic%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L139" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="old_spanish?-instance-method">
+      <div class="signature">
+        
+        def <strong>old_spanish?</strong>
+
+        <a class="method-permalink" href="#old_spanish%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L140" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ossetic?-instance-method">
+      <div class="signature">
+        
+        def <strong>ossetic?</strong>
+
+        <a class="method-permalink" href="#ossetic%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L141" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="papiamento?-instance-method">
+      <div class="signature">
+        
+        def <strong>papiamento?</strong>
+
+        <a class="method-permalink" href="#papiamento%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L142" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="pidgin_english?-instance-method">
+      <div class="signature">
+        
+        def <strong>pidgin_english?</strong>
+
+        <a class="method-permalink" href="#pidgin_english%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L143" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="polish?-instance-method">
+      <div class="signature">
+        
+        def <strong>polish?</strong>
+
+        <a class="method-permalink" href="#polish%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L144" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="portuguese_brazilian?-instance-method">
+      <div class="signature">
+        
+        def <strong>portuguese_brazilian?</strong>
+
+        <a class="method-permalink" href="#portuguese_brazilian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L145" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="portuguese_standard?-instance-method">
+      <div class="signature">
+        
+        def <strong>portuguese_standard?</strong>
+
+        <a class="method-permalink" href="#portuguese_standard%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L146" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="provencal?-instance-method">
+      <div class="signature">
+        
+        def <strong>provencal?</strong>
+
+        <a class="method-permalink" href="#provencal%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L147" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="quechua?-instance-method">
+      <div class="signature">
+        
+        def <strong>quechua?</strong>
+
+        <a class="method-permalink" href="#quechua%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L148" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="rhaeto_romanic?-instance-method">
+      <div class="signature">
+        
+        def <strong>rhaeto_romanic?</strong>
+
+        <a class="method-permalink" href="#rhaeto_romanic%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L149" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="romanian?-instance-method">
+      <div class="signature">
+        
+        def <strong>romanian?</strong>
+
+        <a class="method-permalink" href="#romanian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L150" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="romanian_moldavia?-instance-method">
+      <div class="signature">
+        
+        def <strong>romanian_moldavia?</strong>
+
+        <a class="method-permalink" href="#romanian_moldavia%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L151" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="romany?-instance-method">
+      <div class="signature">
+        
+        def <strong>romany?</strong>
+
+        <a class="method-permalink" href="#romany%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L152" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ruanda?-instance-method">
+      <div class="signature">
+        
+        def <strong>ruanda?</strong>
+
+        <a class="method-permalink" href="#ruanda%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L153" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="rundi?-instance-method">
+      <div class="signature">
+        
+        def <strong>rundi?</strong>
+
+        <a class="method-permalink" href="#rundi%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L154" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="russian?-instance-method">
+      <div class="signature">
+        
+        def <strong>russian?</strong>
+
+        <a class="method-permalink" href="#russian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L156" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="russian_old_spelling?-instance-method">
+      <div class="signature">
+        
+        def <strong>russian_old_spelling?</strong>
+
+        <a class="method-permalink" href="#russian_old_spelling%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L155" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="samoan?-instance-method">
+      <div class="signature">
+        
+        def <strong>samoan?</strong>
+
+        <a class="method-permalink" href="#samoan%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L157" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="selkup?-instance-method">
+      <div class="signature">
+        
+        def <strong>selkup?</strong>
+
+        <a class="method-permalink" href="#selkup%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L158" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="serbian_cyrillic?-instance-method">
+      <div class="signature">
+        
+        def <strong>serbian_cyrillic?</strong>
+
+        <a class="method-permalink" href="#serbian_cyrillic%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L159" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="serbian_latin?-instance-method">
+      <div class="signature">
+        
+        def <strong>serbian_latin?</strong>
+
+        <a class="method-permalink" href="#serbian_latin%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L160" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="shona?-instance-method">
+      <div class="signature">
+        
+        def <strong>shona?</strong>
+
+        <a class="method-permalink" href="#shona%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L161" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="sioux?-instance-method">
+      <div class="signature">
+        
+        def <strong>sioux?</strong>
+
+        <a class="method-permalink" href="#sioux%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L162" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="slovak?-instance-method">
+      <div class="signature">
+        
+        def <strong>slovak?</strong>
+
+        <a class="method-permalink" href="#slovak%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L163" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="slovenian?-instance-method">
+      <div class="signature">
+        
+        def <strong>slovenian?</strong>
+
+        <a class="method-permalink" href="#slovenian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L164" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="somali?-instance-method">
+      <div class="signature">
+        
+        def <strong>somali?</strong>
+
+        <a class="method-permalink" href="#somali%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L165" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="sorbian?-instance-method">
+      <div class="signature">
+        
+        def <strong>sorbian?</strong>
+
+        <a class="method-permalink" href="#sorbian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L166" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="sotho?-instance-method">
+      <div class="signature">
+        
+        def <strong>sotho?</strong>
+
+        <a class="method-permalink" href="#sotho%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L167" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="spanish?-instance-method">
+      <div class="signature">
+        
+        def <strong>spanish?</strong>
+
+        <a class="method-permalink" href="#spanish%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L168" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="sunda?-instance-method">
+      <div class="signature">
+        
+        def <strong>sunda?</strong>
+
+        <a class="method-permalink" href="#sunda%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L169" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="swahili?-instance-method">
+      <div class="signature">
+        
+        def <strong>swahili?</strong>
+
+        <a class="method-permalink" href="#swahili%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L170" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="swazi?-instance-method">
+      <div class="signature">
+        
+        def <strong>swazi?</strong>
+
+        <a class="method-permalink" href="#swazi%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L171" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="swedish?-instance-method">
+      <div class="signature">
+        
+        def <strong>swedish?</strong>
+
+        <a class="method-permalink" href="#swedish%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L172" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tabassaran?-instance-method">
+      <div class="signature">
+        
+        def <strong>tabassaran?</strong>
+
+        <a class="method-permalink" href="#tabassaran%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L173" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tagalog?-instance-method">
+      <div class="signature">
+        
+        def <strong>tagalog?</strong>
+
+        <a class="method-permalink" href="#tagalog%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L174" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tahitian?-instance-method">
+      <div class="signature">
+        
+        def <strong>tahitian?</strong>
+
+        <a class="method-permalink" href="#tahitian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L175" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tajik?-instance-method">
+      <div class="signature">
+        
+        def <strong>tajik?</strong>
+
+        <a class="method-permalink" href="#tajik%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L176" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tatar?-instance-method">
+      <div class="signature">
+        
+        def <strong>tatar?</strong>
+
+        <a class="method-permalink" href="#tatar%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L177" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="thai?-instance-method">
+      <div class="signature">
+        
+        def <strong>thai?</strong>
+
+        <a class="method-permalink" href="#thai%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L178" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tinpo?-instance-method">
+      <div class="signature">
+        
+        def <strong>tinpo?</strong>
+
+        <a class="method-permalink" href="#tinpo%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L179" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tongan?-instance-method">
+      <div class="signature">
+        
+        def <strong>tongan?</strong>
+
+        <a class="method-permalink" href="#tongan%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L180" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tswana?-instance-method">
+      <div class="signature">
+        
+        def <strong>tswana?</strong>
+
+        <a class="method-permalink" href="#tswana%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L181" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tun?-instance-method">
+      <div class="signature">
+        
+        def <strong>tun?</strong>
+
+        <a class="method-permalink" href="#tun%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L182" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="turkish?-instance-method">
+      <div class="signature">
+        
+        def <strong>turkish?</strong>
+
+        <a class="method-permalink" href="#turkish%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L183" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="turkmen?-instance-method">
+      <div class="signature">
+        
+        def <strong>turkmen?</strong>
+
+        <a class="method-permalink" href="#turkmen%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L184" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tuvin?-instance-method">
+      <div class="signature">
+        
+        def <strong>tuvin?</strong>
+
+        <a class="method-permalink" href="#tuvin%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L185" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="udmurt?-instance-method">
+      <div class="signature">
+        
+        def <strong>udmurt?</strong>
+
+        <a class="method-permalink" href="#udmurt%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L186" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="uighur_cyrillic?-instance-method">
+      <div class="signature">
+        
+        def <strong>uighur_cyrillic?</strong>
+
+        <a class="method-permalink" href="#uighur_cyrillic%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L187" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="uighur_latin?-instance-method">
+      <div class="signature">
+        
+        def <strong>uighur_latin?</strong>
+
+        <a class="method-permalink" href="#uighur_latin%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L188" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ukrainian?-instance-method">
+      <div class="signature">
+        
+        def <strong>ukrainian?</strong>
+
+        <a class="method-permalink" href="#ukrainian%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L189" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="uzbek_cyrillic?-instance-method">
+      <div class="signature">
+        
+        def <strong>uzbek_cyrillic?</strong>
+
+        <a class="method-permalink" href="#uzbek_cyrillic%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L190" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="uzbek_latin?-instance-method">
+      <div class="signature">
+        
+        def <strong>uzbek_latin?</strong>
+
+        <a class="method-permalink" href="#uzbek_latin%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L191" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="vietnamese?-instance-method">
+      <div class="signature">
+        
+        def <strong>vietnamese?</strong>
+
+        <a class="method-permalink" href="#vietnamese%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L192" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="visayan?-instance-method">
+      <div class="signature">
+        
+        def <strong>visayan?</strong>
+
+        <a class="method-permalink" href="#visayan%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L193" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="welsh?-instance-method">
+      <div class="signature">
+        
+        def <strong>welsh?</strong>
+
+        <a class="method-permalink" href="#welsh%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L194" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="wolof?-instance-method">
+      <div class="signature">
+        
+        def <strong>wolof?</strong>
+
+        <a class="method-permalink" href="#wolof%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L195" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="xhosa?-instance-method">
+      <div class="signature">
+        
+        def <strong>xhosa?</strong>
+
+        <a class="method-permalink" href="#xhosa%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L196" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="yakut?-instance-method">
+      <div class="signature">
+        
+        def <strong>yakut?</strong>
+
+        <a class="method-permalink" href="#yakut%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L197" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="yiddish?-instance-method">
+      <div class="signature">
+        
+        def <strong>yiddish?</strong>
+
+        <a class="method-permalink" href="#yiddish%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L198" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="zapotec?-instance-method">
+      <div class="signature">
+        
+        def <strong>zapotec?</strong>
+
+        <a class="method-permalink" href="#zapotec%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L199" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="zulu?-instance-method">
+      <div class="signature">
+        
+        def <strong>zulu?</strong>
+
+        <a class="method-permalink" href="#zulu%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/language.cr#L200" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

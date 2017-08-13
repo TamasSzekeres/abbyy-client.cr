@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/TamasSzekeres/abbyy-client.cr">
+  <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../../js/doc.js"></script>
+  <title>Abbyy::Models::ProcessBarcodeFieldRequest - github.com/TamasSzekeres/abbyy-client.cr</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="../../index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent open current" data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy" data-name="abbyy">
+      <a href="../../Abbyy.html">Abbyy</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/ApplicationType" data-name="abbyy::applicationtype">
+      <a href="../../Abbyy/ApplicationType.html">ApplicationType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/BarcodeType" data-name="abbyy::barcodetype">
+      <a href="../../Abbyy/BarcodeType.html">BarcodeType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/CheckmarkType" data-name="abbyy::checkmarktype">
+      <a href="../../Abbyy/CheckmarkType.html">CheckmarkType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Client" data-name="abbyy::client">
+      <a href="../../Abbyy/Client.html">Client</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Country" data-name="abbyy::country">
+      <a href="../../Abbyy/Country.html">Country</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/ExportFormat" data-name="abbyy::exportformat">
+      <a href="../../Abbyy/ExportFormat.html">ExportFormat</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/FieldMarkingType" data-name="abbyy::fieldmarkingtype">
+      <a href="../../Abbyy/FieldMarkingType.html">FieldMarkingType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/ImageSource" data-name="abbyy::imagesource">
+      <a href="../../Abbyy/ImageSource.html">ImageSource</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Language" data-name="abbyy::language">
+      <a href="../../Abbyy/Language.html">Language</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models" data-name="abbyy::models">
+      <a href="../../Abbyy/Models.html">Models</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/BaseModel" data-name="abbyy::models::basemodel">
+      <a href="../../Abbyy/Models/BaseModel.html">BaseModel</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/BaseRequest" data-name="abbyy::models::baserequest">
+      <a href="../../Abbyy/Models/BaseRequest.html">BaseRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/BaseResponse" data-name="abbyy::models::baseresponse">
+      <a href="../../Abbyy/Models/BaseResponse.html">BaseResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/DeleteTaskRequest" data-name="abbyy::models::deletetaskrequest">
+      <a href="../../Abbyy/Models/DeleteTaskRequest.html">DeleteTaskRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/DeleteTaskResponse" data-name="abbyy::models::deletetaskresponse">
+      <a href="../../Abbyy/Models/DeleteTaskResponse.html">DeleteTaskResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/FileBody" data-name="abbyy::models::filebody">
+      <a href="../../Abbyy/Models/FileBody.html">FileBody</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/GetApplicationInfoResponse" data-name="abbyy::models::getapplicationinforesponse">
+      <a href="../../Abbyy/Models/GetApplicationInfoResponse.html">GetApplicationInfoResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/GetTaskStatusRequest" data-name="abbyy::models::gettaskstatusrequest">
+      <a href="../../Abbyy/Models/GetTaskStatusRequest.html">GetTaskStatusRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/GetTaskStatusResponse" data-name="abbyy::models::gettaskstatusresponse">
+      <a href="../../Abbyy/Models/GetTaskStatusResponse.html">GetTaskStatusResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ListTasksRequest" data-name="abbyy::models::listtasksrequest">
+      <a href="../../Abbyy/Models/ListTasksRequest.html">ListTasksRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ListTasksResponse" data-name="abbyy::models::listtasksresponse">
+      <a href="../../Abbyy/Models/ListTasksResponse.html">ListTasksResponse</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBarcodeFieldRequest" data-name="abbyy::models::processbarcodefieldrequest">
+      <a href="../../Abbyy/Models/ProcessBarcodeFieldRequest.html">ProcessBarcodeFieldRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBarcodeFieldResponse" data-name="abbyy::models::processbarcodefieldresponse">
+      <a href="../../Abbyy/Models/ProcessBarcodeFieldResponse.html">ProcessBarcodeFieldResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBusinessCardRequest" data-name="abbyy::models::processbusinesscardrequest">
+      <a href="../../Abbyy/Models/ProcessBusinessCardRequest.html">ProcessBusinessCardRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBusinessCardResponse" data-name="abbyy::models::processbusinesscardresponse">
+      <a href="../../Abbyy/Models/ProcessBusinessCardResponse.html">ProcessBusinessCardResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessCheckmarkFieldRequest" data-name="abbyy::models::processcheckmarkfieldrequest">
+      <a href="../../Abbyy/Models/ProcessCheckmarkFieldRequest.html">ProcessCheckmarkFieldRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessCheckmarkFieldResponse" data-name="abbyy::models::processcheckmarkfieldresponse">
+      <a href="../../Abbyy/Models/ProcessCheckmarkFieldResponse.html">ProcessCheckmarkFieldResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessDocumentRequest" data-name="abbyy::models::processdocumentrequest">
+      <a href="../../Abbyy/Models/ProcessDocumentRequest.html">ProcessDocumentRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessDocumentResponse" data-name="abbyy::models::processdocumentresponse">
+      <a href="../../Abbyy/Models/ProcessDocumentResponse.html">ProcessDocumentResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessFieldsRequest" data-name="abbyy::models::processfieldsrequest">
+      <a href="../../Abbyy/Models/ProcessFieldsRequest.html">ProcessFieldsRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessFieldsResponse" data-name="abbyy::models::processfieldsresponse">
+      <a href="../../Abbyy/Models/ProcessFieldsResponse.html">ProcessFieldsResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessImageRequest" data-name="abbyy::models::processimagerequest">
+      <a href="../../Abbyy/Models/ProcessImageRequest.html">ProcessImageRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessImageResponse" data-name="abbyy::models::processimageresponse">
+      <a href="../../Abbyy/Models/ProcessImageResponse.html">ProcessImageResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessMRZRequest" data-name="abbyy::models::processmrzrequest">
+      <a href="../../Abbyy/Models/ProcessMRZRequest.html">ProcessMRZRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessMRZResponse" data-name="abbyy::models::processmrzresponse">
+      <a href="../../Abbyy/Models/ProcessMRZResponse.html">ProcessMRZResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessReceiptRequest" data-name="abbyy::models::processreceiptrequest">
+      <a href="../../Abbyy/Models/ProcessReceiptRequest.html">ProcessReceiptRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessReceiptResponse" data-name="abbyy::models::processreceiptresponse">
+      <a href="../../Abbyy/Models/ProcessReceiptResponse.html">ProcessReceiptResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessTextFieldRequest" data-name="abbyy::models::processtextfieldrequest">
+      <a href="../../Abbyy/Models/ProcessTextFieldRequest.html">ProcessTextFieldRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessTextFieldResponse" data-name="abbyy::models::processtextfieldresponse">
+      <a href="../../Abbyy/Models/ProcessTextFieldResponse.html">ProcessTextFieldResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/Region" data-name="abbyy::models::region">
+      <a href="../../Abbyy/Models/Region.html">Region</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/SubmitImageRequest" data-name="abbyy::models::submitimagerequest">
+      <a href="../../Abbyy/Models/SubmitImageRequest.html">SubmitImageRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/SubmitImageResponse" data-name="abbyy::models::submitimageresponse">
+      <a href="../../Abbyy/Models/SubmitImageResponse.html">SubmitImageResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/Task" data-name="abbyy::models::task">
+      <a href="../../Abbyy/Models/Task.html">Task</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/TaskIdRequest" data-name="abbyy::models::taskidrequest">
+      <a href="../../Abbyy/Models/TaskIdRequest.html">TaskIdRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/TaskResponse" data-name="abbyy::models::taskresponse">
+      <a href="../../Abbyy/Models/TaskResponse.html">TaskResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/TaskResult" data-name="abbyy::models::taskresult">
+      <a href="../../Abbyy/Models/TaskResult.html">TaskResult</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/PdfWriteTag" data-name="abbyy::pdfwritetag">
+      <a href="../../Abbyy/PdfWriteTag.html">PdfWriteTag</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Profile" data-name="abbyy::profile">
+      <a href="../../Abbyy/Profile.html">Profile</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/TaskStatus" data-name="abbyy::taskstatus">
+      <a href="../../Abbyy/TaskStatus.html">TaskStatus</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/TextType" data-name="abbyy::texttype">
+      <a href="../../Abbyy/TextType.html">TextType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/WritingStyle" data-name="abbyy::writingstyle">
+      <a href="../../Abbyy/WritingStyle.html">WritingStyle</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/String" data-name="string">
+      <a href="../../String.html">String</a>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Abbyy::Models::ProcessBarcodeFieldRequest
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../../Abbyy/Models/ProcessBarcodeFieldRequest.html">Abbyy::Models::ProcessBarcodeFieldRequest</a></li><li class="superclass"><a href="../../Abbyy/Models/BaseRequest.html">Abbyy::Models::BaseRequest</a></li><li class="superclass"><a href="../../Abbyy/Models/BaseModel.html">Abbyy::Models::BaseModel</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>Request object for <a href="http://ocrsdk.com/documentation/apireference/processBarcodeField/" target="_blank">/processBarcodeField</a> API-method.</p>
+
+
+
+
+
+  <h2>Included Modules</h2>
+  <ul class="other-types-list">
+  
+    <li class="other-type"><a href="../../Abbyy/Models/FileBody.html">Abbyy::Models::FileBody</a></li>
+  
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_barcode_field_request.cr#L7" target="_blank">abbyy/models/process_barcode_field_request.cr</a>
+    
+    <br/>
+  
+
+
+
+  
+    <h2>Constant Summary</h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="DEFAULT_BARCODE_TYPE">
+        <strong>DEFAULT_BARCODE_TYPE</strong> = <code><span class="t">BarcodeType</span><span class="t">::</span><span class="t">AutoDetect</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_CONTAINS_BINARY_DATA">
+        <strong>DEFAULT_CONTAINS_BINARY_DATA</strong> = <code><span class="n">false</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_DESCRIPTION">
+        <strong>DEFAULT_DESCRIPTION</strong> = <code><span class="s">&quot;&quot;</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_PASSWORD">
+        <strong>DEFAULT_PASSWORD</strong> = <code><span class="s">&quot;&quot;</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DEFAULT_REGION">
+        <strong>DEFAULT_REGION</strong> = <code><span class="t">Region</span>.<span class="k">new</span>(<span class="n">-1</span>, <span class="n">-1</span>, <span class="n">-1</span>, <span class="n">-1</span>)</code>
+      </dt>
+      
+    
+  </dl>
+
+
+
+  <h2>Constructors</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28file_path%3AString%2Cregion%3ARegion%3F%3Dnil%2Cbarcode_type%3ABarcodeType%7CArray%28BarcodeType%29%3F%3Dnil%2Ccontains_binary_data%3ABool%3F%3Dnil%2Cdescription%3AString%3F%3Dnil%2Cpdf_password%3AString%3F%3Dnil%29-class-method" class="signature"><strong>.new</strong>(file_path : String, region : Region? = <span class="n">nil</span>, barcode_type : BarcodeType | Array(BarcodeType)? = <span class="n">nil</span>, contains_binary_data : Bool? = <span class="n">nil</span>, description : String? = <span class="n">nil</span>, pdf_password : String? = <span class="n">nil</span>)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#barcode_type%3ABarcodeType%7CArray%28BarcodeType%29%7CNil-instance-method" class="signature"><strong>#barcode_type</strong> : BarcodeType | Array(BarcodeType) | Nil</a>
+        
+          <div class="summary"><p>Specifies the type of the barcode.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#barcode_type%3D%28barcode_type%3ABarcodeType%7CArray%28BarcodeType%29%7CNil%29-instance-method" class="signature"><strong>#barcode_type=</strong>(barcode_type : BarcodeType | Array(BarcodeType) | Nil)</a>
+        
+          <div class="summary"><p>Specifies the type of the barcode.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#contains_binary_data%3ABool%3F-instance-method" class="signature"><strong>#contains_binary_data</strong> : Bool?</a>
+        
+          <div class="summary"><p>This parameter makes sense only for PDF417 and <em>Aztec</em> barcodes, which encode some binary data.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#contains_binary_data%3D%28contains_binary_data%3ABool%3F%29-instance-method" class="signature"><strong>#contains_binary_data=</strong>(contains_binary_data : Bool?)</a>
+        
+          <div class="summary"><p>This parameter makes sense only for PDF417 and <em>Aztec</em> barcodes, which encode some binary data.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#description%3AString%3F-instance-method" class="signature"><strong>#description</strong> : String?</a>
+        
+          <div class="summary"><p>Contains the description of the processing task.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#description%3D%28description%3AString%3F%29-instance-method" class="signature"><strong>#description=</strong>(description : String?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#params%3AHash%28String%2CString%29-instance-method" class="signature"><strong>#params</strong> : Hash(String, String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#pdf_password%3AString%3F-instance-method" class="signature"><strong>#pdf_password</strong> : String?</a>
+        
+          <div class="summary"><p>Contains a password for accessing password-protected images in PDF format.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#pdf_password%3D%28pdf_password%3AString%3F%29-instance-method" class="signature"><strong>#pdf_password=</strong>(pdf_password : String?)</a>
+        
+          <div class="summary"><p>Contains a password for accessing password-protected images in PDF format.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#region%3ARegion%3F-instance-method" class="signature"><strong>#region</strong> : Region?</a>
+        
+          <div class="summary"><p>Specifies the region of the text field on the image.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#region%3D%28region%3ARegion%3F%29-instance-method" class="signature"><strong>#region=</strong>(region : Region?)</a>
+        
+          <div class="summary"><p>Specifies the region of the text field on the image.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#region%3D%28coordinates%3AArray%28Int32%29%29-instance-method" class="signature"><strong>#region=</strong>(coordinates : Array(Int32))</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+  <h3>Instance methods inherited from module <code><a href="../../Abbyy/Models/FileBody.html">Abbyy::Models::FileBody</a></code></h3>
+  
+  
+    <a href="../../Abbyy/Models/FileBody.html#body%3AHTTP%3A%3AClient%3A%3ABodyType-instance-method" class="tooltip">
+      <span>body : HTTP::Client::BodyType</span>
+    body</a>, 
+    
+  
+    <a href="../../Abbyy/Models/FileBody.html#file_path%3AString-instance-method" class="tooltip">
+      <span>file_path : String</span>
+    file_path</a>, 
+    
+  
+    <a href="../../Abbyy/Models/FileBody.html#file_path%3D%28file_path%3AString%29-instance-method" class="tooltip">
+      <span>file_path=(file_path : String)</span>
+    file_path=</a>
+    
+  
+
+
+    
+
+  <h3>Constructor methods inherited from module <code><a href="../../Abbyy/Models/FileBody.html">Abbyy::Models::FileBody</a></code></h3>
+  
+  
+    <a href="../../Abbyy/Models/FileBody.html#new%28file_path%3AString%29-class-method" class="tooltip">
+      <span>new(file_path : String)</span>
+    new</a>
+    
+  
+
+
+    
+
+
+  
+    
+
+  <h3>Instance methods inherited from class <code><a href="../../Abbyy/Models/BaseRequest.html">Abbyy::Models::BaseRequest</a></code></h3>
+  
+  
+    <a href="../../Abbyy/Models/BaseRequest.html#body%3AHTTP%3A%3AClient%3A%3ABodyType-instance-method" class="tooltip">
+      <span>body : HTTP::Client::BodyType</span>
+    body</a>, 
+    
+  
+    <a href="../../Abbyy/Models/BaseRequest.html#params%3AHash%28String%2CString%29-instance-method" class="tooltip">
+      <span>params : Hash(String, String)</span>
+    params</a>
+    
+  
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Constructor Detail</h2>
+  
+    <div class="entry-detail" id="new&#40;file_path:String,region:Region?&#61;nil,barcode_type:BarcodeType|Array&#40;BarcodeType&#41;?&#61;nil,contains_binary_data:Bool?&#61;nil,description:String?&#61;nil,pdf_password:String?&#61;nil&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(file_path : <a href="../../String.html">String</a>, region : <a href="../../Abbyy/Models/Region.html">Region</a>? = <span class="n">nil</span>, barcode_type : <a href="../../Abbyy/BarcodeType.html">BarcodeType</a> | Array(<a href="../../Abbyy/BarcodeType.html">BarcodeType</a>)? = <span class="n">nil</span>, contains_binary_data : Bool? = <span class="n">nil</span>, description : <a href="../../String.html">String</a>? = <span class="n">nil</span>, pdf_password : <a href="../../String.html">String</a>? = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#new%28file_path%3AString%2Cregion%3ARegion%3F%3Dnil%2Cbarcode_type%3ABarcodeType%7CArray%28BarcodeType%29%3F%3Dnil%2Ccontains_binary_data%3ABool%3F%3Dnil%2Cdescription%3AString%3F%3Dnil%2Cpdf_password%3AString%3F%3Dnil%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_barcode_field_request.cr#L86" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="barcode_type:BarcodeType|Array&#40;BarcodeType&#41;|Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>barcode_type</strong> : <a href="../../Abbyy/BarcodeType.html">BarcodeType</a> | Array(<a href="../../Abbyy/BarcodeType.html">BarcodeType</a>) | Nil
+
+        <a class="method-permalink" href="#barcode_type%3ABarcodeType%7CArray%28BarcodeType%29%7CNil-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies the type of the barcode. This parameter may also contain several
+barcode types in an array, for example:</p>
+
+<pre><code>[<span class="t">BarcodeType</span><span class="t">::</span><span class="t">Code39</span>, <span class="t">BarcodeType</span><span class="t">::</span><span class="t">Code93</span>]</code></pre>
+
+<p>The following values can be used:</p>
+
+<ul><li><code><a href="../../Abbyy/BarcodeType.html#AutoDetect">BarcodeType::AutoDetect</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#Patch">BarcodeType::Patch</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#Code39">BarcodeType::Code39</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#Code93">BarcodeType::Code93</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#Code128">BarcodeType::Code128</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#UCC_128">BarcodeType::UCC_128</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#Interleaved25">BarcodeType::Interleaved25</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#Industrial25">BarcodeType::Industrial25</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#IATA25">BarcodeType::IATA25</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#Matrix25">BarcodeType::Matrix25</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#EAN8">BarcodeType::EAN8</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#EAN13">BarcodeType::EAN13</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#Codabar">BarcodeType::Codabar</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#UPCA">BarcodeType::UPCA</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#UPCE">BarcodeType::UPCE</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#PostNet">BarcodeType::PostNet</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#Aztec">BarcodeType::Aztec</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#DataMatrix">BarcodeType::DataMatrix</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#PDF417">BarcodeType::PDF417</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#QR_Code">BarcodeType::QR_Code</a></code></li></ul>
+
+<p>See the description of
+<a href="http://ocrsdk.com/documentation/specifications/barcode-types/" target="_blank">barcode types</a> for details.</p>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <code><a href="../../Abbyy/BarcodeType.html#AutoDetect">BarcodeType::AutoDetect</a></code>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_barcode_field_request.cr#L59" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="barcode_type&#61;&#40;barcode_type:BarcodeType|Array&#40;BarcodeType&#41;|Nil&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>barcode_type=</strong>(barcode_type : <a href="../../Abbyy/BarcodeType.html">BarcodeType</a> | Array(<a href="../../Abbyy/BarcodeType.html">BarcodeType</a>) | Nil)
+
+        <a class="method-permalink" href="#barcode_type%3D%28barcode_type%3ABarcodeType%7CArray%28BarcodeType%29%7CNil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies the type of the barcode. This parameter may also contain several
+barcode types in an array, for example:</p>
+
+<pre><code>[<span class="t">BarcodeType</span><span class="t">::</span><span class="t">Code39</span>, <span class="t">BarcodeType</span><span class="t">::</span><span class="t">Code93</span>]</code></pre>
+
+<p>The following values can be used:</p>
+
+<ul><li><code><a href="../../Abbyy/BarcodeType.html#AutoDetect">BarcodeType::AutoDetect</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#Patch">BarcodeType::Patch</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#Code39">BarcodeType::Code39</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#Code93">BarcodeType::Code93</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#Code128">BarcodeType::Code128</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#UCC_128">BarcodeType::UCC_128</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#Interleaved25">BarcodeType::Interleaved25</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#Industrial25">BarcodeType::Industrial25</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#IATA25">BarcodeType::IATA25</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#Matrix25">BarcodeType::Matrix25</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#EAN8">BarcodeType::EAN8</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#EAN13">BarcodeType::EAN13</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#Codabar">BarcodeType::Codabar</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#UPCA">BarcodeType::UPCA</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#UPCE">BarcodeType::UPCE</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#PostNet">BarcodeType::PostNet</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#Aztec">BarcodeType::Aztec</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#DataMatrix">BarcodeType::DataMatrix</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#PDF417">BarcodeType::PDF417</a></code></li><li><code><a href="../../Abbyy/BarcodeType.html#QR_Code">BarcodeType::QR_Code</a></code></li></ul>
+
+<p>See the description of
+<a href="http://ocrsdk.com/documentation/specifications/barcode-types/" target="_blank">barcode types</a> for details.</p>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <code><a href="../../Abbyy/BarcodeType.html#AutoDetect">BarcodeType::AutoDetect</a></code>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_barcode_field_request.cr#L59" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="contains_binary_data:Bool?-instance-method">
+      <div class="signature">
+        
+        def <strong>contains_binary_data</strong> : Bool?
+
+        <a class="method-permalink" href="#contains_binary_data%3ABool%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>This parameter makes sense only for PDF417 and <em>Aztec</em> barcodes, which
+encode some binary data. If this parameter is set to <strong>true</strong>, the binary
+data encoded in a barcode are saved as a sequence of hexadecimal
+values for corresponding bytes.</p>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <strong>false</strong>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_barcode_field_request.cr#L69" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="contains_binary_data&#61;&#40;contains_binary_data:Bool?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>contains_binary_data=</strong>(contains_binary_data : Bool?)
+
+        <a class="method-permalink" href="#contains_binary_data%3D%28contains_binary_data%3ABool%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>This parameter makes sense only for PDF417 and <em>Aztec</em> barcodes, which
+encode some binary data. If this parameter is set to <strong>true</strong>, the binary
+data encoded in a barcode are saved as a sequence of hexadecimal
+values for corresponding bytes.</p>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <strong>false</strong>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_barcode_field_request.cr#L69" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="description:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>description</strong> : <a href="../../String.html">String</a>?
+
+        <a class="method-permalink" href="#description%3AString%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Contains the description of the processing task.
+Cannot contain more than 255 characters.</p>
+
+<p>This parameter is <strong>not required</strong>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_barcode_field_request.cr#L75" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="description&#61;&#40;description:String?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>description=</strong>(description : <a href="../../String.html">String</a>?)
+
+        <a class="method-permalink" href="#description%3D%28description%3AString%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_barcode_field_request.cr#L110" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="params:Hash&#40;String,String&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>params</strong> : Hash(<a href="../../String.html">String</a>, <a href="../../String.html">String</a>)
+
+        <a class="method-permalink" href="#params%3AHash%28String%2CString%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_barcode_field_request.cr#L123" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="pdf_password:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>pdf_password</strong> : <a href="../../String.html">String</a>?
+
+        <a class="method-permalink" href="#pdf_password%3AString%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Contains a password for accessing password-protected images in PDF format.</p>
+
+<p>This parameter is <strong>not required</strong>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_barcode_field_request.cr#L80" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="pdf_password&#61;&#40;pdf_password:String?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>pdf_password=</strong>(pdf_password : <a href="../../String.html">String</a>?)
+
+        <a class="method-permalink" href="#pdf_password%3D%28pdf_password%3AString%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Contains a password for accessing password-protected images in PDF format.</p>
+
+<p>This parameter is <strong>not required</strong>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_barcode_field_request.cr#L80" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="region:Region?-instance-method">
+      <div class="signature">
+        
+        def <strong>region</strong> : <a href="../../Abbyy/Models/Region.html">Region</a>?
+
+        <a class="method-permalink" href="#region%3ARegion%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies the region of the text field on the image. The coordinates of
+the region are measured in pixels relative to the left top corner of the
+image and are specified in the following order: left, top, right, bottom.
+By default, the region of the whole image is used.</p>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <code>Region.new(-1, -1, -1, -1)</code>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_barcode_field_request.cr#L24" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="region&#61;&#40;region:Region?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>region=</strong>(region : <a href="../../Abbyy/Models/Region.html">Region</a>?)
+
+        <a class="method-permalink" href="#region%3D%28region%3ARegion%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies the region of the text field on the image. The coordinates of
+the region are measured in pixels relative to the left top corner of the
+image and are specified in the following order: left, top, right, bottom.
+By default, the region of the whole image is used.</p>
+
+<p>This parameter is <strong>not required</strong>.</p>
+
+<p>Default value is <code>Region.new(-1, -1, -1, -1)</code>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_barcode_field_request.cr#L24" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="region&#61;&#40;coordinates:Array&#40;Int32&#41;&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>region=</strong>(coordinates : Array(Int32))
+
+        <a class="method-permalink" href="#region%3D%28coordinates%3AArray%28Int32%29%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/process_barcode_field_request.cr#L106" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

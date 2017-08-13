@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/TamasSzekeres/abbyy-client.cr">
+  <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../../js/doc.js"></script>
+  <title>Abbyy::Models::Task - github.com/TamasSzekeres/abbyy-client.cr</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="../../index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent open current" data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy" data-name="abbyy">
+      <a href="../../Abbyy.html">Abbyy</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/ApplicationType" data-name="abbyy::applicationtype">
+      <a href="../../Abbyy/ApplicationType.html">ApplicationType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/BarcodeType" data-name="abbyy::barcodetype">
+      <a href="../../Abbyy/BarcodeType.html">BarcodeType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/CheckmarkType" data-name="abbyy::checkmarktype">
+      <a href="../../Abbyy/CheckmarkType.html">CheckmarkType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Client" data-name="abbyy::client">
+      <a href="../../Abbyy/Client.html">Client</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Country" data-name="abbyy::country">
+      <a href="../../Abbyy/Country.html">Country</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/ExportFormat" data-name="abbyy::exportformat">
+      <a href="../../Abbyy/ExportFormat.html">ExportFormat</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/FieldMarkingType" data-name="abbyy::fieldmarkingtype">
+      <a href="../../Abbyy/FieldMarkingType.html">FieldMarkingType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/ImageSource" data-name="abbyy::imagesource">
+      <a href="../../Abbyy/ImageSource.html">ImageSource</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Language" data-name="abbyy::language">
+      <a href="../../Abbyy/Language.html">Language</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models" data-name="abbyy::models">
+      <a href="../../Abbyy/Models.html">Models</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/BaseModel" data-name="abbyy::models::basemodel">
+      <a href="../../Abbyy/Models/BaseModel.html">BaseModel</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/BaseRequest" data-name="abbyy::models::baserequest">
+      <a href="../../Abbyy/Models/BaseRequest.html">BaseRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/BaseResponse" data-name="abbyy::models::baseresponse">
+      <a href="../../Abbyy/Models/BaseResponse.html">BaseResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/DeleteTaskRequest" data-name="abbyy::models::deletetaskrequest">
+      <a href="../../Abbyy/Models/DeleteTaskRequest.html">DeleteTaskRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/DeleteTaskResponse" data-name="abbyy::models::deletetaskresponse">
+      <a href="../../Abbyy/Models/DeleteTaskResponse.html">DeleteTaskResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/FileBody" data-name="abbyy::models::filebody">
+      <a href="../../Abbyy/Models/FileBody.html">FileBody</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/GetApplicationInfoResponse" data-name="abbyy::models::getapplicationinforesponse">
+      <a href="../../Abbyy/Models/GetApplicationInfoResponse.html">GetApplicationInfoResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/GetTaskStatusRequest" data-name="abbyy::models::gettaskstatusrequest">
+      <a href="../../Abbyy/Models/GetTaskStatusRequest.html">GetTaskStatusRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/GetTaskStatusResponse" data-name="abbyy::models::gettaskstatusresponse">
+      <a href="../../Abbyy/Models/GetTaskStatusResponse.html">GetTaskStatusResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ListTasksRequest" data-name="abbyy::models::listtasksrequest">
+      <a href="../../Abbyy/Models/ListTasksRequest.html">ListTasksRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ListTasksResponse" data-name="abbyy::models::listtasksresponse">
+      <a href="../../Abbyy/Models/ListTasksResponse.html">ListTasksResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBarcodeFieldRequest" data-name="abbyy::models::processbarcodefieldrequest">
+      <a href="../../Abbyy/Models/ProcessBarcodeFieldRequest.html">ProcessBarcodeFieldRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBarcodeFieldResponse" data-name="abbyy::models::processbarcodefieldresponse">
+      <a href="../../Abbyy/Models/ProcessBarcodeFieldResponse.html">ProcessBarcodeFieldResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBusinessCardRequest" data-name="abbyy::models::processbusinesscardrequest">
+      <a href="../../Abbyy/Models/ProcessBusinessCardRequest.html">ProcessBusinessCardRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessBusinessCardResponse" data-name="abbyy::models::processbusinesscardresponse">
+      <a href="../../Abbyy/Models/ProcessBusinessCardResponse.html">ProcessBusinessCardResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessCheckmarkFieldRequest" data-name="abbyy::models::processcheckmarkfieldrequest">
+      <a href="../../Abbyy/Models/ProcessCheckmarkFieldRequest.html">ProcessCheckmarkFieldRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessCheckmarkFieldResponse" data-name="abbyy::models::processcheckmarkfieldresponse">
+      <a href="../../Abbyy/Models/ProcessCheckmarkFieldResponse.html">ProcessCheckmarkFieldResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessDocumentRequest" data-name="abbyy::models::processdocumentrequest">
+      <a href="../../Abbyy/Models/ProcessDocumentRequest.html">ProcessDocumentRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessDocumentResponse" data-name="abbyy::models::processdocumentresponse">
+      <a href="../../Abbyy/Models/ProcessDocumentResponse.html">ProcessDocumentResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessFieldsRequest" data-name="abbyy::models::processfieldsrequest">
+      <a href="../../Abbyy/Models/ProcessFieldsRequest.html">ProcessFieldsRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessFieldsResponse" data-name="abbyy::models::processfieldsresponse">
+      <a href="../../Abbyy/Models/ProcessFieldsResponse.html">ProcessFieldsResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessImageRequest" data-name="abbyy::models::processimagerequest">
+      <a href="../../Abbyy/Models/ProcessImageRequest.html">ProcessImageRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessImageResponse" data-name="abbyy::models::processimageresponse">
+      <a href="../../Abbyy/Models/ProcessImageResponse.html">ProcessImageResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessMRZRequest" data-name="abbyy::models::processmrzrequest">
+      <a href="../../Abbyy/Models/ProcessMRZRequest.html">ProcessMRZRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessMRZResponse" data-name="abbyy::models::processmrzresponse">
+      <a href="../../Abbyy/Models/ProcessMRZResponse.html">ProcessMRZResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessReceiptRequest" data-name="abbyy::models::processreceiptrequest">
+      <a href="../../Abbyy/Models/ProcessReceiptRequest.html">ProcessReceiptRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessReceiptResponse" data-name="abbyy::models::processreceiptresponse">
+      <a href="../../Abbyy/Models/ProcessReceiptResponse.html">ProcessReceiptResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessTextFieldRequest" data-name="abbyy::models::processtextfieldrequest">
+      <a href="../../Abbyy/Models/ProcessTextFieldRequest.html">ProcessTextFieldRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/ProcessTextFieldResponse" data-name="abbyy::models::processtextfieldresponse">
+      <a href="../../Abbyy/Models/ProcessTextFieldResponse.html">ProcessTextFieldResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/Region" data-name="abbyy::models::region">
+      <a href="../../Abbyy/Models/Region.html">Region</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/SubmitImageRequest" data-name="abbyy::models::submitimagerequest">
+      <a href="../../Abbyy/Models/SubmitImageRequest.html">SubmitImageRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/SubmitImageResponse" data-name="abbyy::models::submitimageresponse">
+      <a href="../../Abbyy/Models/SubmitImageResponse.html">SubmitImageResponse</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/Task" data-name="abbyy::models::task">
+      <a href="../../Abbyy/Models/Task.html">Task</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/TaskIdRequest" data-name="abbyy::models::taskidrequest">
+      <a href="../../Abbyy/Models/TaskIdRequest.html">TaskIdRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/TaskResponse" data-name="abbyy::models::taskresponse">
+      <a href="../../Abbyy/Models/TaskResponse.html">TaskResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Models/TaskResult" data-name="abbyy::models::taskresult">
+      <a href="../../Abbyy/Models/TaskResult.html">TaskResult</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/PdfWriteTag" data-name="abbyy::pdfwritetag">
+      <a href="../../Abbyy/PdfWriteTag.html">PdfWriteTag</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/Profile" data-name="abbyy::profile">
+      <a href="../../Abbyy/Profile.html">Profile</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/TaskStatus" data-name="abbyy::taskstatus">
+      <a href="../../Abbyy/TaskStatus.html">TaskStatus</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/TextType" data-name="abbyy::texttype">
+      <a href="../../Abbyy/TextType.html">TextType</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/Abbyy/WritingStyle" data-name="abbyy::writingstyle">
+      <a href="../../Abbyy/WritingStyle.html">WritingStyle</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/TamasSzekeres/abbyy-client.cr/String" data-name="string">
+      <a href="../../String.html">String</a>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Abbyy::Models::Task
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../../Abbyy/Models/Task.html">Abbyy::Models::Task</a></li><li class="superclass"><a href="../../Abbyy/Models/BaseModel.html">Abbyy::Models::BaseModel</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>Task.</p>
+
+<p><strong>See</strong> <a href="http://ocrsdk.com/documentation/specifications/status-codes/" target="_blank">status-codes</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L7" target="_blank">abbyy/models/task.cr</a>
+    
+    <br/>
+  
+
+
+
+  
+    <h2>Constant Summary</h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="TIME_FORMAT">
+        <strong>TIME_FORMAT</strong> = <code><span class="s">&quot;&#37;Y-&#37;m-&#37;dT&#37;H:&#37;M:&#37;SZ&quot;</span></code>
+      </dt>
+      
+    
+  </dl>
+
+
+
+  <h2>Constructors</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28xml%3AXML%3A%3ANode%29-class-method" class="signature"><strong>.new</strong>(xml : XML::Node)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#credits%3AInt32%3F-instance-method" class="signature"><strong>#credits</strong> : Int32?</a>
+        
+          <div class="summary"><p>Specifies the cost of processing: it contains the estimated cost before task processing, and the actual cost, after the task has been completed.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#credits%3D%28credits%3AInt32%3F%29-instance-method" class="signature"><strong>#credits=</strong>(credits : Int32?)</a>
+        
+          <div class="summary"><p>Specifies the cost of processing: it contains the estimated cost before task processing, and the actual cost, after the task has been completed.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#description%3AString%3F-instance-method" class="signature"><strong>#description</strong> : String?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#description%3D%28description%3AString%3F%29-instance-method" class="signature"><strong>#description=</strong>(description : String?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#error%3AString%3F-instance-method" class="signature"><strong>#error</strong> : String?</a>
+        
+          <div class="summary"><p>Description of the error occurred during processing.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#error%3D%28error%3AString%3F%29-instance-method" class="signature"><strong>#error=</strong>(error : String?)</a>
+        
+          <div class="summary"><p>Description of the error occurred during processing.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#estimated_processing_time%3AInt32%3F-instance-method" class="signature"><strong>#estimated_processing_time</strong> : Int32?</a>
+        
+          <div class="summary"><p>Estimated time until the task is completed (in seconds).</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#estimated_processing_time%3D%28estimated_processing_time%3AInt32%3F%29-instance-method" class="signature"><strong>#estimated_processing_time=</strong>(estimated_processing_time : Int32?)</a>
+        
+          <div class="summary"><p>Estimated time until the task is completed (in seconds).</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#files_count%3AInt32%3F-instance-method" class="signature"><strong>#files_count</strong> : Int32?</a>
+        
+          <div class="summary"><p>Specifies the number of files in the task.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#files_count%3D%28files_count%3AInt32%3F%29-instance-method" class="signature"><strong>#files_count=</strong>(files_count : Int32?)</a>
+        
+          <div class="summary"><p>Specifies the number of files in the task.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#id%3AString%3F-instance-method" class="signature"><strong>#id</strong> : String?</a>
+        
+          <div class="summary"><p>Specifies the identifier of the task.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#id%3D%28id%3AString%3F%29-instance-method" class="signature"><strong>#id=</strong>(id : String?)</a>
+        
+          <div class="summary"><p>Specifies the identifier of the task.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#registration_time%3ATime%3F-instance-method" class="signature"><strong>#registration_time</strong> : Time?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#registration_time%3D%28registration_time%3ATime%3F%29-instance-method" class="signature"><strong>#registration_time=</strong>(registration_time : Time?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#result_url%3AString%3F-instance-method" class="signature"><strong>#result_url</strong> : String?</a>
+        
+          <div class="summary"><p>This attribute is only available for completed tasks.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#result_url2%3AString%3F-instance-method" class="signature"><strong>#result_url2</strong> : String?</a>
+        
+          <div class="summary"><p>This attribute is only available for completed tasks which were processed with multiple export formats.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#result_url2%3D%28result_url2%3AString%3F%29-instance-method" class="signature"><strong>#result_url2=</strong>(result_url2 : String?)</a>
+        
+          <div class="summary"><p>This attribute is only available for completed tasks which were processed with multiple export formats.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#result_url3%3AString%3F-instance-method" class="signature"><strong>#result_url3</strong> : String?</a>
+        
+          <div class="summary"><p>This attribute is only available for completed tasks which were processed with three export formats.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#result_url3%3D%28result_url3%3AString%3F%29-instance-method" class="signature"><strong>#result_url3=</strong>(result_url3 : String?)</a>
+        
+          <div class="summary"><p>This attribute is only available for completed tasks which were processed with three export formats.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#result_url%3D%28result_url%3AString%3F%29-instance-method" class="signature"><strong>#result_url=</strong>(result_url : String?)</a>
+        
+          <div class="summary"><p>This attribute is only available for completed tasks.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#status%3ATaskStatus%3F-instance-method" class="signature"><strong>#status</strong> : TaskStatus?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#status%3D%28status%3ATaskStatus%3F%29-instance-method" class="signature"><strong>#status=</strong>(status : TaskStatus?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#status_change_time%3ATime%3F-instance-method" class="signature"><strong>#status_change_time</strong> : Time?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#status_change_time%3D%28status_change_time%3ATime%3F%29-instance-method" class="signature"><strong>#status_change_time=</strong>(status_change_time : Time?)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Constructor Detail</h2>
+  
+    <div class="entry-detail" id="new&#40;xml:XML::Node&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(xml : XML::Node)
+
+        <a class="method-permalink" href="#new%28xml%3AXML%3A%3ANode%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L50" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="credits:Int32?-instance-method">
+      <div class="signature">
+        
+        def <strong>credits</strong> : Int32?
+
+        <a class="method-permalink" href="#credits%3AInt32%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies the cost of processing: it contains the estimated cost before task
+processing, and the actual cost, after the task has been completed.
+The measurement unit is the price of processing of one field.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L26" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="credits&#61;&#40;credits:Int32?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>credits=</strong>(credits : Int32?)
+
+        <a class="method-permalink" href="#credits%3D%28credits%3AInt32%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies the cost of processing: it contains the estimated cost before task
+processing, and the actual cost, after the task has been completed.
+The measurement unit is the price of processing of one field.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L26" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="description:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>description</strong> : <a href="../../String.html">String</a>?
+
+        <a class="method-permalink" href="#description%3AString%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L48" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="description&#61;&#40;description:String?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>description=</strong>(description : <a href="../../String.html">String</a>?)
+
+        <a class="method-permalink" href="#description%3D%28description%3AString%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L48" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="error:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>error</strong> : <a href="../../String.html">String</a>?
+
+        <a class="method-permalink" href="#error%3AString%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Description of the error occurred during processing.
+This attribute is available for the tasks with <code>ProcessingFailed</code> status only.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L18" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="error&#61;&#40;error:String?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>error=</strong>(error : <a href="../../String.html">String</a>?)
+
+        <a class="method-permalink" href="#error%3D%28error%3AString%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Description of the error occurred during processing.
+This attribute is available for the tasks with <code>ProcessingFailed</code> status only.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L18" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="estimated_processing_time:Int32?-instance-method">
+      <div class="signature">
+        
+        def <strong>estimated_processing_time</strong> : Int32?
+
+        <a class="method-permalink" href="#estimated_processing_time%3AInt32%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Estimated time until the task is completed (in seconds).
+This attribute is available for the tasks with <code>Queued</code> or <code>InProgress</code> status.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L30" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="estimated_processing_time&#61;&#40;estimated_processing_time:Int32?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>estimated_processing_time=</strong>(estimated_processing_time : Int32?)
+
+        <a class="method-permalink" href="#estimated_processing_time%3D%28estimated_processing_time%3AInt32%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Estimated time until the task is completed (in seconds).
+This attribute is available for the tasks with <code>Queued</code> or <code>InProgress</code> status.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L30" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="files_count:Int32?-instance-method">
+      <div class="signature">
+        
+        def <strong>files_count</strong> : Int32?
+
+        <a class="method-permalink" href="#files_count%3AInt32%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies the number of files in the task.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L21" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="files_count&#61;&#40;files_count:Int32?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>files_count=</strong>(files_count : Int32?)
+
+        <a class="method-permalink" href="#files_count%3D%28files_count%3AInt32%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies the number of files in the task.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L21" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="id:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>id</strong> : <a href="../../String.html">String</a>?
+
+        <a class="method-permalink" href="#id%3AString%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies the identifier of the task.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L11" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="id&#61;&#40;id:String?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>id=</strong>(id : <a href="../../String.html">String</a>?)
+
+        <a class="method-permalink" href="#id%3D%28id%3AString%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Specifies the identifier of the task.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L11" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="registration_time:Time?-instance-method">
+      <div class="signature">
+        
+        def <strong>registration_time</strong> : Time?
+
+        <a class="method-permalink" href="#registration_time%3ATime%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="registration_time&#61;&#40;registration_time:Time?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>registration_time=</strong>(registration_time : Time?)
+
+        <a class="method-permalink" href="#registration_time%3D%28registration_time%3ATime%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="result_url:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>result_url</strong> : <a href="../../String.html">String</a>?
+
+        <a class="method-permalink" href="#result_url%3AString%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>This attribute is only available for completed tasks. It provides the URL
+of the result of processing. The hyperlink has limited lifetime. If you
+want to download the result after that time has passed, use the
+<a href="http://ocrsdk.com/documentation/apireference/getTaskStatus/" target="_blank">getTaskStatus</a>
+or <a href="http://ocrsdk.com/documentation/apireference/listTasks/" target="_blank">listTasks</a> method to obtain the new hyperlink.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L37" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="result_url2:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>result_url2</strong> : <a href="../../String.html">String</a>?
+
+        <a class="method-permalink" href="#result_url2%3AString%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>This attribute is only available for completed tasks which were processed
+with multiple export formats. It provides the URL of the result saved in
+the second specified format. Otherwise, it has the same properties as the resultUrl attribute.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L42" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="result_url2&#61;&#40;result_url2:String?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>result_url2=</strong>(result_url2 : <a href="../../String.html">String</a>?)
+
+        <a class="method-permalink" href="#result_url2%3D%28result_url2%3AString%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>This attribute is only available for completed tasks which were processed
+with multiple export formats. It provides the URL of the result saved in
+the second specified format. Otherwise, it has the same properties as the resultUrl attribute.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L42" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="result_url3:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>result_url3</strong> : <a href="../../String.html">String</a>?
+
+        <a class="method-permalink" href="#result_url3%3AString%3F-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>This attribute is only available for completed tasks which were processed
+with three export formats. It provides the URL of the result saved in the
+third specified format. Otherwise, it has the same properties as the resultUrl attribute.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L47" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="result_url3&#61;&#40;result_url3:String?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>result_url3=</strong>(result_url3 : <a href="../../String.html">String</a>?)
+
+        <a class="method-permalink" href="#result_url3%3D%28result_url3%3AString%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>This attribute is only available for completed tasks which were processed
+with three export formats. It provides the URL of the result saved in the
+third specified format. Otherwise, it has the same properties as the resultUrl attribute.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L47" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="result_url&#61;&#40;result_url:String?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>result_url=</strong>(result_url : <a href="../../String.html">String</a>?)
+
+        <a class="method-permalink" href="#result_url%3D%28result_url%3AString%3F%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>This attribute is only available for completed tasks. It provides the URL
+of the result of processing. The hyperlink has limited lifetime. If you
+want to download the result after that time has passed, use the
+<a href="http://ocrsdk.com/documentation/apireference/getTaskStatus/" target="_blank">getTaskStatus</a>
+or <a href="http://ocrsdk.com/documentation/apireference/listTasks/" target="_blank">listTasks</a> method to obtain the new hyperlink.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L37" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="status:TaskStatus?-instance-method">
+      <div class="signature">
+        
+        def <strong>status</strong> : <a href="../../Abbyy/TaskStatus.html">TaskStatus</a>?
+
+        <a class="method-permalink" href="#status%3ATaskStatus%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L14" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="status&#61;&#40;status:TaskStatus?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>status=</strong>(status : <a href="../../Abbyy/TaskStatus.html">TaskStatus</a>?)
+
+        <a class="method-permalink" href="#status%3D%28status%3ATaskStatus%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L14" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="status_change_time:Time?-instance-method">
+      <div class="signature">
+        
+        def <strong>status_change_time</strong> : Time?
+
+        <a class="method-permalink" href="#status_change_time%3ATime%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="status_change_time&#61;&#40;status_change_time:Time?&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>status_change_time=</strong>(status_change_time : Time?)
+
+        <a class="method-permalink" href="#status_change_time%3D%28status_change_time%3ATime%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/TamasSzekeres/abbyy-client.cr/blob/aa819bc29db77830d753b78cecac063d076f87d7/src/abbyy/models/task.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
