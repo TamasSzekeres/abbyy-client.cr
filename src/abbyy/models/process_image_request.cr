@@ -6,18 +6,18 @@ module Abbyy::Models
   class ProcessImageRequest < BaseRequest
     include FileBody
 
-    DEFAULT_LANGUAGE = Language::English
-    DEFAULT_PROFILE = Profile::DocumentConversion
-    DEFAULT_TEXT_TYPE = TextType::Normal
-    DEFAULT_IMAGE_SOURCE = ImageSource::Auto
-    DEFAULT_CORRECT_ORIENTATION = true
-    DEFAULT_CORRENT_SKEW = true
-    DEFAULT_READ_BARCODES = true
-    DEFAULT_EXPORT_FORMAT = ExportFormat::Rtf
+    DEFAULT_LANGUAGE                       = Language::English
+    DEFAULT_PROFILE                        = Profile::DocumentConversion
+    DEFAULT_TEXT_TYPE                      = TextType::Normal
+    DEFAULT_IMAGE_SOURCE                   = ImageSource::Auto
+    DEFAULT_CORRECT_ORIENTATION            = true
+    DEFAULT_CORRENT_SKEW                   = true
+    DEFAULT_READ_BARCODES                  = true
+    DEFAULT_EXPORT_FORMAT                  = ExportFormat::Rtf
     DEFAULT_XML_WRITE_RECOGNITION_VARIANTS = false
-    DEFAULT_PDF_WRITE_TAGS = PdfWriteTag::Auto
-    DEFAULT_DESCRITION = ""
-    DEFAULT_PDF_PASSWORD = ""
+    DEFAULT_PDF_WRITE_TAGS                 = PdfWriteTag::Auto
+    DEFAULT_DESCRITION                     = ""
+    DEFAULT_PDF_PASSWORD                   = ""
 
     # Specifies recognition language of the document. This parameter can contain
     # one language or several languages in an array,
@@ -28,7 +28,7 @@ module Abbyy::Models
     # request.language = [
     #   Language::English,
     #   Language::French,
-    #   Language::German
+    #   Language::German,
     # ]
     # ```
     # See the [list of available recognition languages](http://ocrsdk.com/documentation/specifications/recognition-languages/).
@@ -194,16 +194,43 @@ module Abbyy::Models
       @file_path = file_path
     end
 
+    def initialize(file_path : String,
+                   @language : (Language | Array(Language))? = nil,
+                   profile : Profile? = nil,
+                   text_type : (TextType | Array(TextType))? = nil,
+                   @image_source : ImageSource? = nil,
+                   @correct_orientation : Bool? = nil,
+                   @correct_skew : Bool? = nil,
+                   @read_barcodes : Bool? = nil,
+                   export_format : (ExportFormat | Array(ExportFormat))? = nil,
+                   @xml_write_recognition_variants : Bool? = nil,
+                   @pdf_write_tags : PdfWriteTag? = nil,
+                   @description : String? = nil,
+                   @pdf_password : String? = nil)
+      unless File.exists? file_path
+        raise ArgumentError.new "File does not exists: #{file_path}"
+      end
+      @file_path = file_path
+
+      set_profile profile
+      set_text_type text_type
+      set_export_format export_format
+    end
+
     ALLOWED_PROFILES = Profile.values - [Profile::FieldLevelRecognition]
 
     ALLOWED_TEXT_TYPES = TextType.values - [TextType::Handprinted]
 
     ALLOWED_EXPORT_FORMATS = ExportFormat.values - [
       ExportFormat::V_Card,
-      ExportFormat::Csv
+      ExportFormat::Csv,
     ]
 
     def profile=(profile : Profile?)
+      set_profile
+    end
+
+    private def set_profile(profile : Profile?)
       if profile
         unless ALLOWED_PROFILES.includes? profile
           raise ArgumentError.new "Invalid profile: #{profile}"
@@ -213,6 +240,10 @@ module Abbyy::Models
     end
 
     def text_type=(text_type : (TextType | Array(TextType))?)
+      set_text_type text_type
+    end
+
+    private def set_text_type(text_type : (TextType | Array(TextType))?)
       case text_type
       when TextType
         unless ALLOWED_TEXT_TYPES.includes? text_type
@@ -229,6 +260,10 @@ module Abbyy::Models
     end
 
     def export_format=(export_format : (ExportFormat | Array(ExportFormat))?)
+      set_export_format export_format
+    end
+
+    private def set_export_format(export_format : (ExportFormat | Array(ExportFormat))?)
       case export_format
       when ExportFormat
         unless ALLOWED_EXPORT_FORMATS.includes? export_format
@@ -248,6 +283,10 @@ module Abbyy::Models
     end
 
     def description=(description : String?)
+      set_description description
+    end
+
+    private def set_description(description : String?)
       if description.is_a? String
         if description.as(String).size > 255
           raise ArgumentError.new "'description' parameter cannot contain more than 255 characters"

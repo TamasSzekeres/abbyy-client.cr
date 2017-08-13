@@ -1,6 +1,10 @@
 # abbyy-client.cr
 
-TODO: Write a description here
+[Abbyy Cloud OCR SDK](http://ocrsdk.com/) Client for Crystal.
+
+[![Build Status](https://travis-ci.org/TamasSzekeres/abbyy-client.cr.svg?branch=master)](https://travis-ci.org/TamasSzekeres/abbyy-client.cr)
+
+Based on [abbyy-client-php](https://github.com/TamasSzekeres/abbyy-client-php).
 
 ## Installation
 
@@ -12,17 +16,67 @@ dependencies:
     github: TamasSzekeres/abbyy-client.cr
 ```
 
+Than run:
+```shell
+crystal deps
+```
+
+## Authentication
+
+If you want to use the api, you have to register on [Abbyy](http://ocrsdk.com/)'s
+ site and create an application to get your own *application_id* and *password*.
+
 ## Usage
 
 ```crystal
 require "abbyy"
+
+module AbbySample
+  include Abbyy
+  include Abbyy::Models
+
+  APPLICATION_ID = "_YOUR_APPLCATION_ID_"
+  PASSWORD = "_YOUR_PASSWORD_"
+
+  def self.main
+    input_file = "ScannedDocument.png"
+    output_file = "SearchableDocument.pdf"
+
+    client = Client.new(APPLICATION_ID, PASSWORD)
+
+    request = ProcessImageRequest.new(
+      file_path: input_file,
+      image_source: ImageSource::Scanner,
+      export_format: ExportFormat::PdfTextAndImages)
+
+
+    # - Send the image to API
+    # - Wait for processing
+    # - Finally download and return the result
+    result = client.perform_image_processing request
+
+    # Saving result to file.
+    if task_result = result.as?(TaskResult)
+      unless task_result.result.is_a? Nil
+        task_result.save_result output_file
+      end
+    end
+
+    0
+  end
+
+  main
+end
 ```
 
-TODO: Write usage instructions here
+## Resources
 
-## Development
+- API reference:  [ocrsdk.com/documentation/apireference/](http://ocrsdk.com/documentation/apireference/)
+- Online Documentation: [https://tamasszekeres.github.io/abbyy-client.cr/](https://tamasszekeres.github.io/abbyy-client.cr/).
 
-TODO: Write development instructions here
+## License
+
+This package is released under the MIT License.
 
 ## Contributing
 
@@ -34,4 +88,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [Tamás Szekeres](https://github.com/TamasSzekeres) Tamás Szekeres - creator, maintainer
+- [TamasSzekeres](https://github.com/TamasSzekeres) Tamás Szekeres - creator, maintainer

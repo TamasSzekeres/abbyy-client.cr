@@ -6,15 +6,15 @@ module Abbyy::Models
   class ProcessBusinessCardRequest < BaseRequest
     include FileBody
 
-    DEFAULT_LANGUAGE = Language::English
-    DEFAULT_IMAGE_SOURCE = ImageSource::Auto
-    DEFAULT_CORRECT_ORIENTATION = true
-    DEFAULT_CORRENT_SKEW = true
-    DEFAULT_EXPORT_FORMAT = ExportFormat::V_Card;
+    DEFAULT_LANGUAGE                          = Language::English
+    DEFAULT_IMAGE_SOURCE                      = ImageSource::Auto
+    DEFAULT_CORRECT_ORIENTATION               = true
+    DEFAULT_CORRENT_SKEW                      = true
+    DEFAULT_EXPORT_FORMAT                     = ExportFormat::V_Card
     DEFAULT_XML_WRITE_EXTENDED_CHARACTER_INFO = false
-    DEFAULT_PXML_WRITE_FIELD_COMPONENTS = false
-    DEFAULT_DESCRITION = ""
-    DEFAULT_PDF_PASSWORD = ""
+    DEFAULT_PXML_WRITE_FIELD_COMPONENTS       = false
+    DEFAULT_DESCRITION                        = ""
+    DEFAULT_PDF_PASSWORD                      = ""
 
     # Specifies recognition language of the document. This parameter can contain
     # one language or several languages in an array,
@@ -25,7 +25,7 @@ module Abbyy::Models
     # request.language = [
     #   Language::English,
     #   Language::French,
-    #   Language::German
+    #   Language::German,
     # ]
     # ```
     # See the [list of available recognition languages](http://ocrsdk.com/documentation/specifications/recognition-languages/).
@@ -116,6 +116,28 @@ module Abbyy::Models
     property pdf_password : String? = nil
 
     def initialize(file_path : String)
+      set_file_path file_path
+    end
+
+    def initialize(file_path : String,
+                   @language : (Language | Array(Language))? = nil,
+                   @image_source : ImageSource? = nil,
+                   @correct_orientation : Bool? = nil,
+                   @correct_skew : Bool? = nil,
+                   export_format : ExportFormat? = nil,
+                   @xml_write_extended_character_info : Bool? = nil,
+                   @pdf_write_field_components : Bool? = nil,
+                   description : String? = nil,
+                   @pdf_password : String? = nil)
+      unless File.exists? file_path
+        raise ArgumentError.new "File does not exists: #{file_path}"
+      end
+      @file_path = file_path
+      set_export_format export_format
+      set_description description
+    end
+
+    private def set_file_path(file_path : String)
       unless File.exists? file_path
         raise ArgumentError.new "File does not exists: #{file_path}"
       end
@@ -125,10 +147,14 @@ module Abbyy::Models
     ALLOWED_EXPORT_FORMATS = [
       ExportFormat::V_Card,
       ExportFormat::Csv,
-      ExportFormat::Xml
+      ExportFormat::Xml,
     ]
 
     def export_format=(export_format : (ExportFormat | Array(ExportFormat))?)
+      set_export_format
+    end
+
+    private def set_export_format(export_format : (ExportFormat | Array(ExportFormat))?)
       if export_format
         unless ALLOWED_EXPORT_FORMATS.includes? export_format
           raise ArgumentError.new "Invalid export-format: #{export_format}"
@@ -138,6 +164,10 @@ module Abbyy::Models
     end
 
     def description=(description : String?)
+      set_description description
+    end
+
+    private def set_description(description : String?)
       if description.is_a? String
         if description.as(String).size > 255
           raise ArgumentError.new "'description' parameter cannot contain more than 255 characters"

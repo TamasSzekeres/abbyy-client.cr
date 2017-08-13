@@ -7,11 +7,11 @@ module Abbyy::Models
   class ProcessCheckmarkFieldRequest < BaseRequest
     include FileBody
 
-    DEFAULT_REGION = Region.new(-1, -1, -1, -1)
-    DEFAULT_CHECKMARK_TYPE = CheckmarkType::Empty
+    DEFAULT_REGION             = Region.new(-1, -1, -1, -1)
+    DEFAULT_CHECKMARK_TYPE     = CheckmarkType::Empty
     DEFAULT_CORRECTION_ALLOWED = false
-    DEFAULT_DESCRIPTION = ""
-    DEFAULT_PASSWORD = ""
+    DEFAULT_DESCRIPTION        = ""
+    DEFAULT_PASSWORD           = ""
 
     # Specifies the region of the text field on the image. The coordinates of
     # the region are measured in pixels relative to the left top corner of the
@@ -51,11 +51,39 @@ module Abbyy::Models
     # This parameter is **not required**.
     property pdf_password : String? = nil
 
+    def initialize(file_path : String)
+      set_file_path file_path
+    end
+
+    def initialize(file_path : String,
+                   @region : Region? = nil,
+                   @checkmark_type : CheckmarkType? = nil,
+                   @correction_allowed : Bool? = nil,
+                   description : String? = nil,
+                   @pdf_password : String? = nil)
+      unless File.exists? file_path
+        raise ArgumentError.new "File does not exists: #{file_path}"
+      end
+      @file_path = file_path
+      set_description description
+    end
+
+    private def set_file_path(file_path : String)
+      unless File.exists? file_path
+        raise ArgumentError.new "File does not exists: #{file_path}"
+      end
+      @file_path = file_path
+    end
+
     def region=(coordinates : Array(Int32))
       @region = Region.new coordinates
     end
 
     def description=(description : String?)
+      set_description description
+    end
+
+    def set_description(description : String?)
       if description.is_a? String
         if description.as(String).size > 255
           raise ArgumentError.new "'description' parameter cannot contain more than 255 characters"

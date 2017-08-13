@@ -6,13 +6,13 @@ module Abbyy::Models
   class ProcessReceiptRequest < BaseRequest
     include FileBody
 
-    DEFAULT_COUNTRY = Country::USA
-    DEFAULT_IMAGE_SOURCE = ImageSource::Auto
-    DEFAULT_CORRECT_ORIENTATION = true
-    DEFAULT_CORRECT_SKEW = true
+    DEFAULT_COUNTRY                           = Country::USA
+    DEFAULT_IMAGE_SOURCE                      = ImageSource::Auto
+    DEFAULT_CORRECT_ORIENTATION               = true
+    DEFAULT_CORRECT_SKEW                      = true
     DEFAULT_XML_WRITE_EXTENDED_CHARACTER_INFO = false
-    DEFAULT_DESCRIPTION = ""
-    DEFAULT_PDF_PASSWORD = ""
+    DEFAULT_DESCRIPTION                       = ""
+    DEFAULT_PDF_PASSWORD                      = ""
 
     # Specifies the country where the receipt was printed. This parameter can
     # contain several countries in an array, for example:
@@ -82,6 +82,25 @@ module Abbyy::Models
     property pdf_password : String? = nil
 
     def initialize(file_path : String)
+      set_file_path file_path
+    end
+
+    def initialize(file_path : String,
+                   @country : (Country | Array(Country))? = nil,
+                   @image_source : ImageSource? = nil,
+                   @correct_orientation : Bool? = nil,
+                   @correct_skew : Bool? = nil,
+                   @xml_write_extended_character_info : Bool? = nil,
+                   description : String? = nil,
+                   @pdf_password : String? = nil)
+      unless File.exists? file_path
+        raise ArgumentError.new "File does not exists: #{file_path}"
+      end
+      @file_path = file_path
+      set_description description
+    end
+
+    private def set_file_path(file_path : String)
       unless File.exists? file_path
         raise ArgumentError.new "File does not exists: #{file_path}"
       end
@@ -89,6 +108,10 @@ module Abbyy::Models
     end
 
     def description=(description : String?)
+      set_description description
+    end
+
+    def set_description(description : String?)
       if description.is_a? String
         if description.as(String).size > 255
           raise ArgumentError.new "'description' parameter cannot contain more than 255 characters"

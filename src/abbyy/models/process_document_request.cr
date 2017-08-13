@@ -3,17 +3,17 @@ require "./task_id_request"
 module Abbyy::Models
   # Request object for [/processDocument](http://ocrsdk.com/documentation/apireference/processDocument/) API-method.
   class ProcessDocumentRequest < TaskIdRequest
-    DEFAULT_LANGUAGE = Language::English
-    DEFAULT_PROFILE = Profile::DocumentConversion
-    DEFAULT_TEXT_TYPE = TextType::Normal
-    DEFAULT_IMAGE_SOURCE = ImageSource::Auto
-    DEFAULT_CORRECT_ORIENTATION = true
-    DEFAULT_CORRENT_SKEW = true
-    DEFAULT_READ_BARCODES = true
-    DEFAULT_EXPORT_FORMAT = ExportFormat::Rtf
+    DEFAULT_LANGUAGE                       = Language::English
+    DEFAULT_PROFILE                        = Profile::DocumentConversion
+    DEFAULT_TEXT_TYPE                      = TextType::Normal
+    DEFAULT_IMAGE_SOURCE                   = ImageSource::Auto
+    DEFAULT_CORRECT_ORIENTATION            = true
+    DEFAULT_CORRENT_SKEW                   = true
+    DEFAULT_READ_BARCODES                  = true
+    DEFAULT_EXPORT_FORMAT                  = ExportFormat::Rtf
     DEFAULT_XML_WRITE_RECOGNITION_VARIANTS = false
-    DEFAULT_PDF_WRITE_TAGS = PdfWriteTag::Auto
-    DEFAULT_DESCRITION = ""
+    DEFAULT_PDF_WRITE_TAGS                 = PdfWriteTag::Auto
+    DEFAULT_DESCRITION                     = ""
 
     # Specifies recognition language of the document. This parameter can contain
     # one language or several languages in an array,
@@ -24,7 +24,7 @@ module Abbyy::Models
     # request.language = [
     #   Language::English,
     #   Language::French,
-    #   Language::German
+    #   Language::German,
     # ]
     # ```
     # See the [list of available recognition languages](http://ocrsdk.com/documentation/specifications/recognition-languages/).
@@ -179,16 +179,33 @@ module Abbyy::Models
     getter description : String? = nil
 
     def initialize(task_id : String)
-      raise ArgumentError.new "Invalid taskId: #{task_id}" unless task_id.is_task_id?
-      @task_id = task_id
+      set_task_id task_id
     end
 
-    def task_id=(task_id : String)
-      raise ArgumentError.new "Invalid taskId: #{task_id}" unless task_id.is_task_id?
-      @task_id = task_id
+    def initialize(task_id : String,
+                   @language : (Language | Array(Language))? = nil,
+                   profile : Profile? = nil,
+                   text_type : (TextType | Array(TextType))? = nil,
+                   @image_source : ImageSource? = nil,
+                   @correct_orientation : Bool? = nil,
+                   @correct_skew : Bool? = nil,
+                   @read_barcodes : Bool? = nil,
+                   export_format : (ExportFormat | Array(ExportFormat))? = nil,
+                   @xml_write_recognition_variants : Bool? = nil,
+                   @pdf_write_tags : PdfWriteTag? = nil,
+                   description : String? = nil)
+      set_task_id task_id
+      set_profile profile
+      set_text_type text_type
+      set_export_format export_format
+      set_description description
     end
 
     def task_id=(task_id : String?)
+      set_task_id task_id
+    end
+
+    private def set_task_id(task_id : String?)
       if task_id.is_a?(String)
         raise ArgumentError.new "Invalid taskId: #{task_id}" unless task_id.as(String).is_task_id?
       else
@@ -203,10 +220,14 @@ module Abbyy::Models
 
     ALLOWED_EXPORT_FORMATS = ExportFormat.values - [
       ExportFormat::V_Card,
-      ExportFormat::Csv
+      ExportFormat::Csv,
     ]
 
     def profile=(profile : Profile?)
+      set_profile profile
+    end
+
+    private def set_profile(profile : Profile?)
       if profile
         unless ALLOWED_PROFILES.includes? profile
           raise ArgumentError.new "Invalid profile: #{profile}"
@@ -216,6 +237,10 @@ module Abbyy::Models
     end
 
     def text_type=(text_type : (TextType | Array(TextType))?)
+      set_text_type text_type
+    end
+
+    private def set_text_type(text_type : (TextType | Array(TextType))?)
       case text_type
       when TextType
         unless ALLOWED_TEXT_TYPES.includes? text_type
@@ -232,6 +257,10 @@ module Abbyy::Models
     end
 
     def export_format=(export_format : (ExportFormat | Array(ExportFormat))?)
+      set_export_format export_format
+    end
+
+    private def set_export_format(export_format : (ExportFormat | Array(ExportFormat))?)
       case export_format
       when ExportFormat
         unless ALLOWED_EXPORT_FORMATS.includes? export_format
@@ -251,6 +280,10 @@ module Abbyy::Models
     end
 
     def description=(description : String?)
+      set_description description
+    end
+
+    private def set_description(description : String?)
       if description.is_a? String
         if description.as(String).size > 255
           raise ArgumentError.new "'description' parameter cannot contain more than 255 characters"

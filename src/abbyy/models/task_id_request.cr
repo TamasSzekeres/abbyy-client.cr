@@ -22,7 +22,7 @@ module Abbyy::Models
 
     def params : Hash(String, String)
       hash = {} of String => String
-      hash["taskId"] = @task if @task
+      hash["taskId"] = @task_id.as(String) if @task_id.is_a?(String)
       hash
     end
   end

@@ -7,18 +7,18 @@ module Abbyy::Models
   class ProcessTextFieldRequest < BaseRequest
     include FileBody
 
-    DEFAULT_REGION = Region.new(-1, -1, -1, -1)
-    DEFAULT_LANGUAGE = Language::English
-    DEFAULT_LETTER_SET = ""
-    DEFAULT_REG_EXP = ""
-    DEFAULT_TEXT_TYPE = TextType::Normal
-    DEFAULT_ONE_TEXT_LINE = false
+    DEFAULT_REGION                 = Region.new(-1, -1, -1, -1)
+    DEFAULT_LANGUAGE               = Language::English
+    DEFAULT_LETTER_SET             = ""
+    DEFAULT_REG_EXP                = ""
+    DEFAULT_TEXT_TYPE              = TextType::Normal
+    DEFAULT_ONE_TEXT_LINE          = false
     DEFAULT_ONE_WORD_PER_TEXT_LINE = false
-    DEFAULT_MARKING_TYPE = FieldMarkingType::SimpleText
-    DEFAULT_PLACEHOLDERS_COUNT = 1
-    DEFAULT_WRITING_STYLE = WritingStyle::Default
-    DEFAULT_DESCRIPTION = ""
-    DEFAULT_PASSWORD = ""
+    DEFAULT_MARKING_TYPE           = FieldMarkingType::SimpleText
+    DEFAULT_PLACEHOLDERS_COUNT     = 1
+    DEFAULT_WRITING_STYLE          = WritingStyle::Default
+    DEFAULT_DESCRIPTION            = ""
+    DEFAULT_PASSWORD               = ""
 
     # Specifies the region of the text field on the image. The coordinates of
     # the region are measured in pixels relative to the left top corner of the
@@ -39,7 +39,7 @@ module Abbyy::Models
     # request.language = [
     #   Language::English,
     #   Language::French,
-    #   Language::German
+    #   Language::German,
     # ]
     # ```
     # See the [list of available recognition languages](http://ocrsdk.com/documentation/specifications/recognition-languages/).
@@ -170,6 +170,31 @@ module Abbyy::Models
     property pdf_password : String? = nil
 
     def initialize(file_path : String)
+      set_file_path file_path
+    end
+
+    def initialize(file_path : String,
+                   @region : Region? = nil,
+                   @language : (Language | Array(Language))? = nil,
+                   @letter_set : String? = nil,
+                   @reg_exp : String? = nil,
+                   text_type : (TextType | Array(TextType))? = nil,
+                   @one_text_line : Bool? = nil,
+                   @one_word_per_text_line : Bool? = nil,
+                   @marking_type : FieldMarkingType? = nil,
+                   @placeholders_count : Int32? = nil,
+                   @writing_style : WritingStyle? = nil,
+                   description : String? = nil,
+                   @pdf_password : String? = nil)
+      unless File.exists? file_path
+        raise ArgumentError.new "File does not exists: #{file_path}"
+      end
+      @file_path = file_path
+      set_text_type text_type
+      set_description description
+    end
+
+    private def set_file_path(file_path : String)
       unless File.exists? file_path
         raise ArgumentError.new "File does not exists: #{file_path}"
       end
@@ -183,6 +208,10 @@ module Abbyy::Models
     end
 
     def text_type=(text_type : (TextType | Array(TextType))?)
+      set_text_type text_type
+    end
+
+    private def set_text_type(text_type : (TextType | Array(TextType))?)
       case text_type
       when TextType
         unless ALLOWED_TEXT_TYPES.includes? text_type
@@ -199,6 +228,10 @@ module Abbyy::Models
     end
 
     def description=(description : String?)
+      set_description description
+    end
+
+    private def set_description(description : String?)
       if description.is_a? String
         if description.as(String).size > 255
           raise ArgumentError.new "'description' parameter cannot contain more than 255 characters"
