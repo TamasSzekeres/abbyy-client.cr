@@ -4,8 +4,6 @@
 
 [![Build Status](https://travis-ci.org/TamasSzekeres/abbyy-client.cr.svg?branch=master)](https://travis-ci.org/TamasSzekeres/abbyy-client.cr)
 
-Based on [abbyy-client-php](https://github.com/TamasSzekeres/abbyy-client-php).
-
 ## Installation
 
 Add this to your application's `shard.yml`:
