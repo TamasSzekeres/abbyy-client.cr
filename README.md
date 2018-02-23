@@ -2,10 +2,6 @@
 
 [Abbyy Cloud OCR SDK](http://ocrsdk.com/) Client for Crystal.
 
-[![Build Status](https://travis-ci.org/TamasSzekeres/abbyy-client.cr.svg?branch=master)](https://travis-ci.org/TamasSzekeres/abbyy-client.cr)
-
-Based on [abbyy-client-php](https://github.com/TamasSzekeres/abbyy-client-php).
-
 ## Installation
 
 Add this to your application's `shard.yml`:
@@ -13,7 +9,7 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   abbyy:
-    github: TamasSzekeres/abbyy-client.cr
+    github: light-side-software/abbyy-client.cr
 ```
 
 Then run:
@@ -72,7 +68,7 @@ end
 ## Resources
 
 - API reference:  [ocrsdk.com/documentation/apireference/](http://ocrsdk.com/documentation/apireference/)
-- Online Documentation: [https://tamasszekeres.github.io/abbyy-client.cr/](https://tamasszekeres.github.io/abbyy-client.cr/).
+- Online Documentation: [https://light-side-software.github.io/abbyy-client.cr/](https://light-side-software.github.io/abbyy-client.cr/).
 
 ## License
 
@@ -80,7 +76,7 @@ This package is released under the MIT License.
 
 ## Contributing
 
-1. Fork it ( https://github.com/TamasSzekeres/abbyy-client.cr/fork )
+1. Fork it ( https://github.com/light-side-software/abbyy-client.cr/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
